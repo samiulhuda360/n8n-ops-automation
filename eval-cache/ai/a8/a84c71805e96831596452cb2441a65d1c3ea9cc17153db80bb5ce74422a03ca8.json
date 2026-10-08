@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"stock\",\n  \"restricted\": false,\n  \"reason\": \"These items are for maintaining demo products used in store operations.\",\n  \"approver_summary\": \"Owen Parata wants replacement tent pegs and guy ropes from Ridgeline Camp Supplies Ltd for $480 NZD to maintain the demo tents.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TASfvteGEx2O571zYia+ed0uBD1Codlb5xNwy7IBhiVyoT6yEG5Of4HnZi6t26E0nYPdqPMQic5guSGg3+AvGVWakIaZT6HTIu2VXrhib98ntTl4+4jAG3fg="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441490,
+ "id": "UTrHaouZA4aj9tMPxrD8oAg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 74,
+  "prompt_tokens": 312,
+  "total_tokens": 386
+ },
+ "_gateway": {
+  "latency_ms": 2559.2
+ }
+}

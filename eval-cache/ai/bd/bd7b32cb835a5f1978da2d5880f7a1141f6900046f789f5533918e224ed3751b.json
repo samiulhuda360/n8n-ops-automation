@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"supplier_name\": \"Peak Performance Apparel Ltd\",\n  \"gst_number\": \"125-640-388\",\n  \"invoice_number\": \"PPA7720\",\n  \"invoice_date\": \"2026-09-25\",\n  \"due_date\": \"2026-10-25\",\n  \"po_number\": null,\n  \"currency\": \"NZD\",\n  \"lines\": [\n    {\n      \"description\": \"Performance tee samples\",\n      \"quantity\": 30,\n      \"unit_price\": 19.50,\n      \"amount\": 585.00\n    }\n  ],\n  \"subtotal\": 585.00,\n  \"gst\": 87.75,\n  \"total\": 672.75\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TEGgnpdC85390mzB5Yb4ziuToIxu4OoHj6vJpGCgsMiRg9+oKmnjluXqQR+cLe8kWmYygBXSXOp5UE3as87X6B0IuOB1BF1JUr8YogzcTimrBfepLRqsln6k="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441535,
+ "id": "fTrHar7eMNqZvr0PgfKk6Qc",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 205,
+  "prompt_tokens": 421,
+  "total_tokens": 626
+ },
+ "_gateway": {
+  "latency_ms": 1959.6
+ }
+}

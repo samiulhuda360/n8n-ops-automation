@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"return_or_exchange\",\n  \"priority\": \"normal\",\n  \"needs_person\": false,\n  \"reason\": \"Standard return request for a sleeping bag purchased last week.\",\n  \"reply_draft\": \"Hi Zane, thanks for getting in touch about your sleeping bag return. Our team will review your request and be in touch shortly with the next steps.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T0vwE6pS/vDfyuCDrwWh/XHEVAcAx++x9gHj/1QkbAxUm/T18DwaxaGaALeX8R/nQCqOaMLgCg61miK+/5cZQuwsSl1xp31+6cqA7Cz0jwue4MmTwtWOKaxQ="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441204,
+ "id": "KznHarPIBO311e8P9srYqAc",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 87,
+  "prompt_tokens": 450,
+  "total_tokens": 537
+ },
+ "_gateway": {
+  "latency_ms": 10091.7
+ }
+}

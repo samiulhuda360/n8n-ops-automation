@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"marketing\",\n  \"restricted\": false,\n  \"reason\": \"Promotional signage for a store opening falls under marketing.\",\n  \"approver_summary\": \"Jess Moana from Marketing wants A1 posters and window decals from Pixel Print Studio Ltd for $2400 NZD for the Wellington store opening.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TBfyD2Apmwnt0tgkuzX2umKdNGXjVlIGU71o+34hZVA9P6h4ZfinZqGJ27QaD/4ABCpz8Uh3nRHnHA2US/Ytu2rW4oBkTZFarPaYvaCuRfCgtM1dBLoXczfM="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440942,
+ "id": "LTjHasGCC6DY9tMP1eSbuAE",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 75,
+  "prompt_tokens": 319,
+  "total_tokens": 394
+ },
+ "_gateway": {
+  "latency_ms": 2002.7
+ }
+}

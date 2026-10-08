@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"packaging_and_freight\",\n  \"restricted\": false,\n  \"reason\": \"This purchase is for freight services used in wholesale deliveries.\",\n  \"approver_summary\": \"Owen Parata wants $7800 NZD from Harbour Freight Logistics Ltd for a top-up of the Q4 freight contract to cover wholesale deliveries before Christmas.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T+KELn28qhSqLxNy1wcy+KtvfsCsemVlaHVqeQSIPudA7uPv3nu3kg/zDMG51IMc/+hysLfq4IRLGAJdW77pev+K5FKFMBXXAxuZAQbz/U5jRcAjP/GSxScQ="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440947,
+ "id": "LzjHapejJoaj9tMPxrD8oAg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 83,
+  "prompt_tokens": 317,
+  "total_tokens": 400
+ },
+ "_gateway": {
+  "latency_ms": 4174.8
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"TASMAN TRAIL FOOTWEAR LTD\", \"gst_number\": \"123-456-789\", \"invoice_number\": \"TTF/8851\", \"invoice_date\": \"2026-09-18\", \"due_date\": \"2026-10-18\", \"po_number\": \"PO-2026-0151\", \"currency\": \"NZD\", \"lines\": [{\"description\": \"Trail runner, sizes 36-45\", \"quantity\": 24, \"unit_price\": 88.00, \"amount\": 2112.00}], \"subtotal\": 2112.00, \"gst\": 211.20, \"total\": 2323.20}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TSWR2nCXLdb1EZYI3TQv8A2+BYY04ETEyjGi39gRRXjkzCJZx+eaW+k6f/+3aXm1OVMvFhrhlAbVwAye3XBoawjxB3uXD5OCMmxziL4oAAM46nWUIwrx8u3c="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441124,
+ "id": "1DjHarWJGae-1e8P5OSaOQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 191,
+  "prompt_tokens": 439,
+  "total_tokens": 630
+ },
+ "_gateway": {
+  "latency_ms": 16444.9
+ }
+}

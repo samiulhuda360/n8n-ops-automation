@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"supplier_name\": \"Coastline Promo Products Ltd\",\n  \"gst_number\": \"131-777-210\",\n  \"invoice_number\": \"CPP-0091\",\n  \"invoice_date\": \"2026-09-08\",\n  \"due_date\": \"2026-10-20\",\n  \"po_number\": null,\n  \"currency\": \"NZD\",\n  \"lines\": [\n    {\n      \"description\": \"Branded lanyards\",\n      \"quantity\": 500,\n      \"unit_price\": 1.35,\n      \"amount\": 675.00\n    },\n    {\n      \"description\": \"Setup fee\",\n      \"quantity\": 1,\n      \"unit_price\": 85.00,\n      \"amount\": 85.00\n    }\n  ],\n  \"subtotal\": 760.00,\n  \"gst\": 114.00,\n  \"total\": 874.00\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T5BPzy3OxsMoLDwd4fOYg9lIDFegNoZxMvs2q4uBI+8uwzninmvzRv19xxGd+qBhXRbM6Ys7XOyk5aeb1HjXV2R6Vhg4dDAefu6jMAo0Uomm63FBlnXYrk7I="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441071,
+ "id": "oDjHavj4HaOu1e8P-f2XyQI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 257,
+  "prompt_tokens": 473,
+  "total_tokens": 730
+ },
+ "_gateway": {
+  "latency_ms": 15950.1
+ }
+}

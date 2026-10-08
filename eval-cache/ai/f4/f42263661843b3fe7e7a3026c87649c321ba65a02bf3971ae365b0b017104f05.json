@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"restricted\", \"restricted\": true, \"reason\": \"Alcohol and gifts for staff are classified as restricted items.\", \"approver_summary\": \"Ruby Chen wants engraved hip flasks filled with whisky from Bay Trophy & Engraving Ltd for $260 NZD to serve as prizes for the staff sales competition.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T/3gDg4GiomqAcSmEKI7rfXtsgBEVKCuE/iY9iTvIAQSXAgYwwMipbOGr5Dh2Djtn8u7bnAVHPy337V+jdanraT5ZENpCKsbbeWVMCuuHcB4lYVTDnZZu8mM="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441499,
+ "id": "VTrHap2RDoj91e8P2fuboAQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 67,
+  "prompt_tokens": 316,
+  "total_tokens": 383
+ },
+ "_gateway": {
+  "latency_ms": 7248.2
+ }
+}

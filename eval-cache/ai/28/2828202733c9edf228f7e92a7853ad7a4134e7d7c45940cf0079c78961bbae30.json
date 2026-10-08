@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"warranty_or_fault\",\n  \"priority\": \"urgent\",\n  \"needs_person\": true,\n  \"reason\": \"Gas leak and fire resulting in a burn represents a severe safety risk.\",\n  \"reply_draft\": \"Hi Jo, we are so sorry to hear about this and hope your partner is okay. Please stop using the stove immediately. Our safety team will urgently review this and be in touch right away.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TOAaoh9YECNwHzsLJ2XW21vsSNglDzg80r0xFvffgUXTyTArbg6fN37+8yYSbyH31Mwn66N+r1iQ6jkofeMpE11VfmAskBLAZMtdVlP8nIJOygz1GONmIZ3U="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441155,
+ "id": "ATnHauKrGsP11e8PgKm_4Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 99,
+  "prompt_tokens": 461,
+  "total_tokens": 560
+ },
+ "_gateway": {
+  "latency_ms": 2294.2
+ }
+}

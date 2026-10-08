@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"linkedin\": \"Planning a multi-day tramp this season? The new Trailhead 55L pack is designed to make carrying your gear more comfortable on the trail. It features an adjustable back length to fit torsos from 40 to 52 cm, a removable lid that converts into a handy day pack, and convenient hip-belt pockets sized to fit your phone. Weighing in at 1.6 kg, it is available now in three different colours. Find out more about its features on our blog. https://acmeoutdoorgear.example.com/blog/trailhead-55 #TrampingNZ #OutdoorGear #AcmeOutdoorGear\", \"instagram\": \"Heading out on a multi-day tramp? The Trailhead 55L pack is ready for your next adventure. It features an adjustable back length for torsos measuring 40 to 52 cm, handy hip-belt pockets for your phone, and a removable lid that doubles as a separate day pack. At 1.6 kg, it is available now in three colours. Check out the details at the link in bio. #Tramping #NewZealand #OutdoorLife #HikingGear #AcmeOutdoor\", \"x\": \"Get ready for multi-day tramps with the new Trailhead 55L pack. Features an adjustable back length, phone-sized hip-belt pockets, and a lid that becomes a day pack. Weighs 1.6 kg and available in three colours. https://acmeoutdoorgear.example.com/blog/trailhead-55 #TrampingNZ\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TH3gAhPHNNZsPxqJ2+Kho6WjzWLuCxSZBOZiU98NNwpIOKE/wy15GH0FlIJMcAeD2fapwe9j/VePu6OTwyaf23J3zPHgOJ0ZCt5Yy76s/aLoAoyt3w0nGbyA="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441358,
+ "id": "zTnHarGxB7Ddvr0Pt_uhuAg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 335,
+  "prompt_tokens": 370,
+  "total_tokens": 705
+ },
+ "_gateway": {
+  "latency_ms": 2365.0
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"supplier_name\": \"Kauri Coast Packaging Ltd\",\n  \"gst_number\": \"98-765-432\",\n  \"invoice_number\": \"KCP50240\",\n  \"invoice_date\": \"2026-09-11\",\n  \"due_date\": \"2026-10-11\",\n  \"po_number\": \"PO-2026-0147\",\n  \"currency\": \"NZD\",\n  \"lines\": [\n    {\n      \"description\": \"Recycled tissue paper (ream)\",\n      \"quantity\": 30,\n      \"unit_price\": 22.00,\n      \"amount\": 660.00\n    },\n    {\n      \"description\": \"Printed swing tags (1,000)\",\n      \"quantity\": 4,\n      \"unit_price\": 96.00,\n      \"amount\": 384.00\n    }\n  ],\n  \"subtotal\": 1044.00,\n  \"gst\": 156.60,\n  \"total\": 1200.60\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TXqeq9nB6esH0I6fkbLAYveOxLfvuoQKBW5oNgWegp4YBZYF7sLmcAZGFs3QZFn2W9N9vb4Sgex30/H7CK0Bs/D6tR0DssnD/IGgr1OQjzyJNGPeuIg1y8Ak="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441080,
+ "id": "tTjHavCvA8P11e8P-ai_4Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 279,
+  "prompt_tokens": 471,
+  "total_tokens": 750
+ },
+ "_gateway": {
+  "latency_ms": 4088.9
+ }
+}

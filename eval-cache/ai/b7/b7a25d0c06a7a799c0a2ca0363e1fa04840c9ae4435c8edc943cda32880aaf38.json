@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"Southern Alps Textiles Ltd\", \"gst_number\": \"112-345-678\", \"invoice_number\": \"SAT-10531\", \"invoice_date\": \"2026-09-23\", \"due_date\": \"2026-10-20\", \"po_number\": \"PO-2026-0153\", \"currency\": \"NZD\", \"lines\": [{\"description\": \"Merino jersey 200 gsm, navy (m)\", \"quantity\": 60, \"unit_price\": 21.5, \"amount\": 1290.0}, {\"description\": \"Ribbing 1x1 (m)\", \"quantity\": 25, \"unit_price\": 9.8, \"amount\": 245.0}], \"subtotal\": 1535.0, \"gst\": 230.25, \"total\": 1765.25}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TFpjGDgmaUZ3p75Mj3hy/j6xrv0NLkTrUx9HYdwjNAh2Txcu/AcagI/iki2831bbqa3Ogydsx2RmD+dek7ilDIMjbDAAD8UBTaHe2XORZa9qLlpmbaXMWuZc="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441529,
+ "id": "dTrHau3eCbCPvr0PhorQoQY",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 227,
+  "prompt_tokens": 506,
+  "total_tokens": 733
+ },
+ "_gateway": {
+  "latency_ms": 4870.6
+ }
+}

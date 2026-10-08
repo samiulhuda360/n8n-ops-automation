@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"software\", \"restricted\": false, \"reason\": \"Software licences, apps and subscriptions are classified as software.\", \"approver_summary\": \"Leo Martin wants the annual licence for the stockist inventory sync app from CloudDesk Software Ltd for $1200 NZD to manage inventory.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tm3ce/gKFiHC6CaIXV6FOW0aF1940k0oyM5Vdbxwr/jMf/07G62M0pAe4Mifxt8+Bgb0aBeR4NcJ2RXUGor6P0cxSpZCspftnUa7wHT7sfjM8qp3r2rst0t4="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440962,
+ "id": "QDjHaoODAYj91e8P2fuboAQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 64,
+  "prompt_tokens": 312,
+  "total_tokens": 376
+ },
+ "_gateway": {
+  "latency_ms": 3147.9
+ }
+}

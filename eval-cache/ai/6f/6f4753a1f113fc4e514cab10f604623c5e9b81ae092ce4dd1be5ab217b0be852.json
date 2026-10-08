@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"Ridgeline Camp Supplies Ltd\", \"gst_number\": \"104-221-907\", \"invoice_number\": \"RCS-3366\", \"invoice_date\": \"2026-10-01\", \"due_date\": \"2026-11-20\", \"po_number\": \"PO-2026-0158\", \"currency\": \"NZD\", \"lines\": [{\"description\": \"Dome tent poles, spare set\", \"quantity\": 30, \"unit_price\": 27.50, \"amount\": 825.00}, {\"description\": \"Pole repair sleeve\", \"quantity\": 60, \"unit_price\": 2.20, \"amount\": 132.00}], \"subtotal\": 957.00, \"gst\": 143.55, \"total\": 1190.55}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TaBP1KkOQtW+MM1/DdLD2hhWI4PpeJ1nJswP6RgYv1fNaOlTjr9tj4EkNrY5Z9dS9pN5GalMBM2RVb8SGa89TOuLCdfXF+6c95/1D5n/j6TtiPkfim+4VmXI="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441546,
+ "id": "iDrHarn4Nca01e8Pr92s4Qg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 220,
+  "prompt_tokens": 489,
+  "total_tokens": 709
+ },
+ "_gateway": {
+  "latency_ms": 1844.2
+ }
+}

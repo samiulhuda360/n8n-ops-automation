@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"retail_customer\",\n  \"priority\": null,\n  \"summary\": \"Customer Mark Fenwick is inquiring about the tracking status of his headlamp order A1043 placed last Monday.\",\n  \"follow_up_subject\": \"\",\n  \"follow_up_body\": \"\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TapG/l0L8nlHzvoLkrByBVhm4RDc6EWW1LIHu7j3bDhSWYIM0abnJ6fjoih1ONEggJSPicmgLia//A+tcaYc39c2Wm4tO0XjD/cvrzRpoch8is68AXHuqDSU="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440907,
+ "id": "CjjHasPlNuKz1e8P7qWDuAQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 70,
+  "prompt_tokens": 477,
+  "total_tokens": 547
+ },
+ "_gateway": {
+  "latency_ms": 1305.2
+ }
+}

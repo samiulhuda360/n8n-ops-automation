@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"lines\": [\n    \"Revenue was $5,290 across 28 orders, down 71.1% against the same day last week.\",\n    \"Average order value was $189 with 34 units sold today.\",\n    \"Channel revenue: online $5,290, store $0, wholesale $0.\",\n    \"Top product was Fiordland rain jacket, and total refunds were $0.\",\n    \"Revenue drop, store zero.\"\n  ]\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TaZvKmE15Lzgs90IyPdGdagaIIdbAxDoFqbW2cAz4DUl0j9gWCgRlKv4MmferjTjcljRy7bMGQEOTM3JGTWDSzgAOfuYA81UfoO5ICsf+UoXHDfyFN+GOJso="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441416,
+ "id": "BzrHatfpHIj91e8P2fuboAQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 112,
+  "prompt_tokens": 470,
+  "total_tokens": 582
+ },
+ "_gateway": {
+  "latency_ms": 1697.4
+ }
+}

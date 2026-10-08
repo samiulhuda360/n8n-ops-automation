@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"linkedin\": \"Planning to tackle the Tongariro Alpine Crossing soon? This 19.4 km day walk usually takes between 6 and 8 hours to complete. Because weather on the saddle can change rapidly, it pays to be prepared by packing a rain shell, a warm layer, a hat, and gloves, even during the summer months. You will also need to carry at least 2 litres of water per person as there are no refills along the track. Our Trailhead 45L pack has plenty of room for all your gear and lunch. Remember to check the forecast, book your shuttle in advance, and start early. Read our full packing guide here: https://acmeoutdoorgear.example.com/blog/tongariro-packing-list #TongariroAlpineCrossing #NewZealandWalks #AcmeOutdoorGear\", \"instagram\": \"Heading out for the 19.4 km Tongariro Alpine Crossing? Most people take 6 to 8 hours for this stunning walk. Mountain weather changes fast, so make sure you pack a rain shell, warm layer, hat, and gloves, even in summer. Don't forget to carry at least 2 litres of water per person since there is no water on the track. Our Trailhead 45L pack easily fits all your gear and lunch for the day. Plan ahead by checking the forecast and booking a shuttle. Find the full packing list via the link in bio. #TongariroCrossing #DayWalk #NewZealandOutdoors #AcmeOutdoorGear #HikingNZ\", \"x\": \"Tackling the 19.4 km Tongariro Alpine Crossing? Pack a rain shell, warm layer, gloves and 2L of water as weather changes fast. Our Trailhead 45L pack fits it all. Read our guide: https://acmeoutdoorgear.example.com/blog/tongariro-packing-list #Tongariro #NZWalks\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Toyco6xye8c0/KUGBhj5gLQlPDoASrKyjIklLhdK76axNPovjJ2Ay/0NkiUOdR9aYhSONMa9g9B01iKrtvk9iiStcvMlazqFQn2N2Yu86WKH0Rd1ivZczbWk="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440703,
+ "id": "OjfHaqPaLJbWrfcPi9qt-AY",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 413,
+  "prompt_tokens": 400,
+  "total_tokens": 813
+ },
+ "_gateway": {
+  "latency_ms": 5341.2
+ }
+}

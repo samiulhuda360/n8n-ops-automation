@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"return_or_exchange\", \"priority\": \"normal\", \"needs_person\": false, \"reason\": \"Customer is asking about the standard return policy for an unused item.\", \"reply_draft\": \"Kia ora Mia, thanks for reaching out. Yes, you can return unused items within our standard return window. Our team will check your details and be in touch with the next steps.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TZ8qNtR9IfLVU0D+xE9gok/irQnMKK6zXkBD3ZOSywarLnRpNc7zBBxfKIka8q626FqV3C/HaEi4eFMa4caAaZFO0N/Js0LTf5EpLbybThfVh1yMCF7pcYfU="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441206,
+ "id": "NTnHatjFCYXZrfcPg6misAo",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 84,
+  "prompt_tokens": 444,
+  "total_tokens": 528
+ },
+ "_gateway": {
+  "latency_ms": 1718.7
+ }
+}

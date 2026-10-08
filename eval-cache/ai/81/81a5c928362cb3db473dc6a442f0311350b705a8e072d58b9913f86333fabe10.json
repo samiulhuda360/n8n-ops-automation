@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"Get ready for our Black Friday event on Friday 27 November. Every pack in our range will be 30% off, available both online and across all four of our stores. The sale runs from midnight to midnight New Zealand time. Please note that click and collect orders must be picked up by 6 December, and the offer does not apply to wholesale orders. Prepare for your upcoming outdoor excursions by visiting our website to view the full collection. https://acmeoutdoorgear.example.com/blog/black-friday #BlackFriday #AcmeOutdoorGear #NewZealand\",\n  \"instagram\": \"Prepare for our upcoming Black Friday sale on Friday 27 November. Every pack in our range will be discounted by 30%, available both online and across all four of our stores. The sale runs from midnight to midnight New Zealand time. Click and collect orders must be picked up by 6 December. Please note that this offer is not available on wholesale orders. Visit our link in bio to explore the range and plan your next adventure across New Zealand. #BlackFriday #AcmeOutdoorGear #OutdoorLife #NZAdventure #HikingPacks\",\n  \"x\": \"Enjoy 30% off every pack in our range this Black Friday on 27 November, online and in all four stores from midnight to midnight NZ time. Click and collect orders must be picked up by 6 December. Not valid for wholesale. https://acmeoutdoorgear.example.com/blog/black-friday #BlackFriday #AcmeOutdoorGear\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TQGTL2hRzGN3vqeQXz8n9pW9aa+TJtIiG0ySfWAsti+am6RLCa3rJKgXPLnXpE0axYGyplBuWPU0D6bzb1yxdcPgRly6MC0/cwoJ2Gy2bcQ6sMs2qaTZLOVk="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441363,
+ "id": "0jnHaqMgoNj20w_V5Ju4AQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 332,
+  "prompt_tokens": 354,
+  "total_tokens": 686
+ },
+ "_gateway": {
+  "latency_ms": 2289.0
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"packaging_and_freight\",\n  \"restricted\": false,\n  \"reason\": \"Wooden pallets are used for warehouse logistics and freight management.\",\n  \"approver_summary\": \"Owen Parata wants 20 wooden pallets from Waikato Pallet Co for $320 NZD to be used for warehouse racking.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TYmnDFPLSznpy/484MieXQhTJmZV/ooXcEfHmpmXUaFS+NwsAGas/yRlPdwq6ctM+rQkbq1CuThS+fL3yT4jYHdApEhfz9WhbDNp9nv+o7SFjQAdT8RkHXMY="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440959,
+ "id": "PDjHaonqNO311e8P7IrYqAY",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 78,
+  "prompt_tokens": 311,
+  "total_tokens": 389
+ },
+ "_gateway": {
+  "latency_ms": 3205.2
+ }
+}

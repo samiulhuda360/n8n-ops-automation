@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"Heading into the backcountry soon? Practising Leave No Trace principles helps protect our unique New Zealand landscapes for everyone. It comes down to seven simple habits: planning ahead, staying on durable surfaces, packing out all rubbish, leaving what you find, keeping fires small or using a stove, respecting wildlife, and being considerate of other visitors. A great tip for your next tramp is to carry a small rubbish bag in your pack. It weighs nothing and makes a big difference to keeping our trails pristine. Read the full guide here: https://acmeoutdoorgear.example.com/blog/leave-no-trace #LeaveNoTrace #NewZealand #Tramping\",\n  \"instagram\": \"Heading into the backcountry soon? Practising Leave No Trace principles helps protect our unique New Zealand landscapes for everyone. It comes down to seven simple habits: planning ahead, staying on durable surfaces, packing out all rubbish, leaving what you find, keeping fires small or using a stove, respecting wildlife, and being considerate of other visitors. A great tip for your next tramp is to carry a small rubbish bag in your pack. It weighs nothing and makes a big difference to keeping our trails pristine. Link in bio. #LeaveNoTrace #NewZealand #Tramping #Outdoors #BackcountryNZ\",\n  \"x\": \"Protect our trails with seven simple Leave No Trace habits, from packing out all rubbish to respecting wildlife. Carry a small rubbish bag in your pack—it weighs nothing and helps keep the backcountry pristine. https://acmeoutdoorgear.example.com/blog/leave-no-trace #LeaveNoTrace\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TcAoe13NVnZXLuXKL8m1ieekxbfY3Ty5K1h4fI44ozqDnSq4ScwbmW9ENYEqJAzw6Rslu2RtVVK3WLeZovXHTA8krVGw5jBRjE2PIObwhdeXKFN5HU038I6I="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441373,
+ "id": "1DnHasesIY791e8P_rWyyAI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 342,
+  "prompt_tokens": 358,
+  "total_tokens": 700
+ },
+ "_gateway": {
+  "latency_ms": 9084.1
+ }
+}

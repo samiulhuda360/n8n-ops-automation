@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"We are excited to open our fourth store at 22 Cuba Street, Wellington, on Saturday 14 November. Join us from 9 am for free coffee, a gear-repair demonstration at 11 am, and a talk from a local search-and-rescue volunteer at 2 pm. If you are among the first 50 customers, you will receive a free Acme drink bottle. We look forward to meeting local outdoor enthusiasts and sharing tips for your next adventure in Aotearoa. Come along and see the new space. https://acmeoutdoorgear.example.com/blog/wellington-store #Wellington #AcmeOutdoorGear #OutdoorsNZ\",\n  \"instagram\": \"Our new Wellington store opens on Saturday 14 November at 22 Cuba Street. Join us from 9 am for free coffee, a gear-repair demonstration at 11 am, and a talk from a local search-and-rescue volunteer at 2 pm. The first 50 customers will receive a free Acme drink bottle. We cannot wait to welcome you to our fourth store and help you gear up for your next trip. Link in bio for all the details. #Wellington #AcmeOutdoorGear #CubaStreet #NewZealand #OutdoorLife\",\n  \"x\": \"Our new Wellington store at 22 Cuba Street opens Sat 14 Nov from 9 am with free coffee, gear-repair demos, and a search-and-rescue talk. First 50 customers get a free drink bottle! https://acmeoutdoorgear.example.com/blog/wellington-store #Wellington #OutdoorsNZ\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TfNnHJY07jduwUpfP0jJ/EQ7SLDD4/SyFQBzstUZP6ZYh/EonCzn52b/rcbEmJUxe23xUMOVhJQ8MuE44+8Q7itk087n/bj8oM0N/rb1fm9xrQknmNAC3zTc="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440738,
+ "id": "XDfHaouvNZ601e8P4uKAiQg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 357,
+  "prompt_tokens": 370,
+  "total_tokens": 727
+ },
+ "_gateway": {
+  "latency_ms": 5982.9
+ }
+}

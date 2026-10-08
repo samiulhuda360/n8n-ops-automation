@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"Ridgeline Camp Supplies Ltd\", \"gst_number\": \"104-221-907\", \"invoice_number\": \"RCS-3321\", \"invoice_date\": \"2026-09-15\", \"due_date\": \"2026-10-20\", \"po_number\": \"PO-2026-0149\", \"currency\": \"NZD\", \"lines\": [{\"description\": \"Aluminium tent pegs (pack of 10)\", \"quantity\": 80, \"unit_price\": 7.20, \"amount\": 576.00}, {\"description\": \"Guy rope 4 mm (20 m)\", \"quantity\": 60, \"unit_price\": 5.50, \"amount\": 330.00}], \"subtotal\": 970.00, \"gst\": 145.50, \"total\": 1115.50}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TtkhkfrcsIUS/7kENOW+TcnzAuvkRPOE6y4AvNhQoeiP+pjKmCm0R43sg3/Gs53MPaHf/8Qgf4TqYpD4PqBjNY+5Q7PlbYh1Gb9H4bx5el4WV1UUYQxkvptA="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441089,
+ "id": "vjjHasbYAY3nrfcPz9TCgA4",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 229,
+  "prompt_tokens": 500,
+  "total_tokens": 729
+ },
+ "_gateway": {
+  "latency_ms": 4371.6
+ }
+}

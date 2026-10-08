@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"packaging_and_freight\", \"restricted\": false, \"reason\": \"Courier bags and boxes are shipping and packaging supplies used for fulfilling customer orders.\", \"approver_summary\": \"Owen Parata wants to buy courier bags and boxes from Kauri Coast Packaging Ltd for $2900 NZD to handle online orders during the Christmas peak.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TTir5zk213NyG6m447+6uzeYEf1ZgCQb0bjXw3m7uE8wyVUDJozLXebvovJFsMC58Vp21O8Jh703N8cfjijv4jQUPMdiWYg+JYJxZ2uJJmuIb8MI6KKmdzDY="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441505,
+ "id": "XjrHavH3Nr6N1e8PwJeKyQg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 76,
+  "prompt_tokens": 314,
+  "total_tokens": 390
+ },
+ "_gateway": {
+  "latency_ms": 2910.3
+ }
+}

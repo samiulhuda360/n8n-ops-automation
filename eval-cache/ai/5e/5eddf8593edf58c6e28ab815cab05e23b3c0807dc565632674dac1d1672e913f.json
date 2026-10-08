@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"complaint\",\n  \"priority\": \"high\",\n  \"needs_person\": true,\n  \"reason\": \"The customer is threatening legal action over a faulty product.\",\n  \"reply_draft\": \"Hi Greg, I'm really sorry to hear your jacket delaminated after just one trip and that you're frustrated. Our team will review this and get back to you urgently regarding your refund request.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TvSY4jCUNzwf+d+HAZlTprBMWhNptvMW/INKVIX0BKOz4FydnH7mGmGZzdkXTikjmdYWCr3TZGIjVNL3iQwflv3cmNZQPh3dGtECNxUUPEW1SeMAwCRJ+wX8="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441164,
+ "id": "CjnHaqOQNpbZ9tMP6MbH6Qc",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 95,
+  "prompt_tokens": 449,
+  "total_tokens": 544
+ },
+ "_gateway": {
+  "latency_ms": 1891.5
+ }
+}

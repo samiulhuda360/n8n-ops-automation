@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"spam\",\n  \"priority\": null,\n  \"summary\": \"An unsolicited SEO sales pitch offering guaranteed first-page rankings for a monthly fee.\",\n  \"follow_up_subject\": \"\",\n  \"follow_up_body\": \"\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TSjVYpGrgdtToIBZpWWyPh/7fv4yiyZy6fC0J4Ue5IVbtIWfbwAROMNT3goBO3S8Fg5wrn2Ugo1caIeCy63kUhhNGqffisv3SsGiLfYRmiqAxA+dM04aZiVI="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440882,
+ "id": "8TfHasHjNd_81e8Pieze0Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 60,
+  "prompt_tokens": 521,
+  "total_tokens": 581
+ },
+ "_gateway": {
+  "latency_ms": 1209.4
+ }
+}

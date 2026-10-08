@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"corporate_bulk\",\n  \"priority\": \"warm\",\n  \"summary\": \"Grant & Hale Surveyors is inquiring about branded rain jackets with logo embroidery for 60 field staff for next year and requested a catalogue.\",\n  \"follow_up_subject\": \"Branded rain jackets for Grant & Hale Surveyors\",\n  \"follow_up_body\": \"Hi Olivia,\\n\\nThanks for reaching out! We certainly do logo embroidery on our rain jackets for corporate teams. I'll make sure a catalogue is sent your way so you can start browsing.\\n\\nTo help us point you toward the best options for your field staff, do you have a preferred style in mind, and do you have a target timeframe next year for when you'd need them delivered?\\n\\nThe Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TBlIb1sAodgpdUL/QDi8V2/oNad63CFVKeIWOgyyHl4fXsrdH5baKKBKVuapdyhnXONhiRwW9MnViy3IWnVL91kIwbOLKNyDOWDViygOuaBgIOkjTcV2DGwo="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440885,
+ "id": "9DfHas3SGIaj9tMPxrD8oAg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 179,
+  "prompt_tokens": 491,
+  "total_tokens": 670
+ },
+ "_gateway": {
+  "latency_ms": 1675.0
+ }
+}

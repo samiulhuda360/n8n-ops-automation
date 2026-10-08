@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"stock\",\n  \"restricted\": false,\n  \"reason\": \"Self-inflating sleeping mats are products purchased for resale to customers.\",\n  \"approver_summary\": \"Owen Parata wants to buy 60 self-inflating sleeping mats from Ridgeline Camp Supplies Ltd for $4,950 NZD to restock summer inventory.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tttiq5diPAIax2W0MlIz0bGAh96fSw0JvICh/K0Psmk1hB9bBFhSO12AUqb9KmGushplKKZvLr0zfrMpwU1a9izEnmkXyUpuQnYwxxOOw1wXAeJHs2c2DG+Q="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440970,
+ "id": "SDjHauy9D7DQ1e8P-cet2Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 83,
+  "prompt_tokens": 317,
+  "total_tokens": 400
+ },
+ "_gateway": {
+  "latency_ms": 2921.3
+ }
+}

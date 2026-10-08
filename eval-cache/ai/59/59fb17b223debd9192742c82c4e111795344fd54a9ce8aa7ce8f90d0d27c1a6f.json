@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"office_and_equipment\",\n  \"restricted\": false,\n  \"reason\": \"This purchase is for general office and store supplies like receipt rolls and pens.\",\n  \"approver_summary\": \"Nadia Faleolo wants to buy receipt printer rolls and pens from Capital Office Supplies Ltd for $86.5 NZD for the Newmarket store counter.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TXfiYidcStNepE9lmyGGPbQtTuZQuAUHIQGtZ8aiSqN50a3h/Csxmbm+TZNzCWiSv2iOjAPPUSY6TuaC12VaOUhYVdFDokV4q5bg7qJvuU6C5HG653DDLC6I="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440940,
+ "id": "IjjHau3xMOKz1e8P_KODuAQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 84,
+  "prompt_tokens": 313,
+  "total_tokens": 397
+ },
+ "_gateway": {
+  "latency_ms": 10392.2
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"Keeping children dry on outdoor adventures just got a little easier with our new kids' rain ponchos. Available in sizes 4 to 12, these ponchos fold easily into a small pouch for convenience in a school bag or daypack. They also feature reflective strips on the back for extra visibility in low light. Priced at $39 each, or $35 each for school orders of 20 or more, they are a practical addition to any wet weather gear collection. Head over to our blog for all the details: https://acmeoutdoorgear.example.com/blog/kids-ponchos #AcmeOutdoorGear #KidsOutdoors #NewZealand\",\n  \"instagram\": \"Get your tamariki ready for wet weather with our new kids' rain ponchos! Designed in sizes 4 to 12, they fold up neatly into a small pouch and include reflective strips on the back for visibility. They are priced at $39 each, or $35 each for school orders of 20 or more. Perfect for school walks and weekend exploring. Check out the link in our bio for more information. #AcmeOutdoorGear #KidsRainwear #OutdoorKids #NewZealandOutdoors #WetWeatherGear\",\n  \"x\": \"Ready for wet weather? Our new kids' rain ponchos come in sizes 4 to 12, fold into a pouch, and feature reflective strips. $39 each, or $35 for school orders of 20+. https://acmeoutdoorgear.example.com/blog/kids-ponchos #AcmeOutdoorGear #KidsOutdoors\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TsqjtcxGuc1pmm89P5MTDLwBfao3ky817mAQKf/Qc7xC4Psb/6ftnDrEdUaXmrfNi5NQTE8HRsTs5whmd/oCPMAHae0exMckPZR+Ui0cGY48ga5yYhFOelT8="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441361,
+ "id": "zznHauDQIru21e8PzcK32QI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 352,
+  "prompt_tokens": 359,
+  "total_tokens": 711
+ },
+ "_gateway": {
+  "latency_ms": 2324.6
+ }
+}

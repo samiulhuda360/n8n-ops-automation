@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"marketing\", \"restricted\": false, \"reason\": \"Business cards are a marketing and promotional material expense.\", \"approver_summary\": \"Aisha Khan wants business cards for four new staff from Pixel Print Studio Ltd for $220 NZD.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TlurDpyoeHQEJKfmtS77XOzM4hvNVAawR0FcZp6uIolbIIgXi9bRCzshUQICFpZmjHg/BX9AdhRY+7nP6aLR00wZCVvDgM9QkPVYA3Q9WAAgc7xd9+W/x0v0="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441003,
+ "id": "XTjHaoXKAYvirfcP_d6L6Ak",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 56,
+  "prompt_tokens": 307,
+  "total_tokens": 363
+ },
+ "_gateway": {
+  "latency_ms": 14847.1
+ }
+}

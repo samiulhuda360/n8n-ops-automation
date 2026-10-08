@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"lines\": [\"Revenue was $10,045 across 66 orders, up 18.4% against the same day last week.\", \"Average order value was $152.20 with 77 units sold.\", \"Channel split: online $5,543, store $4,502, and wholesale $0.\", \"Top product was Kea daypack 22L, and there were 2 refunds.\", \"No alerts today.\"]}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TMh4bxmCfZU5Ex+4FyUyVdtE11XcnKOXEe+wu8ittNxVteorzM9VSDHx1ALJB7PJvDsU2QXqepJkR/iow4eFcetlwpMHcF8Sfe3ZPBa2sJt9YFyJybgeOuiA="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441407,
+ "id": "_jnHaq_eDd-Zvr0P6bC2mAI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 103,
+  "prompt_tokens": 465,
+  "total_tokens": 568
+ },
+ "_gateway": {
+  "latency_ms": 1689.2
+ }
+}

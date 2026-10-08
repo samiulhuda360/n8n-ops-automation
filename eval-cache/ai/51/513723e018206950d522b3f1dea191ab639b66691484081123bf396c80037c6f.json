@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"sponsorship_or_partnership\",\n  \"priority\": \"cold\",\n  \"summary\": \"Instagram hiking creator Kai Peters is requesting free gear in exchange for social media stories.\",\n  \"follow_up_subject\": \"Collaboration with Acme Outdoor Gear\",\n  \"follow_up_body\": \"Hi Kai, thanks for reaching out and for your interest in Acme Outdoor Gear! We always love seeing our gear out on the trails. Could you share a link to your Instagram profile and some recent engagement stats? We'd also love to know which specific items you had in mind for your upcoming content. The Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TnvIHOd2qw/wA6EW+vYVT1CJzLV0NY1M+dt4gcecIJkrUZ+FzZDnjbW7X+5baoGSynAyMdufx9BB9L+ZKLbqmarxF5vPj+iHRpEuqQViuHafO10AcIY2C9dA="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440893,
+ "id": "_DfHasiWIe231e8PsPij-Q4",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 139,
+  "prompt_tokens": 480,
+  "total_tokens": 619
+ },
+ "_gateway": {
+  "latency_ms": 2189.2
+ }
+}

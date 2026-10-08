@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"Harbour Freight Logistics Ltd\", \"gst_number\": \"116-532-004\", \"invoice_number\": \"HFL-2350\", \"invoice_date\": \"2026-09-07\", \"due_date\": \"2026-09-21\", \"po_number\": null, \"currency\": \"NZD\", \"lines\": [{\"description\": \"Linehaul Auckland-Wellington, pallets\", \"quantity\": 6, \"unit_price\": 145.00, \"amount\": 870.00}, {\"description\": \"Fuel surcharge\", \"quantity\": 1, \"unit_price\": 62.40, \"amount\": 62.40}], \"subtotal\": 932.40, \"gst\": 139.86, \"total\": 1162.26}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Teoqczt3TkLXonVChzqcD0gGdTVZUzGGM+tqONkiOZkIHtFkRmMjpPr1INWK4Qgr40DUZq2vLIaU9oNl3eCe8fGONocRH5IGDuKu5z7r9uRetAStvPpTuNuQ="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441054,
+ "id": "nTjHavOCKMP11e8PgKm_4Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 208,
+  "prompt_tokens": 447,
+  "total_tokens": 655
+ },
+ "_gateway": {
+  "latency_ms": 1788.0
+ }
+}

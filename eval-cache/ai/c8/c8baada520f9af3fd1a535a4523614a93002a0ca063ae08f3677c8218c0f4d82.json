@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"packaging_and_freight\", \"restricted\": false, \"reason\": \"This is a courier service used for shipping goods.\", \"approver_summary\": \"Tom Reed from Wholesale wants express courier services from Harbour Freight Logistics Ltd for $640 NZD to ship an urgent stockist order to Queenstown.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0ToircOKwCCy3XWpvNeFtAlofRz9FOduknU1cJClB0g/lKt79JirKu3rEwzdLMSAOJAKp7/6l1RHU8eZTfVGMnVPavJ7MRj/Y2y0uGFvf0PHWXHUhE6Q9nd1Y="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441017,
+ "id": "bzjHasywLbu21e8PzcK32QI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 69,
+  "prompt_tokens": 313,
+  "total_tokens": 382
+ },
+ "_gateway": {
+  "latency_ms": 10087.5
+ }
+}

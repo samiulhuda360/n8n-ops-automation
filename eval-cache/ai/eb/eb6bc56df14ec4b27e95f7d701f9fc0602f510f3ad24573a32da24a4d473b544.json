@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"Southern Alps Textiles Ltd\", \"gst_number\": \"112-345-678\", \"invoice_number\": \"SAT-10560\", \"invoice_date\": \"2026-10-02\", \"due_date\": \"2026-11-20\", \"po_number\": \"PO-2026-0159\", \"currency\": \"NZD\", \"lines\": [{\"description\": \"Polar fleece 300 gsm, forest (m)\", \"quantity\": 140, \"unit_price\": 11.9, \"amount\": 1666.0}], \"subtotal\": 1666.0, \"gst\": 249.9, \"total\": 1915.9}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T3GTptuBuAjl3zQ0UyKqMur0RfDu9gebc7613IJi1ujxK0UFudsZp5auohg0rdwaC7ARd6QLX1bDvA3R7f5Td4xAIKanj9VLe1gQ2CNsYil7LSBzbcLbt0mM="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441548,
+ "id": "izrHau3FGsP11e8PgKm_4Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 185,
+  "prompt_tokens": 481,
+  "total_tokens": 666
+ },
+ "_gateway": {
+  "latency_ms": 2099.8
+ }
+}

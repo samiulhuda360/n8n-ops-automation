@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"Packing away a wet tent after a trip is often unavoidable, but getting it sorted once you are home is key to keeping your gear in good condition. Pitch or hang your tent within 24 hours to prevent mould. Wipe out any sand and grit, and aim to dry it out of direct sun so the UV rays do not break down the fabric over time. Remember to avoid using a dryer, and store the tent loosely in a cool, dry cupboard. Read our full guide on https://acmeoutdoorgear.example.com/blog/dry-wet-tent for more practical tips. #AcmeOutdoorGear #CampingTips #NewZealand\",\n  \"instagram\": \"Got caught in the wet on your latest trip? Packing away a damp tent happens to the best of us, but proper post-trip care makes all the difference. Pitch or hang your tent within 24 hours to avoid mould, wipe away sand and grit, and let it dry out of direct sun to protect the fabric. Skip the dryer completely and store it loosely in a cool, dry cupboard rather than tightly rolled. Check out our full guide on how to dry out a wet tent. Link in bio. #AcmeOutdoorGear #CampingLife #TentCare #OutdoorGear #NewZealand\",\n  \"x\": \"Packed away a wet tent? Pitch or hang it within 24 hours to prevent mould, wipe out sand, and dry it out of direct sun. Never use a dryer; store it loosely in a cool, dry cupboard. Read more: https://acmeoutdoorgear.example.com/blog/dry-wet-tent #AcmeOutdoorGear #CampingTips\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T6PwA0zTi0ybypSxX6hTyzT+NO/ny4e4rKBw/TozSgvMWnndkLDlNxqo9HOteP2VdDT7JMdTRvWVcXvqLRYYuEkFNcg39glHeWECsR25s3VwDbSCwMoPeUQw="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440732,
+ "id": "VTfHar7YAu6_vr0PlM-YMA",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 356,
+  "prompt_tokens": 378,
+  "total_tokens": 734
+ },
+ "_gateway": {
+  "latency_ms": 7733.8
+ }
+}

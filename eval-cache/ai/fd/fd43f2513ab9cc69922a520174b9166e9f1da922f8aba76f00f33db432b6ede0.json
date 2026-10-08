@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"lines\": [\n    \"Revenue reached $10,577.5 across 52 orders, down 10.4% against the same day last week.\",\n    \"Average order value was $203.41 with 62 units sold.\",\n    \"Channel split: online generated $6,053.5, store reached $4,524, and wholesale was $0.\",\n    \"Top product was Trailhead 45L pack bringing in $2,241, with $0 in refunds.\",\n    \"No alerts today.\"\n  ]\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TFaALTYcFURQVgymi0QhMvOKFUvINUKyeSnMvUeEi7AnYnDyKJ13plh66HtcMk/IUT6kz0479X2Ary4Y+gMBy4kQmVpgf9watSvmDhgzmtr/lnx3Yb5RAwMU="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440815,
+ "id": "qDfHasPaHeT11e8PsZ-QqAg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 134,
+  "prompt_tokens": 463,
+  "total_tokens": 597
+ },
+ "_gateway": {
+  "latency_ms": 7923.6
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"linkedin\": \"Looking after your outdoor equipment just got easier. Every Acme jacket, pack and tent can now be brought into any of our stores for repairs, including fixes for zips, buckles and seam tape. Simple fixes are free for the first two years, and after that we charge cost price. Most repairs take 7 to 10 days to complete. Just make sure to bring your item in clean and dry, and our team will provide a quote before any work starts. Find out more on our blog. https://acmeoutdoorgear.example.com/blog/repair-service #AcmeOutdoorGear #GearRepair #SustainableLiving\", \"instagram\": \"We want to help your gear last longer. Every Acme jacket, pack and tent can now be repaired at any of our stores, covering zips, buckles and seam tape. Simple fixes are free for the first two years, with cost price applied after that. Most repairs take between 7 and 10 days. Please bring your item in clean and dry so we can provide a quote before we start working on it. Link in bio. #AcmeOutdoorGear #OutdoorLife #GearRepair #SustainableOutdoors\", \"x\": \"Bring your Acme jacket, pack or tent to any store for repairs. Zips, buckles and seam tape fixed. Free for two years, then cost price. 7 to 10 day turnaround. https://acmeoutdoorgear.example.com/blog/repair-service #AcmeOutdoorGear\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T17v1syIVVymkYakYDY/7jfom0UwhFHqyPABc+S5ITJexTQhQSnkUA2qs+u/qVj6MS9y2J8AvTtGt3B4WF5mBe8X8yef2vwYqfSTLBNSHqb8pokNkX7eZ/K0="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440755,
+ "id": "bTfHasnsIf_hrfcPisatmAw",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 313,
+  "prompt_tokens": 367,
+  "total_tokens": 680
+ },
+ "_gateway": {
+  "latency_ms": 6353.1
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"spam\",\n  \"priority\": \"low\",\n  \"needs_person\": false,\n  \"reason\": \"This is a marketing sales pitch and should be ignored.\",\n  \"reply_draft\": \"\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TFLfuxX8mtNfAu3rEVWxp/uJ+ia4r6ReuumZHhOK0XicYZAtjcOZznsxrLtTXRSYNalGVai4H9f9S672VLibdzTmVfiGqdpwsmbMr7pgXviIGQn+W+pHOdj8="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441172,
+ "id": "DTnHaubXGt_81e8Px-re0Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 53,
+  "prompt_tokens": 448,
+  "total_tokens": 501
+ },
+ "_gateway": {
+  "latency_ms": 7754.6
+ }
+}

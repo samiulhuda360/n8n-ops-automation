@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"sponsorship_or_partnership\",\n  \"priority\": \"warm\",\n  \"summary\": \"Pureora Trail Run is seeking a gear partnership for their event in March with 800 runners.\",\n  \"follow_up_subject\": \"Pureora Trail Run partnership with Acme Outdoor Gear\",\n  \"follow_up_body\": \"Hi Rachel,\\n\\nThanks for reaching out about a potential gear partnership for the Pureora Trail Run in March! We'd love to learn a bit more about what you have in mind and how we might be able to support your 800 runners.\\n\\nCould you let us know what kind of partnership or activation you are looking for, and if you have a proposal or media kit you can share?\\n\\nThe Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T+R9KG042Bggr9GY+B9UqstZ7uEMGI/f/7dTvmlGoyc2pI7Tmq5I+JqPGIAERNKZVoz4B6HFv6CLV+EiNDAsB9DjWEg5LnB7Rj+xHyDwiJ0HRkMZhClLF3Oo="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440905,
+ "id": "CDjHaobNG76N1e8PwJeKyQg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 175,
+  "prompt_tokens": 493,
+  "total_tokens": 668
+ },
+ "_gateway": {
+  "latency_ms": 1660.1
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"warranty_or_fault\", \"priority\": \"high\", \"needs_person\": true, \"reason\": \"Customer is reporting a broken jacket zip within two months, which requires a warranty review.\", \"reply_draft\": \"Hi Laura, I'm sorry to hear your Fiordland rain jacket zip has broken. Our team will review your warranty inquiry and be in touch soon with the next steps.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T1a+rJRLeCLavM+ieXbzoVe+0d+CcEBueGXshxHiiKewSgyOUjIuNhnRmFLs30CWz6GIQQ/JtahGyGCZiP0pgKS21EQc+s32P3rp5fyrPCwlTsQM251s3DCA="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441176,
+ "id": "FznHat-_Laf91e8PyYjdSQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 87,
+  "prompt_tokens": 442,
+  "total_tokens": 529
+ },
+ "_gateway": {
+  "latency_ms": 1652.4
+ }
+}

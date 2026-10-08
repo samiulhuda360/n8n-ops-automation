@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"Heading out for an evening tramp or early morning trail run? The Lumen headlamp packs a 400-lumen high setting and runs for up to 40 hours on low, helping you see the trail ahead clearly. Weighing just 72 g with the battery, it features USB-C charging that takes 3 hours. It has an IPX4 water resistance rating to handle rain out in the New Zealand backcountry. Priced at $79, it is a practical addition to your pack for weekend adventures. Find out more on our blog: https://acmeoutdoorgear.example.com/blog/lumen-headlamp #AcmeOutdoorGear #TrampingNZ #HikingGear\",\n  \"instagram\": \"Planning a late finish on the trail? The Lumen headlamp offers 400 lumens on high and up to 40 hours of light on low. Weighing 72 g with its battery, it recharges by USB-C in 3 hours. With an IPX4 rating, it easily handles rainy conditions during your adventures. Priced at $79, it is ready to light your way outdoors. Link in bio to read the full post. #AcmeOutdoorGear #NewZealand #OutdoorLife #Tramping #HikingNZ\",\n  \"x\": \"Light your way with the Lumen headlamp. Features 400 lumens on high, 40-hour low run time, USB-C charging in 3 hours, and a 72 g weight with battery. IPX4 rain-resistant. $79. Read more: https://acmeoutdoorgear.example.com/blog/lumen-headlamp #AcmeOutdoorGear #TrampingNZ\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tp1UHe2+hN7B/5nrawrKrO6c5lq0oFjKAhIGLa59AirSXuugZR+Ty9WMaNWlS515XCKXA9KCjBiyQNBMT0/KotLcXa8b99keVLc491FjgLzxserzPpnaBFJc="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441381,
+ "id": "3TnHaoH6JM3e9tMPxsjzoAQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 373,
+  "prompt_tokens": 367,
+  "total_tokens": 740
+ },
+ "_gateway": {
+  "latency_ms": 8851.0
+ }
+}

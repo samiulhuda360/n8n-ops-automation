@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"supplier_name\": \"Kauri Coast Packaging Ltd\",\n  \"gst_number\": \"98-765-432\",\n  \"invoice_number\": \"KCP50213\",\n  \"invoice_date\": \"2026-09-03\",\n  \"due_date\": \"2026-10-03\",\n  \"po_number\": \"PO-2026-0143\",\n  \"currency\": \"NZD\",\n  \"lines\": [\n    {\n      \"description\": \"Courier bags A3 (pack of 500)\",\n      \"quantity\": 6,\n      \"unit_price\": 74.5,\n      \"amount\": 447.0\n    },\n    {\n      \"description\": \"Shipping boxes medium (bundle of 50)\",\n      \"quantity\": 10,\n      \"unit_price\": 61.2,\n      \"amount\": 612.0\n    }\n  ],\n  \"subtotal\": 1059.0,\n  \"gst\": 158.85,\n  \"total\": 1217.85\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T/+rrO+JfU0pf4HJ+cFuuXyR+Df5qt7Wt7ovl7ymqt1ZVS8b2QaRodIu0w5o66ZwHejNSUhSK7gs7czVE0igmmpnZB3mcCLodNPprjCeL4x2QRo8sQ1/7CUM="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441047,
+ "id": "ljjHaub_Bu311e8P9srYqAc",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 279,
+  "prompt_tokens": 474,
+  "total_tokens": 753
+ },
+ "_gateway": {
+  "latency_ms": 1966.3
+ }
+}

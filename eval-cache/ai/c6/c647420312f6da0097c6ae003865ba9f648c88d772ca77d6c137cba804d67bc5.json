@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"lines\": [\"Revenue was $14,866 across 57 orders, up 75.7% from the same day last week.\", \"Average order value was $260.81 with 94 units sold today.\", \"Channel revenue: online $6,559, store $4,145, and wholesale $4,162.\", \"Top product was Alpine 0 sleeping bag, and total refunds were $0.\", \"No alerts today.\"]}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TaRazUofSIK2VTtwPqVXQqVczty7c9WrIpYtiLXaN7a65xnADx7AKksb7/kkZRysAfodJpSMxHzOz5tSuoEui60Du0nQk0hEAozkkjY0fM4JVYexMxx984YQ="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440803,
+ "id": "nDfHatm_KZ-_1e8Pnee74Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 105,
+  "prompt_tokens": 470,
+  "total_tokens": 575
+ },
+ "_gateway": {
+  "latency_ms": 7103.3
+ }
+}

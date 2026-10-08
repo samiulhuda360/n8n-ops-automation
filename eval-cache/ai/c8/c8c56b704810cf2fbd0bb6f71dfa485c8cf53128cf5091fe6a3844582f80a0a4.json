@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"wholesale\",\n  \"priority\": \"hot\",\n  \"summary\": \"Outdoor shop in Ohakune wants to open an account with an $8,000 order for three pack lines needed by November 1st.\",\n  \"follow_up_subject\": \"Wholesale enquiry: Ruapehu Ridge Outfitters\",\n  \"follow_up_body\": \"Hi Jack,\\n\\nThanks for reaching out and great to hear from you in Ohakune! We'd love to help get the Trailhead and Kea packs on your shelves for summer.\\n\\nCould you please let us know if you have an existing trading account with us or if we should set one up? Also, are there any specific quantities per style you had in mind for that opening order?\\n\\nThe Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0To1xozq9QhIVDUHDCxkDj7y/lOB269A+Q8j1QZKX5ftQ1JM4X0yqy4ViBjPBy86ZYWDWxHX3hJOwGHxTgK4jHy8BuQxiaXJm0hT3KKzVZ534OT9gWbYKKjmQ="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440878,
+ "id": "6jfHat6kJ9K11e8PzoXr2AQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 179,
+  "prompt_tokens": 528,
+  "total_tokens": 707
+ },
+ "_gateway": {
+  "latency_ms": 4808.8
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"wholesale_enquiry\",\n  \"priority\": \"high\",\n  \"needs_person\": true,\n  \"reason\": \"Wholesale enquiries require personal follow-up from our trade team regarding pricing and stocking.\",\n  \"reply_draft\": \"Kia ora Tim, thanks for your interest in stocking Acme Outdoor Gear. I've passed your details on to our wholesale team, and someone will be in touch with you shortly to discuss trade pricing and our product range.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TlW28ULgTKB2zOkKlw8zpmw7Dk6kjzq30uKEljg4NLmsn6tQTWZ6XZuW/I9uTYIqpmbuJpnV7BVELynQTGGx7O7xE1XnxUkqFLT6Ek/W/HVtmjjB9SlhVx6E="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441174,
+ "id": "FTnHarCTDKe-1e8P5OSaOQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 106,
+  "prompt_tokens": 447,
+  "total_tokens": 553
+ },
+ "_gateway": {
+  "latency_ms": 1661.0
+ }
+}

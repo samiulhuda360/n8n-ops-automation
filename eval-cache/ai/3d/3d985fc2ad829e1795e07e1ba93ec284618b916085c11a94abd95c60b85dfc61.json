@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"supplier_name\": \"Southern Alps Textiles Ltd\",\n  \"gst_number\": \"112-345-678\",\n  \"invoice_number\": \"SAT-10477\",\n  \"invoice_date\": \"2026-09-02\",\n  \"due_date\": \"2026-10-20\",\n  \"po_number\": \"PO-2026-0141\",\n  \"currency\": \"NZD\",\n  \"lines\": [\n    {\n      \"description\": \"Ripstop nylon 70D, forest green (m)\",\n      \"quantity\": 120,\n      \"unit_price\": 8.40,\n      \"amount\": 1008.00\n    },\n    {\n      \"description\": \"Seam tape 20 mm (roll)\",\n      \"quantity\": 15,\n      \"unit_price\": 12.00,\n      \"amount\": 180.00\n    }\n  ],\n  \"subtotal\": 1188.00,\n  \"gst\": 178.20,\n  \"total\": 1366.20\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TCyQJSkbMNoYxgoPd6ZxAdcwpJ/7euBebz5pomzQth3s6RXNUmhnL/ZGs9pH+ifcT2CO8OLeZgoXgThpTPqm1KwKVMJ8G9+pQz7bJfjNJ/ynQ9ikQizAu+6s="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441045,
+ "id": "hTjHaoTQOPH_1e8PjO7syQI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 287,
+  "prompt_tokens": 507,
+  "total_tokens": 794
+ },
+ "_gateway": {
+  "latency_ms": 16273.0
+ }
+}

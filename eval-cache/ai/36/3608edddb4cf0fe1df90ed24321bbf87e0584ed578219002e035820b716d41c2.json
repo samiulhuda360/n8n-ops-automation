@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"order_status\", \"priority\": \"normal\", \"needs_person\": false, \"reason\": \"Customer is asking for a tracking number for a recent order.\", \"reply_draft\": \"Hi Mark, thanks for reaching out. We are checking on the status of your order A1043 and will email you the tracking details shortly.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TRXLmtN2v9nc4oPJsjtf40ks1pPis5q/xDlIhOHIlYuiCDASn9XKBf+CS1uNbnR2fxQyidaEY8ySkArhdeHZQcB5xYM4ZCAxOU1rSUIJdSPTGnya4GeoArlg="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441152,
+ "id": "_TjHau_gNLu21e8PzcK32QI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 75,
+  "prompt_tokens": 452,
+  "total_tokens": 527
+ },
+ "_gateway": {
+  "latency_ms": 3558.4
+ }
+}

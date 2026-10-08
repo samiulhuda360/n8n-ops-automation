@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"travel\", \"restricted\": false, \"reason\": \"This purchase is for business travel expenses including flights and accommodation.\", \"approver_summary\": \"Tom Reed from Wholesale wants flights and hotel accommodation from Metro Travel Desk Ltd for $1850 NZD for a trade show trip to Christchurch.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TmboNKkiBt0xJVH3lfs62V1AfEGREaSO29MyAsR9917/MFih8ZIF5mC/E2ymi8ZZqBLHyn7lETiU80DZYiYNg3Q2k4l3QgUEv7qAgNSUjURwPolrDWIboa2E="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441491,
+ "id": "UjrHaujxKc3e9tMPxsjzoAQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 65,
+  "prompt_tokens": 318,
+  "total_tokens": 383
+ },
+ "_gateway": {
+  "latency_ms": 1727.8
+ }
+}

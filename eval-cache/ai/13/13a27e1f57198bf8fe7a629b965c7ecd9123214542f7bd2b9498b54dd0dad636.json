@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"office_and_equipment\", \"restricted\": false, \"reason\": \"The purchase is for office supplies and store consumables.\", \"approver_summary\": \"Ruby Chen from Retail wants label printer tape and a stapler from Capital Office Supplies Ltd for $150 NZD for the stockroom.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tre91hai82Yq4KAbszzJ1HsIyy982/BWmyff3xatvjRAVUJ91e5cgQZQXE9l2BSJ5sWOCbNN+ogJTBZMZnYywOufeyr/C7Xa1fui1ibHTiRWkEI9dzkDMjtY="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440948,
+ "id": "MzjHaquUMYnQ1e8P8KTq-As",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 66,
+  "prompt_tokens": 308,
+  "total_tokens": 374
+ },
+ "_gateway": {
+  "latency_ms": 1606.2
+ }
+}

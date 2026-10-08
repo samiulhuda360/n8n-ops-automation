@@ -1,7 +1,7 @@
 {
  "date": "2026-10-08",
  "split": "all",
- "gateway": "off",
+ "gateway": "live",
  "model": "gemini-flash-lite-latest",
  "runs": [
   {
@@ -12,10 +12,10 @@
    "summary": {
     "dev": {
      "items": 10,
-     "correct": 3,
+     "correct": 5,
      "checks": {
       "all_posts_pass_checks": {
-       "right": 5,
+       "right": 7,
        "of": 10
       },
       "claims_flag": {
@@ -31,8 +31,8 @@
        "of": 10
       }
      },
-     "guard_hit_items": 5,
-     "straight_through": 5
+     "guard_hit_items": 3,
+     "straight_through": 7
     },
     "heldout": {
      "items": 5,
@@ -60,10 +60,10 @@
     },
     "all": {
      "items": 15,
-     "correct": 5,
+     "correct": 7,
      "checks": {
       "all_posts_pass_checks": {
-       "right": 8,
+       "right": 10,
        "of": 15
       },
       "claims_flag": {
@@ -79,8 +79,8 @@
        "of": 15
       }
      },
-     "guard_hit_items": 7,
-     "straight_through": 8
+     "guard_hit_items": 5,
+     "straight_through": 10
     }
    },
    "written": {
@@ -98,9 +98,9 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 1121.0,
+   "execution_ms": 1461.0,
    "ai_node_ms": 0.0,
-   "cli_wall_s": 9.0,
+   "cli_wall_s": 14.9,
    "rows": [
     {
      "id": "B01",
@@ -108,26 +108,20 @@
      "checks": {
       "claims_flag": true,
       "key_facts_in_every_post": true,
-      "all_posts_pass_checks": false,
+      "all_posts_pass_checks": true,
       "no_risky_claim_in_ready_posts": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "claims=False mention=['Tongariro']",
-     "got": "claims=[] passed=1/3",
-     "guard_hits": [
-      "numbers_not_in_blog"
-     ],
-     "straight_through": false,
+     "got": "claims=[] passed=3/3",
+     "guard_hits": [],
+     "straight_through": true,
      "decided_by": "template",
-     "posts_passed": 1,
+     "posts_passed": 3,
      "posts": 3,
      "post_flags": {
-      "linkedin": [
-       "numbers_not_in_blog:19,4"
-      ],
-      "instagram": [
-       "numbers_not_in_blog:19,4"
-      ],
+      "linkedin": [],
+      "instagram": [],
       "x": []
      }
     },
@@ -272,7 +266,6 @@
      "got": "claims=['clinically proven', 'than any other'] passed=0/3",
      "guard_hits": [
       "blog_has_claims_to_check",
-      "numbers_not_in_blog",
       "risky_claim"
      ],
      "straight_through": false,
@@ -281,12 +274,10 @@
      "posts": 3,
      "post_flags": {
       "linkedin": [
-       "numbers_not_in_blog:3",
        "risky_claim:clinically proven,than any other",
        "blog_has_claims_to_check:clinically proven,than any other"
       ],
       "instagram": [
-       "numbers_not_in_blog:3",
        "risky_claim:clinically proven,than any other",
        "blog_has_claims_to_check:clinically proven,than any other"
       ],
@@ -302,26 +293,20 @@
      "checks": {
       "claims_flag": true,
       "key_facts_in_every_post": true,
-      "all_posts_pass_checks": false,
+      "all_posts_pass_checks": true,
       "no_risky_claim_in_ready_posts": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "claims=False mention=['Christchurch']",
-     "got": "claims=[] passed=1/3",
-     "guard_hits": [
-      "numbers_not_in_blog"
-     ],
-     "straight_through": false,
+     "got": "claims=[] passed=3/3",
+     "guard_hits": [],
+     "straight_through": true,
      "decided_by": "template",
-     "posts_passed": 1,
+     "posts_passed": 3,
      "posts": 3,
      "post_flags": {
-      "linkedin": [
-       "numbers_not_in_blog:1"
-      ],
-      "instagram": [
-       "numbers_not_in_blog:1"
-      ],
+      "linkedin": [],
+      "instagram": [],
       "x": []
      }
     },
@@ -531,7 +516,7 @@
    "summary": {
     "dev": {
      "items": 14,
-     "correct": 4,
+     "correct": 14,
      "checks": {
       "alerts": {
        "right": 14,
@@ -546,7 +531,7 @@
        "of": 14
       },
       "posted_numbers_grounded": {
-       "right": 4,
+       "right": 14,
        "of": 14
       }
      },
@@ -555,7 +540,7 @@
     },
     "heldout": {
      "items": 7,
-     "correct": 1,
+     "correct": 7,
      "checks": {
       "alerts": {
        "right": 7,
@@ -570,7 +555,7 @@
        "of": 7
       },
       "posted_numbers_grounded": {
-       "right": 1,
+       "right": 7,
        "of": 7
       }
      },
@@ -579,7 +564,7 @@
     },
     "all": {
      "items": 21,
-     "correct": 5,
+     "correct": 21,
      "checks": {
       "alerts": {
        "right": 21,
@@ -594,7 +579,7 @@
        "of": 21
       },
       "posted_numbers_grounded": {
-       "right": 5,
+       "right": 21,
        "of": 21
       }
      },
@@ -616,9 +601,9 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 1219.0,
+   "execution_ms": 1924.0,
    "ai_node_ms": 0.0,
-   "cli_wall_s": 9.4,
+   "cli_wall_s": 14.0,
    "rows": [
     {
      "id": "K10",
@@ -651,10 +636,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=[]",
      "got": "alerts=[] / template (AI off or no answer)",
      "guard_hits": [],
@@ -676,10 +661,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=['revenue_drop']",
      "got": "alerts=['revenue_drop'] / template (AI off or no answer)",
      "guard_hits": [],
@@ -701,10 +686,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=['revenue_drop']",
      "got": "alerts=['revenue_drop'] / template (AI off or no answer)",
      "guard_hits": [],
@@ -776,10 +761,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=[]",
      "got": "alerts=[] / template (AI off or no answer)",
      "guard_hits": [],
@@ -801,10 +786,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=[]",
      "got": "alerts=[] / template (AI off or no answer)",
      "guard_hits": [],
@@ -826,10 +811,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=['refund_spike']",
      "got": "alerts=['refund_spike'] / template (AI off or no answer)",
      "guard_hits": [],
@@ -851,10 +836,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=[]",
      "got": "alerts=[] / template (AI off or no answer)",
      "guard_hits": [],
@@ -876,10 +861,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=[]",
      "got": "alerts=[] / template (AI off or no answer)",
      "guard_hits": [],
@@ -901,10 +886,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=['revenue_drop']",
      "got": "alerts=['revenue_drop'] / template (AI off or no answer)",
      "guard_hits": [],
@@ -926,10 +911,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=[]",
      "got": "alerts=[] / template (AI off or no answer)",
      "guard_hits": [],
@@ -976,10 +961,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=[]",
      "got": "alerts=[] / template (AI off or no answer)",
      "guard_hits": [],
@@ -1001,10 +986,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=[]",
      "got": "alerts=[] / template (AI off or no answer)",
      "guard_hits": [],
@@ -1051,10 +1036,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=[]",
      "got": "alerts=[] / template (AI off or no answer)",
      "guard_hits": [],
@@ -1076,10 +1061,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=[]",
      "got": "alerts=[] / template (AI off or no answer)",
      "guard_hits": [],
@@ -1101,10 +1086,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=['revenue_drop', 'store_zero']",
      "got": "alerts=['revenue_drop', 'store_zero'] / template (AI off or no answer)",
      "guard_hits": [],
@@ -1126,10 +1111,10 @@
      "checks": {
       "kpis": true,
       "alerts": true,
-      "posted_numbers_grounded": false,
+      "posted_numbers_grounded": true,
       "five_lines": true
      },
-     "correct": false,
+     "correct": true,
      "expected": "alerts=['revenue_drop']",
      "got": "alerts=['revenue_drop'] / template (AI off or no answer)",
      "guard_hits": [],
@@ -1244,9 +1229,9 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 1435.0,
+   "execution_ms": 1356.0,
    "ai_node_ms": 0.0,
-   "cli_wall_s": 9.7,
+   "cli_wall_s": 13.0,
    "rows": [
     {
      "id": "L01",
@@ -1644,14 +1629,14 @@
    "summary": {
     "dev": {
      "items": 16,
-     "correct": 11,
+     "correct": 12,
      "checks": {
       "category": {
        "right": 12,
        "of": 16
       },
       "route": {
-       "right": 13,
+       "right": 14,
        "of": 16
       }
      },
@@ -1660,14 +1645,14 @@
     },
     "heldout": {
      "items": 8,
-     "correct": 5,
+     "correct": 6,
      "checks": {
       "category": {
        "right": 6,
        "of": 8
       },
       "route": {
-       "right": 6,
+       "right": 7,
        "of": 8
       }
      },
@@ -1676,14 +1661,14 @@
     },
     "all": {
      "items": 24,
-     "correct": 16,
+     "correct": 18,
      "checks": {
       "category": {
        "right": 18,
        "of": 24
       },
       "route": {
-       "right": 19,
+       "right": 21,
        "of": 24
       }
      },
@@ -1707,9 +1692,9 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 793.0,
+   "execution_ms": 1318.0,
    "ai_node_ms": 0.0,
-   "cli_wall_s": 11.6,
+   "cli_wall_s": 9.5,
    "rows": [
     {
      "id": "P01",
@@ -1991,10 +1976,10 @@
      "split": "dev",
      "checks": {
       "category": true,
-      "route": false
+      "route": true
      },
-     "correct": false,
-     "expected": "manager / packaging_and_freight",
+     "correct": true,
+     "expected": "director / packaging_and_freight",
      "got": "director / packaging_and_freight",
      "guard_hits": [
       "R4 over $500",
@@ -2066,10 +2051,10 @@
      "split": "heldout",
      "checks": {
       "category": true,
-      "route": false
+      "route": true
      },
-     "correct": false,
-     "expected": "manager / travel",
+     "correct": true,
+     "expected": "director / travel",
      "got": "director / travel",
      "guard_hits": [
       "R4 over $500",
@@ -2348,9 +2333,9 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 3486.0,
+   "execution_ms": 2784.0,
    "ai_node_ms": 0.0,
-   "cli_wall_s": 21.2,
+   "cli_wall_s": 11.6,
    "rows": [
     {
      "id": "I01",
@@ -3141,9 +3126,9 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 1160.0,
+   "execution_ms": 1162.0,
    "ai_node_ms": 0.0,
-   "cli_wall_s": 9.0,
+   "cli_wall_s": 9.1,
    "rows": [
     {
      "id": "S01",
@@ -3583,6 +3568,3529 @@
      "guard_hits": [],
      "straight_through": true,
      "decided_by": "rules",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    }
+   ]
+  },
+  {
+   "workflow": "content-repurpose",
+   "mode": "ai",
+   "status": "success",
+   "error": null,
+   "summary": {
+    "dev": {
+     "items": 10,
+     "correct": 7,
+     "checks": {
+      "all_posts_pass_checks": {
+       "right": 8,
+       "of": 10
+      },
+      "claims_flag": {
+       "right": 10,
+       "of": 10
+      },
+      "key_facts_in_every_post": {
+       "right": 9,
+       "of": 10
+      },
+      "no_risky_claim_in_ready_posts": {
+       "right": 10,
+       "of": 10
+      }
+     },
+     "guard_hit_items": 5,
+     "straight_through": 8
+    },
+    "heldout": {
+     "items": 5,
+     "correct": 4,
+     "checks": {
+      "all_posts_pass_checks": {
+       "right": 4,
+       "of": 5
+      },
+      "claims_flag": {
+       "right": 5,
+       "of": 5
+      },
+      "key_facts_in_every_post": {
+       "right": 5,
+       "of": 5
+      },
+      "no_risky_claim_in_ready_posts": {
+       "right": 5,
+       "of": 5
+      }
+     },
+     "guard_hit_items": 2,
+     "straight_through": 4
+    },
+    "all": {
+     "items": 15,
+     "correct": 11,
+     "checks": {
+      "all_posts_pass_checks": {
+       "right": 12,
+       "of": 15
+      },
+      "claims_flag": {
+       "right": 15,
+       "of": 15
+      },
+      "key_facts_in_every_post": {
+       "right": 14,
+       "of": 15
+      },
+      "no_risky_claim_in_ready_posts": {
+       "right": 15,
+       "of": 15
+      }
+     },
+     "guard_hit_items": 7,
+     "straight_through": 12
+    }
+   },
+   "written": {
+    "posts in the review queue": 45,
+    "posts published": 0
+   },
+   "model": {
+    "calls": 15,
+    "ok": 15,
+    "live": 5,
+    "cached": 10,
+    "failed": 0,
+    "prompt_tokens": 5587,
+    "completion_tokens": 5339,
+    "model_latency_ms_p50": 6095.5,
+    "model_latency_ms_p95": 8851.0
+   },
+   "execution_ms": 28717.0,
+   "ai_node_ms": 27580.0,
+   "cli_wall_s": 36.6,
+   "rows": [
+    {
+     "id": "B01",
+     "split": "dev",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": true,
+     "expected": "claims=False mention=['Tongariro']",
+     "got": "claims=[] passed=3/3",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [],
+      "instagram": [],
+      "x": []
+     }
+    },
+    {
+     "id": "B02",
+     "split": "dev",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": false,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": false,
+     "expected": "claims=False mention=['Kea']",
+     "got": "claims=[] passed=2/3",
+     "guard_hits": [
+      "numbers_not_in_blog"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "posts_passed": 2,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [],
+      "instagram": [],
+      "x": [
+       "numbers_not_in_blog:5"
+      ]
+     }
+    },
+    {
+     "id": "B03",
+     "split": "dev",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": true,
+     "expected": "claims=True mention=['Fiordland']",
+     "got": "claims=['best', '100%', 'guaranteed'] passed=3/3",
+     "guard_hits": [
+      "blog_has_claims_to_check"
+     ],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [
+       "blog_has_claims_to_check:best,100%,guaranteed"
+      ],
+      "instagram": [
+       "blog_has_claims_to_check:best,100%,guaranteed"
+      ],
+      "x": [
+       "blog_has_claims_to_check:best,100%,guaranteed"
+      ]
+     }
+    },
+    {
+     "id": "B04",
+     "split": "dev",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": true,
+     "expected": "claims=False mention=['20%', 'Alpine']",
+     "got": "claims=[] passed=3/3",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [],
+      "instagram": [],
+      "x": []
+     }
+    },
+    {
+     "id": "B05",
+     "split": "dev",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": false,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": false,
+     "expected": "claims=False mention=['24 hours']",
+     "got": "claims=[] passed=2/3",
+     "guard_hits": [
+      "risky_claim"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "posts_passed": 2,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [],
+      "instagram": [
+       "risky_claim:best"
+      ],
+      "x": []
+     }
+    },
+    {
+     "id": "B06",
+     "split": "dev",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": false,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": false,
+     "expected": "claims=False mention=['Wellington', '14 November']",
+     "got": "claims=[] passed=3/3",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [],
+      "instagram": [],
+      "x": []
+     }
+    },
+    {
+     "id": "B07",
+     "split": "dev",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": true,
+     "expected": "claims=True mention=['Ember 2']",
+     "got": "claims=['clinically proven', 'than any other'] passed=3/3",
+     "guard_hits": [
+      "blog_has_claims_to_check"
+     ],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [
+       "blog_has_claims_to_check:clinically proven,than any other"
+      ],
+      "instagram": [
+       "blog_has_claims_to_check:clinically proven,than any other"
+      ],
+      "x": [
+       "blog_has_claims_to_check:clinically proven,than any other"
+      ]
+     }
+    },
+    {
+     "id": "B08",
+     "split": "dev",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": true,
+     "expected": "claims=False mention=['Christchurch']",
+     "got": "claims=[] passed=3/3",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [],
+      "instagram": [],
+      "x": []
+     }
+    },
+    {
+     "id": "B09",
+     "split": "dev",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": true,
+     "expected": "claims=True mention=['repair']",
+     "got": "claims=['for life'] passed=3/3",
+     "guard_hits": [
+      "blog_has_claims_to_check"
+     ],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [
+       "blog_has_claims_to_check:for life"
+      ],
+      "instagram": [
+       "blog_has_claims_to_check:for life"
+      ],
+      "x": [
+       "blog_has_claims_to_check:for life"
+      ]
+     }
+    },
+    {
+     "id": "B10",
+     "split": "dev",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": true,
+     "expected": "claims=False mention=['layer']",
+     "got": "claims=[] passed=3/3",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [],
+      "instagram": [],
+      "x": []
+     }
+    },
+    {
+     "id": "B11",
+     "split": "heldout",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": true,
+     "expected": "claims=False mention=['Trailhead 55L']",
+     "got": "claims=[] passed=3/3",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [],
+      "instagram": [],
+      "x": []
+     }
+    },
+    {
+     "id": "B12",
+     "split": "heldout",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": true,
+     "expected": "claims=True mention=['poncho']",
+     "got": "claims=['completely safe'] passed=3/3",
+     "guard_hits": [
+      "blog_has_claims_to_check"
+     ],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [
+       "blog_has_claims_to_check:completely safe"
+      ],
+      "instagram": [
+       "blog_has_claims_to_check:completely safe"
+      ],
+      "x": [
+       "blog_has_claims_to_check:completely safe"
+      ]
+     }
+    },
+    {
+     "id": "B13",
+     "split": "heldout",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": true,
+     "expected": "claims=False mention=['30%', '27 November']",
+     "got": "claims=[] passed=3/3",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [],
+      "instagram": [],
+      "x": []
+     }
+    },
+    {
+     "id": "B14",
+     "split": "heldout",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": true,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": true,
+     "expected": "claims=False mention=['Leave No Trace']",
+     "got": "claims=[] passed=3/3",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "posts_passed": 3,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [],
+      "instagram": [],
+      "x": []
+     }
+    },
+    {
+     "id": "B15",
+     "split": "heldout",
+     "checks": {
+      "claims_flag": true,
+      "key_facts_in_every_post": true,
+      "all_posts_pass_checks": false,
+      "no_risky_claim_in_ready_posts": true
+     },
+     "correct": false,
+     "expected": "claims=True mention=['Lumen']",
+     "got": "claims=['ever made'] passed=0/3",
+     "guard_hits": [
+      "blog_has_claims_to_check",
+      "numbers_not_in_blog"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "posts_passed": 0,
+     "posts": 3,
+     "post_flags": {
+      "linkedin": [
+       "numbers_not_in_blog:4",
+       "blog_has_claims_to_check:ever made"
+      ],
+      "instagram": [
+       "numbers_not_in_blog:4",
+       "blog_has_claims_to_check:ever made"
+      ],
+      "x": [
+       "numbers_not_in_blog:4",
+       "blog_has_claims_to_check:ever made"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "workflow": "kpi-digest",
+   "mode": "ai",
+   "status": "success",
+   "error": null,
+   "summary": {
+    "dev": {
+     "items": 14,
+     "correct": 14,
+     "checks": {
+      "alerts": {
+       "right": 14,
+       "of": 14
+      },
+      "five_lines": {
+       "right": 14,
+       "of": 14
+      },
+      "kpis": {
+       "right": 14,
+       "of": 14
+      },
+      "posted_numbers_grounded": {
+       "right": 14,
+       "of": 14
+      }
+     },
+     "guard_hit_items": 2,
+     "straight_through": 14
+    },
+    "heldout": {
+     "items": 7,
+     "correct": 7,
+     "checks": {
+      "alerts": {
+       "right": 7,
+       "of": 7
+      },
+      "five_lines": {
+       "right": 7,
+       "of": 7
+      },
+      "kpis": {
+       "right": 7,
+       "of": 7
+      },
+      "posted_numbers_grounded": {
+       "right": 7,
+       "of": 7
+      }
+     },
+     "guard_hit_items": 0,
+     "straight_through": 7
+    },
+    "all": {
+     "items": 21,
+     "correct": 21,
+     "checks": {
+      "alerts": {
+       "right": 21,
+       "of": 21
+      },
+      "five_lines": {
+       "right": 21,
+       "of": 21
+      },
+      "kpis": {
+       "right": 21,
+       "of": 21
+      },
+      "posted_numbers_grounded": {
+       "right": 21,
+       "of": 21
+      }
+     },
+     "guard_hit_items": 2,
+     "straight_through": 21
+    }
+   },
+   "written": {
+    "digests posted": 21
+   },
+   "model": {
+    "calls": 21,
+    "ok": 21,
+    "live": 7,
+    "cached": 14,
+    "failed": 0,
+    "prompt_tokens": 9876,
+    "completion_tokens": 2384,
+    "model_latency_ms_p50": 5778.6,
+    "model_latency_ms_p95": 9271.2
+   },
+   "execution_ms": 36785.0,
+   "ai_node_ms": 35625.0,
+   "cli_wall_s": 44.9,
+   "rows": [
+    {
+     "id": "K10",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $9,664 across 51 orders, up 10.3% compared to the same day last week.",
+      "Average order value was $189.49 with 61 units sold.",
+      "Channel split: online generated $5,964, store brought in $3,700, and wholesale was $0.",
+      "Top product was Fiordland rain jacket, and there were 2 refunds.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K11",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $10,902 across 52 orders, down 4.9% compared to the same day last week.",
+      "Average order value was $209.66 with 65 units sold.",
+      "Channel split: online $5,409, store $5,494, and wholesale $0.",
+      "Top product was Trailhead 45L pack and there was 1 refund.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K12",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=['revenue_drop']",
+     "got": "alerts=['revenue_drop'] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue reached $4,918 across 26 orders, down 42.8% against the same day last week.",
+      "Average order value was $189.13 with 32 units sold.",
+      "Channel split: online $450, store $4,468, wholesale $0.",
+      "Top product was Fiordland rain jacket, and there was 1 refund.",
+      "Revenue drop."
+     ]
+    },
+    {
+     "id": "K13",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=['revenue_drop']",
+     "got": "alerts=['revenue_drop'] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue reached $9,600.30 across 52 orders, down -22.1% against the same day last week.",
+      "Average order value was $184.62 with 61 units sold.",
+      "Channel split: online $5,367.50, store $4,232.80, and wholesale $0.",
+      "Top product was Alpine 0 sleeping bag with 1 refunds recorded.",
+      "Alerts that need a look: revenue_drop."
+     ]
+    },
+    {
+     "id": "K14",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $14,866 across 57 orders, up 75.7% from the same day last week.",
+      "Average order value was $260.81 with 94 units sold today.",
+      "Channel revenue: online $6,559, store $4,145, and wholesale $4,162.",
+      "Top product was Alpine 0 sleeping bag, and total refunds were $0.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K15",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=['refund_spike']",
+     "got": "alerts=['refund_spike'] / template (AI text failed the check: ungrounded_numbers)",
+     "guard_hits": [
+      "ai_text_rejected"
+     ],
+     "straight_through": true,
+     "decided_by": "template (AI text failed the check: ungrounded_numbers)",
+     "ai_text_accepted": false,
+     "ungrounded_in_ai_text": [
+      7755
+     ],
+     "lines": [
+      "Revenue $7,755.50 from 40 orders, down 7.7% on the same day last week ($8,406.70).",
+      "Average order $193.89; 44 units sold.",
+      "Online $4,928.60, store $2,826.90, wholesale $0.00 (0% of revenue).",
+      "Top product: Kea 3-season tent at $1,796.00. Refunds: 7 (14.9%).",
+      "Check: refund rate 14.9% is above 5%."
+     ]
+    },
+    {
+     "id": "K16",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue reached $10,577.5 across 52 orders, down 10.4% against the same day last week.",
+      "Average order value was $203.41 with 62 units sold.",
+      "Channel split: online generated $6,053.5, store reached $4,524, and wholesale was $0.",
+      "Top product was Trailhead 45L pack bringing in $2,241, with $0 in refunds.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K17",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $12,983 across 51 orders, up 34.3% against the same day last week.",
+      "Average order value was $254.57 with 82 units sold.",
+      "Channel revenue: online $6,255, store $3,275, wholesale $3,453.",
+      "Top product was Trailhead 55L pack and refunds were 0.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K18",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=['refund_spike']",
+     "got": "alerts=['refund_spike'] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $10,575.60 across 50 orders, down 3.0% against the same day last week.",
+      "Average order value was $211.51 with 58 units sold.",
+      "Channel split: online revenue $6,510.70, store revenue $4,064.90, wholesale $0.",
+      "Top product was Trailhead 45L pack and refunds were 3.",
+      "refund_spike"
+     ]
+    },
+    {
+     "id": "K19",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / template (AI text failed the check: ungrounded_numbers)",
+     "guard_hits": [
+      "ai_text_rejected"
+     ],
+     "straight_through": true,
+     "decided_by": "template (AI text failed the check: ungrounded_numbers)",
+     "ai_text_accepted": false,
+     "ungrounded_in_ai_text": [
+      9536
+     ],
+     "lines": [
+      "Revenue $9,536.70 from 49 orders, up 93.9% on the same day last week ($4,917.50).",
+      "Average order $194.63; 60 units sold.",
+      "Online $3,644.30, store $5,892.40, wholesale $0.00 (0% of revenue).",
+      "Top product: Trailhead 55L pack at $2,093.00. Refunds: 1 (2%).",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K20",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $8,484 across 48 orders, down 11.6% compared to the same day last week.",
+      "Average order value was $176.75 with 61 units sold in total.",
+      "Channel split: online $5,096.50, store $3,387.40, wholesale $0.",
+      "Top product was Trailhead 45L pack, and total refunds were $0.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K21",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=['revenue_drop']",
+     "got": "alerts=['revenue_drop'] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $9,547 from 56 orders, down 35.8% against the same day last week.",
+      "Average order value was $170.49 with 89 units sold today.",
+      "Channel split: online $6,523, store $2,481, and wholesale $543 revenue.",
+      "Top product was Alpine 0 sleeping bag and refunds were $0.",
+      "Revenue drop."
+     ]
+    },
+    {
+     "id": "K22",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue reached $18,298 across 61 orders, up 135.9% compared to the same day last week.",
+      "Average order value was $299.97 with a total of 176 units sold.",
+      "Channel split: online $7,792, store $4,022, and wholesale $6,485.",
+      "Top product was Trailhead 45L pack and total refunds for the day were 1.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K23",
+     "split": "dev",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue reached $9,791 across 46 orders, down 7.4% against the same day last week.",
+      "Average order value was $212.86 with 83 units sold.",
+      "Channel split revenue: online $5,174.10, store $3,531, and wholesale $1,086.25.",
+      "Top product was Fiordland rain jacket, and there were 1 refunds.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K24",
+     "split": "heldout",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $12,331 across 45 orders, down 5.0% against the same day last week.",
+      "Average order value was $274.03 with 86 units sold.",
+      "Channel split: online $5,738, store $2,615, and wholesale $3,979.",
+      "Top product was Trailhead 55L pack and refunds were 1.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K25",
+     "split": "heldout",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $13,315 across 51 orders, up 25.9% against the same day last week.",
+      "Average order value was $261.07 with 81 units sold.",
+      "Channel revenue: online $4,976.40, store $3,792.50, and wholesale $4,545.75.",
+      "Top product was Kea 3-season tent, and there were 1 refunds.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K26",
+     "split": "heldout",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $12,026 across 60 orders, up 26.1% compared to the same day last week.",
+      "Average order value was $200.43 with 71 units sold today.",
+      "Channel revenue split: online $6,019, store $6,007, and wholesale $0.",
+      "Top product was Fiordland rain jacket, and total refunds were $0.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K27",
+     "split": "heldout",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $10,045 across 66 orders, up 18.4% against the same day last week.",
+      "Average order value was $152.20 with 77 units sold.",
+      "Channel split: online $5,543, store $4,502, and wholesale $0.",
+      "Top product was Kea daypack 22L, and there were 2 refunds.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K28",
+     "split": "heldout",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=[]",
+     "got": "alerts=[] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $11,612 across 54 orders, up 21.6% from the same day last week.",
+      "Average order value was $215.03 with 104 units sold.",
+      "Channel revenue: online $4,099.10, store $5,505.90, wholesale $2,006.75.",
+      "Top product was Merino 200 base layer, and there was 1 refund.",
+      "No alerts today."
+     ]
+    },
+    {
+     "id": "K29",
+     "split": "heldout",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=['revenue_drop', 'store_zero']",
+     "got": "alerts=['revenue_drop', 'store_zero'] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $5,290 across 28 orders, down 71.1% against the same day last week.",
+      "Average order value was $189 with 34 units sold today.",
+      "Channel revenue: online $5,290, store $0, wholesale $0.",
+      "Top product was Fiordland rain jacket, and total refunds were $0.",
+      "Revenue drop, store zero."
+     ]
+    },
+    {
+     "id": "K30",
+     "split": "heldout",
+     "checks": {
+      "kpis": true,
+      "alerts": true,
+      "posted_numbers_grounded": true,
+      "five_lines": true
+     },
+     "correct": true,
+     "expected": "alerts=['revenue_drop']",
+     "got": "alerts=['revenue_drop'] / AI, all numbers checked",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "AI, all numbers checked",
+     "ai_text_accepted": true,
+     "ungrounded_in_ai_text": [],
+     "lines": [
+      "Revenue was $7,065 across 43 orders, down 27.8% against the same day last week.",
+      "Average order value was $164.30 with 48 units sold today.",
+      "Channel split: online brought in $4,984.60, store $2,080.50, and wholesale $0.",
+      "Top product was Kea 3-season tent with $1,347 in revenue, and $0 in refunds.",
+      "Revenue drop."
+     ]
+    }
+   ]
+  },
+  {
+   "workflow": "lead-intake",
+   "mode": "ai",
+   "status": "success",
+   "error": null,
+   "summary": {
+    "dev": {
+     "items": 16,
+     "correct": 16,
+     "checks": {
+      "category": {
+       "right": 16,
+       "of": 16
+      },
+      "duplicate": {
+       "right": 16,
+       "of": 16
+      },
+      "priority": {
+       "right": 11,
+       "of": 11
+      },
+      "route": {
+       "right": 16,
+       "of": 16
+      }
+     },
+     "guard_hit_items": 1,
+     "straight_through": 15
+    },
+    "heldout": {
+     "items": 8,
+     "correct": 7,
+     "checks": {
+      "category": {
+       "right": 8,
+       "of": 8
+      },
+      "duplicate": {
+       "right": 8,
+       "of": 8
+      },
+      "priority": {
+       "right": 5,
+       "of": 6
+      },
+      "route": {
+       "right": 8,
+       "of": 8
+      }
+     },
+     "guard_hit_items": 2,
+     "straight_through": 6
+    },
+    "all": {
+     "items": 24,
+     "correct": 23,
+     "checks": {
+      "category": {
+       "right": 24,
+       "of": 24
+      },
+      "duplicate": {
+       "right": 24,
+       "of": 24
+      },
+      "priority": {
+       "right": 16,
+       "of": 17
+      },
+      "route": {
+       "right": 24,
+       "of": 24
+      }
+     },
+     "guard_hit_items": 3,
+     "straight_through": 21
+    }
+   },
+   "written": {
+    "new CRM rows": 13,
+    "notes on existing contacts": 4,
+    "follow-up drafts awaiting approval": 17,
+    "forwarded to support": 3,
+    "discarded as spam (logged)": 4
+   },
+   "model": {
+    "calls": 24,
+    "ok": 24,
+    "live": 8,
+    "cached": 16,
+    "failed": 0,
+    "prompt_tokens": 11806,
+    "completion_tokens": 3173,
+    "model_latency_ms_p50": 1823.8,
+    "model_latency_ms_p95": 6050.1
+   },
+   "execution_ms": 33911.0,
+   "ai_node_ms": 32471.0,
+   "cli_wall_s": 41.9,
+   "rows": [
+    {
+     "id": "L01",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "wholesale / hot / dup=False",
+     "got": "wholesale / hot / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L02",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "wholesale / hot / dup=True",
+     "got": "wholesale / hot / dup=True",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L03",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": null,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "spam / None / dup=False",
+     "got": "spam / None / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L04",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "corporate_bulk / warm / dup=False",
+     "got": "corporate_bulk / warm / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L05",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "club_or_school / hot / dup=False",
+     "got": "club_or_school / hot / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L06",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": null,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "retail_customer / None / dup=False",
+     "got": "retail_customer / None / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L07",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "sponsorship_or_partnership / cold / dup=False",
+     "got": "sponsorship_or_partnership / cold / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L08",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "club_or_school / warm / dup=True",
+     "got": "club_or_school / warm / dup=True",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L09",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": null,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "spam / None / dup=False",
+     "got": "spam / None / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L10",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "wholesale / warm / dup=False",
+     "got": "wholesale / warm / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L11",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "corporate_bulk / hot / dup=False",
+     "got": "corporate_bulk / hot / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L12",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "sponsorship_or_partnership / warm / dup=False",
+     "got": "sponsorship_or_partnership / warm / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L13",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": null,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "retail_customer / None / dup=False",
+     "got": "retail_customer / None / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L14",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": null,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "spam / None / dup=False",
+     "got": "spam / None / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L15",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "club_or_school / cold / dup=False",
+     "got": "club_or_school / cold / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L16",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "wholesale / hot / dup=True",
+     "got": "wholesale / hot / dup=True",
+     "guard_hits": [
+      "draft_mentions_price_or_promise"
+     ],
+     "straight_through": false,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L17",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "wholesale / hot / dup=True",
+     "got": "wholesale / hot / dup=True",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L18",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "corporate_bulk / warm / dup=False",
+     "got": "corporate_bulk / warm / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L19",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": null,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "spam / None / dup=False",
+     "got": "spam / None / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L20",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": null,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "retail_customer / None / dup=False",
+     "got": "retail_customer / None / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L21",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": false,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": false,
+     "expected": "club_or_school / warm / dup=False",
+     "got": "club_or_school / hot / dup=False",
+     "guard_hits": [
+      "draft_mentions_price_or_promise"
+     ],
+     "straight_through": false,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L22",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "sponsorship_or_partnership / hot / dup=False",
+     "got": "sponsorship_or_partnership / hot / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L23",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "wholesale / warm / dup=False",
+     "got": "wholesale / warm / dup=False",
+     "guard_hits": [
+      "instructions_in_message"
+     ],
+     "straight_through": false,
+     "decided_by": "ai"
+    },
+    {
+     "id": "L24",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "duplicate": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "club_or_school / hot / dup=False",
+     "got": "club_or_school / hot / dup=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai"
+    }
+   ]
+  },
+  {
+   "workflow": "purchase-approval",
+   "mode": "ai",
+   "status": "waiting",
+   "error": null,
+   "summary": {
+    "dev": {
+     "items": 16,
+     "correct": 16,
+     "checks": {
+      "category": {
+       "right": 16,
+       "of": 16
+      },
+      "route": {
+       "right": 16,
+       "of": 16
+      }
+     },
+     "guard_hit_items": 12,
+     "straight_through": 5
+    },
+    "heldout": {
+     "items": 8,
+     "correct": 8,
+     "checks": {
+      "category": {
+       "right": 8,
+       "of": 8
+      },
+      "route": {
+       "right": 8,
+       "of": 8
+      }
+     },
+     "guard_hit_items": 6,
+     "straight_through": 3
+    },
+    "all": {
+     "items": 24,
+     "correct": 24,
+     "checks": {
+      "category": {
+       "right": 24,
+       "of": 24
+      },
+      "route": {
+       "right": 24,
+       "of": 24
+      }
+     },
+     "guard_hit_items": 18,
+     "straight_through": 8
+    }
+   },
+   "written": {
+    "audit entries": 24,
+    "approval requests opened (the run pauses at the first approver form)": 1,
+    "requesters notified": 8
+   },
+   "model": {
+    "calls": 24,
+    "ok": 24,
+    "live": 8,
+    "cached": 16,
+    "failed": 0,
+    "prompt_tokens": 7530,
+    "completion_tokens": 1739,
+    "model_latency_ms_p50": 2921.3,
+    "model_latency_ms_p95": 14847.1
+   },
+   "execution_ms": 32964.0,
+   "ai_node_ms": 31696.0,
+   "cli_wall_s": 42.0,
+   "rows": [
+    {
+     "id": "P01",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "auto_approve / office_and_equipment",
+     "got": "auto_approve / office_and_equipment",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P02",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "manager / marketing",
+     "got": "manager / marketing",
+     "guard_hits": [
+      "R4 over $500"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P03",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "director / packaging_and_freight",
+     "got": "director / packaging_and_freight",
+     "guard_hits": [
+      "R3 over $5,000"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P04",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "return_to_requester / office_and_equipment",
+     "got": "return_to_requester / office_and_equipment",
+     "guard_hits": [
+      "R1 budget code missing or not valid"
+     ],
+     "straight_through": true,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P05",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "manager / marketing",
+     "got": "manager / marketing",
+     "guard_hits": [
+      "R6 possible split purchase ($800 with the same supplier in 14 days)"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P06",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "auto_approve / travel",
+     "got": "auto_approve / travel",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P07",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "manager / office_and_equipment|packaging_and_freight",
+     "got": "manager / packaging_and_freight",
+     "guard_hits": [
+      "R5 supplier not on the approved list"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P08",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "manager / software",
+     "got": "manager / software",
+     "guard_hits": [
+      "R4 over $500"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P09",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "finance_review / restricted",
+     "got": "finance_review / restricted",
+     "guard_hits": [
+      "R2 restricted spend (keyword \"voucher\")"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": true,
+     "restricted_caught": true,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P10",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "finance_review / restricted",
+     "got": "finance_review / restricted",
+     "guard_hits": [
+      "R2 restricted spend (description)",
+      "R5 supplier not on the approved list"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": true,
+     "restricted_caught": true,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P11",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "manager / stock",
+     "got": "manager / stock",
+     "guard_hits": [
+      "R4 over $500"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P12",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "auto_approve / software",
+     "got": "auto_approve / software",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P13",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "director / stock",
+     "got": "director / stock",
+     "guard_hits": [
+      "R3 over $5,000"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P14",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "auto_approve / marketing|office_and_equipment",
+     "got": "auto_approve / marketing",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P15",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "finance_review / restricted",
+     "got": "finance_review / restricted",
+     "guard_hits": [
+      "R2 restricted spend (description)"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": true,
+     "restricted_caught": true,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P16",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "director / packaging_and_freight",
+     "got": "director / packaging_and_freight",
+     "guard_hits": [
+      "R4 over $500",
+      "R7 requester cannot approve their own request"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P17",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "auto_approve / office_and_equipment",
+     "got": "auto_approve / office_and_equipment",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P18",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "director / marketing",
+     "got": "director / marketing",
+     "guard_hits": [
+      "R3 over $5,000"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P19",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "return_to_requester / stock|office_and_equipment",
+     "got": "return_to_requester / stock",
+     "guard_hits": [
+      "R1 budget code missing or not valid"
+     ],
+     "straight_through": true,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P20",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "director / travel",
+     "got": "director / travel",
+     "guard_hits": [
+      "R4 over $500",
+      "R7 requester cannot approve their own request"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P21",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "finance_review / restricted",
+     "got": "finance_review / restricted",
+     "guard_hits": [
+      "R2 restricted spend (description)",
+      "R5 supplier not on the approved list"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": true,
+     "restricted_caught": true,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P22",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "manager / software",
+     "got": "manager / software",
+     "guard_hits": [
+      "R6 possible split purchase ($780 with the same supplier in 14 days)"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P23",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "manager / packaging_and_freight",
+     "got": "manager / packaging_and_freight",
+     "guard_hits": [
+      "R4 over $500"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    },
+    {
+     "id": "P24",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "route": true
+     },
+     "correct": true,
+     "expected": "auto_approve / office_and_equipment",
+     "got": "auto_approve / office_and_equipment",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "restricted_expected": false,
+     "restricted_caught": false,
+     "wrongly_auto_approved": false
+    }
+   ]
+  },
+  {
+   "workflow": "supplier-invoice",
+   "mode": "ai",
+   "status": "success",
+   "error": null,
+   "summary": {
+    "dev": {
+     "items": 16,
+     "correct": 16,
+     "checks": {
+      "field:currency": {
+       "right": 16,
+       "of": 16
+      },
+      "field:due_date": {
+       "right": 16,
+       "of": 16
+      },
+      "field:gst": {
+       "right": 16,
+       "of": 16
+      },
+      "field:gst_number": {
+       "right": 16,
+       "of": 16
+      },
+      "field:invoice_date": {
+       "right": 16,
+       "of": 16
+      },
+      "field:invoice_number": {
+       "right": 16,
+       "of": 16
+      },
+      "field:po_number": {
+       "right": 16,
+       "of": 16
+      },
+      "field:subtotal": {
+       "right": 16,
+       "of": 16
+      },
+      "field:supplier_name": {
+       "right": 16,
+       "of": 16
+      },
+      "field:total": {
+       "right": 16,
+       "of": 16
+      },
+      "reasons": {
+       "right": 16,
+       "of": 16
+      },
+      "route": {
+       "right": 16,
+       "of": 16
+      }
+     },
+     "guard_hit_items": 7,
+     "straight_through": 9
+    },
+    "heldout": {
+     "items": 8,
+     "correct": 8,
+     "checks": {
+      "field:currency": {
+       "right": 8,
+       "of": 8
+      },
+      "field:due_date": {
+       "right": 8,
+       "of": 8
+      },
+      "field:gst": {
+       "right": 8,
+       "of": 8
+      },
+      "field:gst_number": {
+       "right": 8,
+       "of": 8
+      },
+      "field:invoice_date": {
+       "right": 8,
+       "of": 8
+      },
+      "field:invoice_number": {
+       "right": 8,
+       "of": 8
+      },
+      "field:po_number": {
+       "right": 8,
+       "of": 8
+      },
+      "field:subtotal": {
+       "right": 8,
+       "of": 8
+      },
+      "field:supplier_name": {
+       "right": 8,
+       "of": 8
+      },
+      "field:total": {
+       "right": 8,
+       "of": 8
+      },
+      "reasons": {
+       "right": 8,
+       "of": 8
+      },
+      "route": {
+       "right": 8,
+       "of": 8
+      }
+     },
+     "guard_hit_items": 5,
+     "straight_through": 3
+    },
+    "all": {
+     "items": 24,
+     "correct": 24,
+     "checks": {
+      "field:currency": {
+       "right": 24,
+       "of": 24
+      },
+      "field:due_date": {
+       "right": 24,
+       "of": 24
+      },
+      "field:gst": {
+       "right": 24,
+       "of": 24
+      },
+      "field:gst_number": {
+       "right": 24,
+       "of": 24
+      },
+      "field:invoice_date": {
+       "right": 24,
+       "of": 24
+      },
+      "field:invoice_number": {
+       "right": 24,
+       "of": 24
+      },
+      "field:po_number": {
+       "right": 24,
+       "of": 24
+      },
+      "field:subtotal": {
+       "right": 24,
+       "of": 24
+      },
+      "field:supplier_name": {
+       "right": 24,
+       "of": 24
+      },
+      "field:total": {
+       "right": 24,
+       "of": 24
+      },
+      "reasons": {
+       "right": 24,
+       "of": 24
+      },
+      "route": {
+       "right": 24,
+       "of": 24
+      }
+     },
+     "guard_hit_items": 12,
+     "straight_through": 12
+    }
+   },
+   "written": {
+    "draft bills": 12,
+    "exception queue": 12,
+    "bills created that should have been exceptions": 0
+   },
+   "model": {
+    "calls": 24,
+    "ok": 24,
+    "live": 8,
+    "cached": 16,
+    "failed": 0,
+    "prompt_tokens": 11216,
+    "completion_tokens": 5622,
+    "model_latency_ms_p50": 2986.0,
+    "model_latency_ms_p95": 16273.0
+   },
+   "execution_ms": 29487.0,
+   "ai_node_ms": 27702.0,
+   "cli_wall_s": 38.3,
+   "rows": [
+    {
+     "id": "I01",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "A"
+    },
+    {
+     "id": "I02",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "B"
+    },
+    {
+     "id": "I03",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "C"
+    },
+    {
+     "id": "I04",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['gst_mismatch']",
+     "got": "exception ['gst_mismatch']",
+     "guard_hits": [
+      "gst_mismatch"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "A"
+    },
+    {
+     "id": "I05",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['total_mismatch']",
+     "got": "exception ['total_mismatch']",
+     "guard_hits": [
+      "total_mismatch"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "B"
+    },
+    {
+     "id": "I06",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['unknown_supplier']",
+     "got": "exception ['unknown_supplier']",
+     "guard_hits": [
+      "unknown_supplier"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "A"
+    },
+    {
+     "id": "I07",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['duplicate_invoice']",
+     "got": "exception ['duplicate_invoice']",
+     "guard_hits": [
+      "duplicate_invoice"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "A"
+    },
+    {
+     "id": "I08",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "C"
+    },
+    {
+     "id": "I09",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['po_mismatch']",
+     "got": "exception ['po_mismatch']",
+     "guard_hits": [
+      "po_mismatch"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "B"
+    },
+    {
+     "id": "I10",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "C"
+    },
+    {
+     "id": "I11",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['lines_mismatch']",
+     "got": "exception ['lines_mismatch']",
+     "guard_hits": [
+      "lines_mismatch"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "A"
+    },
+    {
+     "id": "I12",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "B"
+    },
+    {
+     "id": "I13",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "A"
+    },
+    {
+     "id": "I14",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['gst_mismatch']",
+     "got": "exception ['gst_mismatch']",
+     "guard_hits": [
+      "gst_mismatch"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "C"
+    },
+    {
+     "id": "I15",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "B"
+    },
+    {
+     "id": "I16",
+     "split": "dev",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "A"
+    },
+    {
+     "id": "I17",
+     "split": "heldout",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "A"
+    },
+    {
+     "id": "I18",
+     "split": "heldout",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['gst_mismatch']",
+     "got": "exception ['gst_mismatch']",
+     "guard_hits": [
+      "gst_mismatch"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "B"
+    },
+    {
+     "id": "I19",
+     "split": "heldout",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['unknown_supplier']",
+     "got": "exception ['unknown_supplier']",
+     "guard_hits": [
+      "unknown_supplier"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "B"
+    },
+    {
+     "id": "I20",
+     "split": "heldout",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "C"
+    },
+    {
+     "id": "I21",
+     "split": "heldout",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['duplicate_invoice']",
+     "got": "exception ['duplicate_invoice']",
+     "guard_hits": [
+      "duplicate_invoice"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "B"
+    },
+    {
+     "id": "I22",
+     "split": "heldout",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "draft_bill []",
+     "got": "draft_bill []",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "C"
+    },
+    {
+     "id": "I23",
+     "split": "heldout",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['total_mismatch']",
+     "got": "exception ['total_mismatch']",
+     "guard_hits": [
+      "total_mismatch"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "A"
+    },
+    {
+     "id": "I24",
+     "split": "heldout",
+     "checks": {
+      "field:supplier_name": true,
+      "field:gst_number": true,
+      "field:invoice_number": true,
+      "field:invoice_date": true,
+      "field:due_date": true,
+      "field:po_number": true,
+      "field:currency": true,
+      "field:subtotal": true,
+      "field:gst": true,
+      "field:total": true,
+      "route": true,
+      "reasons": true
+     },
+     "correct": true,
+     "expected": "exception ['po_mismatch']",
+     "got": "exception ['po_mismatch']",
+     "guard_hits": [
+      "po_mismatch"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "wrong_bill": false,
+     "layout": "A"
+    }
+   ]
+  },
+  {
+   "workflow": "support-triage",
+   "mode": "ai",
+   "status": "success",
+   "error": null,
+   "summary": {
+    "dev": {
+     "items": 16,
+     "correct": 16,
+     "checks": {
+      "category": {
+       "right": 16,
+       "of": 16
+      },
+      "needs_person": {
+       "right": 16,
+       "of": 16
+      },
+      "priority": {
+       "right": 16,
+       "of": 16
+      }
+     },
+     "guard_hit_items": 4,
+     "straight_through": 8
+    },
+    "heldout": {
+     "items": 8,
+     "correct": 8,
+     "checks": {
+      "category": {
+       "right": 8,
+       "of": 8
+      },
+      "needs_person": {
+       "right": 8,
+       "of": 8
+      },
+      "priority": {
+       "right": 8,
+       "of": 8
+      }
+     },
+     "guard_hit_items": 1,
+     "straight_through": 4
+    },
+    "all": {
+     "items": 24,
+     "correct": 24,
+     "checks": {
+      "category": {
+       "right": 24,
+       "of": 24
+      },
+      "needs_person": {
+       "right": 24,
+       "of": 24
+      },
+      "priority": {
+       "right": 24,
+       "of": 24
+      }
+     },
+     "guard_hit_items": 5,
+     "straight_through": 12
+    }
+   },
+   "written": {
+    "helpdesk tickets": 24,
+    "urgent alerts posted": 5,
+    "emails sent to customers": 0
+   },
+   "model": {
+    "calls": 24,
+    "ok": 24,
+    "live": 8,
+    "cached": 16,
+    "failed": 0,
+    "prompt_tokens": 10736,
+    "completion_tokens": 2267,
+    "model_latency_ms_p50": 1891.5,
+    "model_latency_ms_p95": 10091.7
+   },
+   "execution_ms": 34813.0,
+   "ai_node_ms": 33639.0,
+   "cli_wall_s": 42.7,
+   "rows": [
+    {
+     "id": "S01",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "order_status / normal / person=False",
+     "got": "order_status / normal / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S02",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "warranty_or_fault/complaint / urgent / person=True",
+     "got": "warranty_or_fault / urgent / person=True",
+     "guard_hits": [
+      "safety_wording"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": true,
+     "urgent_caught": true
+    },
+    {
+     "id": "S03",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "product_question / normal / person=False",
+     "got": "product_question / normal / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S04",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "return_or_exchange / normal / person=False",
+     "got": "return_or_exchange / normal / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S05",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "complaint/warranty_or_fault / urgent / person=True",
+     "got": "complaint / urgent / person=True",
+     "guard_hits": [
+      "legal_wording"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": true,
+     "urgent_caught": true
+    },
+    {
+     "id": "S06",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "spam / low / person=False",
+     "got": "spam / low / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S07",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "wholesale_enquiry / high / person=True",
+     "got": "wholesale_enquiry / high / person=True",
+     "guard_hits": [],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S08",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "warranty_or_fault / high / person=True",
+     "got": "warranty_or_fault / high / person=True",
+     "guard_hits": [],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S09",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "complaint/order_status / high / person=True",
+     "got": "complaint / high / person=True",
+     "guard_hits": [],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S10",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "warranty_or_fault / urgent / person=True",
+     "got": "warranty_or_fault / urgent / person=True",
+     "guard_hits": [
+      "safety_wording"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": true,
+     "urgent_caught": true
+    },
+    {
+     "id": "S11",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "product_question / normal / person=False",
+     "got": "product_question / normal / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S12",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "order_status / normal / person=False",
+     "got": "order_status / normal / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S13",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "return_or_exchange / normal / person=True",
+     "got": "return_or_exchange / normal / person=True",
+     "guard_hits": [
+      "instructions_in_email"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S14",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "return_or_exchange / normal / person=False",
+     "got": "return_or_exchange / normal / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S15",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "feedback / low / person=False",
+     "got": "feedback / low / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S16",
+     "split": "dev",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "warranty_or_fault / high / person=True",
+     "got": "warranty_or_fault / high / person=True",
+     "guard_hits": [],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S17",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "warranty_or_fault / urgent / person=True",
+     "got": "warranty_or_fault / urgent / person=True",
+     "guard_hits": [],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": true,
+     "urgent_caught": true
+    },
+    {
+     "id": "S18",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "complaint / urgent / person=True",
+     "got": "complaint / urgent / person=True",
+     "guard_hits": [
+      "legal_wording"
+     ],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": true,
+     "urgent_caught": true
+    },
+    {
+     "id": "S19",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "order_status / normal / person=False",
+     "got": "order_status / normal / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S20",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "product_question / normal / person=False",
+     "got": "product_question / normal / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S21",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "spam / low / person=False",
+     "got": "spam / low / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S22",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "wholesale_enquiry / high / person=True",
+     "got": "wholesale_enquiry / high / person=True",
+     "guard_hits": [],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S23",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "complaint/return_or_exchange / high / person=True",
+     "got": "complaint / high / person=True",
+     "guard_hits": [],
+     "straight_through": false,
+     "decided_by": "ai",
+     "missed_person": false,
+     "urgent_expected": false,
+     "urgent_caught": false
+    },
+    {
+     "id": "S24",
+     "split": "heldout",
+     "checks": {
+      "category": true,
+      "priority": true,
+      "needs_person": true
+     },
+     "correct": true,
+     "expected": "return_or_exchange / normal / person=False",
+     "got": "return_or_exchange / normal / person=False",
+     "guard_hits": [],
+     "straight_through": true,
+     "decided_by": "ai",
      "missed_person": false,
      "urgent_expected": false,
      "urgent_caught": false

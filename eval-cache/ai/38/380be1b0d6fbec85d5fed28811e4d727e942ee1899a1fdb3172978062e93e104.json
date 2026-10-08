@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"Heading out into the New Zealand backcountry? The Ember 2 stove is designed to help you prepare meals efficiently on the trail. In our testing, it boils a litre of water in about 3.5 minutes. Weighing just 85 grams and folding down into a 6 cm case, it is a compact addition to your pack and runs on standard screw-on gas canisters. Remember to always cook outside your tent, as stoves produce carbon monoxide. Available for $89. Read more on our blog: https://acmeoutdoorgear.example.com/blog/ember-2 #AcmeOutdoorGear #NewZealand #Tramping\",\n  \"instagram\": \"Planning your next tramping trip? Meet the Ember 2 stove, a lightweight addition to your pack that weighs only 85 g and folds into a 6 cm case. It runs on standard screw-on gas canisters and boils a litre of water in about 3.5 minutes in our tests. Priced at $89. Always remember to cook outside your tent because stoves produce carbon monoxide. Link in bio to read the full post. #AcmeOutdoorGear #NZOutdoors #TrampingNZ #CampCooking\",\n  \"x\": \"The Ember 2 stove boils a litre of water in about 3.5 mins, weighs 85 g, and folds into a 6 cm case. Runs on standard gas canisters. $89. Always cook outside your tent as stoves produce carbon monoxide. https://acmeoutdoorgear.example.com/blog/ember-2 #AcmeOutdoorGear #NZ\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Td3yqa6EJoO3ZWDwmqNuvNvwpN5bXKzXXHejpw0U0P4x657pl1YozTfRRAE7k4ZF4MeqKdUqrk15+Socft5qCpgwHxethNpOs4e+HGyGxygHXAY9W5bkJWOc="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440767,
+ "id": "eTfHauS3POjsrfcPquGdqAo",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 344,
+  "prompt_tokens": 372,
+  "total_tokens": 716
+ },
+ "_gateway": {
+  "latency_ms": 6095.5
+ }
+}

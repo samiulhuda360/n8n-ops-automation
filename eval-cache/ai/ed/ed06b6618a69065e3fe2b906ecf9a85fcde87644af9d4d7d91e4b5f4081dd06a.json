@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"wholesale\", \"priority\": \"hot\", \"summary\": \"Existing stockist Ruapehu Ridge Outfitters submitted a reorder request for Trailhead packs totaling approximately $8k with a deadline of November 1.\", \"follow_up_subject\": \"Re: Your Trailhead packs order for Ruapehu Ridge Outfitters\", \"follow_up_body\": \"Hi Jack, thanks for reaching out again and apologies if your first message didn't come through. We would love to help you get your Trailhead packs sorted before 1 November. Could you let us know the specific breakdown of models and colors you need for this $8k opening order? The Acme Outdoor Gear team\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TBwkvNwgIEs9s1kaypuX8G9hwOtBb0F+1EsgLmlBNajcGzc/P9EfLovIe9FSKT06YSGSIglMIeXlvsFvMsIQCJO8FsUuL+e0ykcwLQuPUFyverdYCdjHU9ik="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440915,
+ "id": "EjjHavPSGd-Zvr0P6bC2mAI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 141,
+  "prompt_tokens": 492,
+  "total_tokens": 633
+ },
+ "_gateway": {
+  "latency_ms": 1732.6
+ }
+}

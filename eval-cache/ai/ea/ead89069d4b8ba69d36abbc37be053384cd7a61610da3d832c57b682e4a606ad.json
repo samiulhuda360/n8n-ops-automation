@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"software\", \"restricted\": false, \"reason\": \"Purchasing software licenses for business operations.\", \"approver_summary\": \"Leo Martin from IT wants three help-desk app seats from CloudDesk Software Ltd for $480 NZD to support the team.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TCzZBKr/u8JViWiQcS23/wcBVH+qW8fe8kyGkTKU4TMAbhhem2yxVxtiAbqhEXhkJpUW6lPmxahV+krYgavFMTNxuDk/PU4nCtLBNywdSub2SFqlS+UEYl6o="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441501,
+ "id": "XDrHauSrIo791e8PrZWOoAg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 59,
+  "prompt_tokens": 311,
+  "total_tokens": 370
+ },
+ "_gateway": {
+  "latency_ms": 1720.8
+ }
+}

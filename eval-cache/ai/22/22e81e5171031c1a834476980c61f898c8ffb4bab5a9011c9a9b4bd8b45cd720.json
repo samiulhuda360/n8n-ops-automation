@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"complaint\",\n  \"priority\": \"high\",\n  \"needs_person\": true,\n  \"reason\": \"The customer is alleging misleading advertising and has reported the issue to the Commerce Commission.\",\n  \"reply_draft\": \"Hi Frank, thanks for reaching out. We are really sorry to hear your jacket leaked, and we take claims like this very seriously. Our team will look into this and get back to you shortly.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TrFhbqY2tPQBsvyhKgXDRbgDLk8U9teDpyZTYZ4eEuzFfFaBa90W0fN5q0waLpUmz7P8Tf1Ol/OL/PeWcppf3xtJBwA4g5UzDo5w1nKNwgoHLW8sAtPCDFU0="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441565,
+ "id": "nDrHasyKLejsrfcPmOCe8A0",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 99,
+  "prompt_tokens": 441,
+  "total_tokens": 540
+ },
+ "_gateway": {
+  "latency_ms": 1754.8
+ }
+}

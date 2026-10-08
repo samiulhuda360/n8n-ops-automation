@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"Kauri Coast Packaging Ltd\", \"gst_number\": \"98-765-432\", \"invoice_number\": \"KCP50288\", \"invoice_date\": \"2026-09-24\", \"due_date\": \"2026-10-24\", \"po_number\": \"PO-2026-0154\", \"currency\": \"NZD\", \"lines\": [{\"description\": \"Shipping boxes large (bundle of 50)\", \"quantity\": 12, \"unit_price\": 79.0, \"amount\": 948.0}], \"subtotal\": 948.0, \"gst\": 94.8, \"total\": 1042.8}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TzdRMlWCznR2tc3fW8zxJyG2YJdq/e34jsCvM6sqhQrXfXF0QHzAG4iQC8XDWOl1gqA1FsiFGX+NGZ5B688zdzsd6stulCf+jpOj4EcmEhDtDi4OYV7k7hP4="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441533,
+ "id": "ejrHaou1Ap-_1e8Pnee74Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 178,
+  "prompt_tokens": 445,
+  "total_tokens": 623
+ },
+ "_gateway": {
+  "latency_ms": 3712.0
+ }
+}

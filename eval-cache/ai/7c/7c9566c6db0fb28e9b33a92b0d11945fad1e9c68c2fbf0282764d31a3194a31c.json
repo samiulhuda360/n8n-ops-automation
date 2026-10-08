@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"Southern Alps Textiles Ltd\", \"gst_number\": \"112-345-678\", \"invoice_number\": \"SAT-10388\", \"invoice_date\": \"2026-09-09\", \"due_date\": \"2026-10-20\", \"po_number\": \"PO-2026-0131\", \"currency\": \"NZD\", \"lines\": [{\"description\": \"Polar fleece 300 gsm, charcoal (m)\", \"quantity\": 80, \"unit_price\": 11.9, \"amount\": 952.0}], \"subtotal\": 952.0, \"gst\": 142.8, \"total\": 1094.8}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TqhBGMQv4zwgRh89XTg45OLzw0B9/2mEt92dz2tb3pnTEWj+bezkBrPDMKoiDCtDAvOGuGyCn62oZaAoAOcPutq0Fb2mMyj+09p0L6ng9snCoKXKLZoajoMI="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441073,
+ "id": "sDjHavHxBLu21e8P3MK0qQQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 182,
+  "prompt_tokens": 476,
+  "total_tokens": 658
+ },
+ "_gateway": {
+  "latency_ms": 1761.3
+ }
+}

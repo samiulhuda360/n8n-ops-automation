@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"restricted\",\n  \"restricted\": true,\n  \"reason\": \"Supermarket vouchers for staff are classified as restricted gifts.\",\n  \"approver_summary\": \"Nadia Faleolo wants nine $50 supermarket vouchers from Capital Office Supplies Ltd for $450 NZD to thank store staff for the stocktake weekend.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TLuisUXXBPqEovYVNYXZenHf0A/uNo1Tx90UAmuuh458DdxqrHvyKH2UlTIC/1/RPIvbzaQebsGdSUkpVXuctheB7WawwPHPXBE8G2DomQqVZfg7O3+ojl/Q="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440964,
+ "id": "QzjHapGkCu311e8P6crYqAc",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 78,
+  "prompt_tokens": 317,
+  "total_tokens": 395
+ },
+ "_gateway": {
+  "latency_ms": 1538.7
+ }
+}

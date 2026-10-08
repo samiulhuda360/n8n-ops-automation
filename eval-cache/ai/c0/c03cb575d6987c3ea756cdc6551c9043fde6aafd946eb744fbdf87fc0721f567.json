@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"feedback\",\n  \"priority\": \"low\",\n  \"needs_person\": false,\n  \"reason\": \"This is a positive thank-you note from a satisfied customer.\",\n  \"reply_draft\": \"Hi Olly, thanks so much for reaching out and sharing your feedback! We're thrilled to hear you loved the Kea tent on your Abel Tasman trip. Happy camping!\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TLP8Ud7EhrDwmCbyufQgZq07rhWu6khjlmVB4Bbg1WbmPvuo+yjQou5t5BRquIycmmapuEJjZDEVYEXuVlpr5VRYiT9t8fMKywlnuwkgFqf0+RfcZE8ss07E="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441217,
+ "id": "NznHaq2zK76N1e8Pv5eKyQg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 91,
+  "prompt_tokens": 439,
+  "total_tokens": 530
+ },
+ "_gateway": {
+  "latency_ms": 10334.1
+ }
+}

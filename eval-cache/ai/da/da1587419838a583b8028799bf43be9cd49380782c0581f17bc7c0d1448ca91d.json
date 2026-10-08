@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"lines\": [\"Revenue was $11,612 across 54 orders, up 21.6% from the same day last week.\", \"Average order value was $215.03 with 104 units sold.\", \"Channel revenue: online $4,099.10, store $5,505.90, wholesale $2,006.75.\", \"Top product was Merino 200 base layer, and there was 1 refund.\", \"No alerts today.\"]}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tk5HNVNqQoWybHtbgAbVhcLoyjNkHY+AlTeSCIMDKP9/ynXZVXUt9C0RAc21gX2Ql9QyUSBr+VGweoifb6MLGYPINaLBZqmmXXfZBzn9na9t2E+VfeEXf5JY="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441414,
+ "id": "ADrHatCQLsP11e8PgKm_4Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 115,
+  "prompt_tokens": 480,
+  "total_tokens": 595
+ },
+ "_gateway": {
+  "latency_ms": 6734.7
+ }
+}

@@ -197,6 +197,13 @@ KPI_TOLERANCE = {
 }
 
 
+def half_up(v: float, places: int = 0) -> float:
+    """Rounds half away from zero, the way people (and JavaScript's Math.round for positives) round money."""
+    from decimal import ROUND_HALF_UP, Decimal
+
+    return float(Decimal(str(v)).quantize(Decimal(1).scaleb(-places), rounding=ROUND_HALF_UP))
+
+
 def allowed_numbers(k: dict[str, Any], report_date: str) -> set[float]:
     """An independent version of the workflow's number check, built from the expected KPIs."""
     from datetime import date, timedelta
@@ -220,9 +227,9 @@ def allowed_numbers(k: dict[str, Any], report_date: str) -> set[float]:
         base += [k["change_vs_week_before_pct"], abs(k["change_vs_week_before_pct"])]
     out: set[float] = set()
     for v in base:
-        out |= {round(v, 2), round(v, 1), float(round(v))}
+        out |= {half_up(v, 2), half_up(v, 1), half_up(v)}
         if abs(v) >= 1000:
-            out |= {round(v / 1000, 1), float(round(v / 1000))}
+            out |= {half_up(v / 1000, 1), half_up(v / 1000)}
     d = date.fromisoformat(report_date)
     p = d - timedelta(days=7)
     out |= {float(x) for x in (d.year, d.month, d.day, p.year, p.month, p.day, 7, 20, 5)}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"Planning a camping trip this season? Meet the Kea 3-season tent from Acme Outdoor Gear, designed for two people. Weighing 1.9 kg and pitching in about five minutes, it features two doors so nobody has to climb over anyone in the middle of the night. The fly has a 3,000 mm rating, and it is suitable for three seasons (note that it is not built for snow camping—for that, you can check out our Alpine 4-season range). Available from 1 November for $449 both in stores and online. Discover more details on our website. https://acmeoutdoorgear.example.com/blog/kea-tent #AcmeOutdoorGear #CampingNZ #KeaTent\",\n  \"instagram\": \"Get ready for your next outdoor adventure with the Kea two-person, 3-season tent. At just 1.9 kg and quick to pitch in about five minutes, it includes two doors so nobody climbs over anyone at 2 am. The fly is rated to 3,000 mm. Available from 1 November for $449 in stores and online. Please remember it is not built for snow camping; for snowy conditions, look at our Alpine 4-season range. Link in bio to read more. #AcmeOutdoorGear #CampingLife #NewZealandOutdoors #TentLife #ExploreNZ\",\n  \"x\": \"Meet the new Kea 2-person, 3-season tent. Weighs 1.9 kg, pitches in ~5 mins, has two doors, and a 3,000 mm fly rating. Available 1 November for $449 in stores and online (not for snow camping). https://acmeoutdoorgear.example.com/blog/kea-tent #AcmeOutdoorGear #Camping\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TnnBR1CsjE0rxNQ3ii5K0YVlc/QFNjTHzo++d0NWh++e4qZML9w1BBiRYhDLy3OXsEI3zTBuBGIVQZaOpz0rmVT8htZTohM9t+iThW7csiNM3XddYIcG10bQ="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440711,
+ "id": "QDfHas3cAcP11e8P-ai_4Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 403,
+  "prompt_tokens": 392,
+  "total_tokens": 795
+ },
+ "_gateway": {
+  "latency_ms": 7751.6
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"club_or_school\",\n  \"priority\": \"cold\",\n  \"summary\": \"An individual is asking about potential scout group discounts for a possible future purchase.\",\n  \"follow_up_subject\": \"Acme Outdoor Gear - Scout groups and gear\",\n  \"follow_up_body\": \"Hi Nina,\\n\\nThanks for reaching out to us! We do love supporting local scout groups and youth clubs with their outdoor adventures.\\n\\nCould you let me know roughly how many members are in your son's group and what kind of gear they might be looking at down the track? \\n\\nCheers,\\nThe Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TT4GG/mpbY+UXsbGhJCHoPYWaaZ17OyXpUHRcR/CZbi5Q0p0DwyttU6CTauml8nhobADN2uACGRZG6AR6mmRJxg0BFHHH5VLmQ6nnkj8HA0p7f2anaTHM90I="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440918,
+ "id": "FDjHaubgOu6_vr0PlM-YMA",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 147,
+  "prompt_tokens": 474,
+  "total_tokens": 621
+ },
+ "_gateway": {
+  "latency_ms": 2532.4
+ }
+}

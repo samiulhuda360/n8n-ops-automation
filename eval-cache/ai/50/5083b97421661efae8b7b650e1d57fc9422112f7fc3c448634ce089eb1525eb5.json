@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"supplier_name\": \"Kauri Coast Packaging Ltd\",\n  \"gst_number\": \"98-765-432\",\n  \"invoice_number\": \"KCP50262\",\n  \"invoice_date\": \"2026-09-21\",\n  \"due_date\": \"2026-10-21\",\n  \"po_number\": null,\n  \"currency\": \"NZD\",\n  \"lines\": [\n    {\n      \"description\": \"Courier bags A2 (pack of 250)\",\n      \"quantity\": 8,\n      \"unit_price\": 69.90,\n      \"amount\": 559.20\n    }\n  ],\n  \"subtotal\": 559.20,\n  \"gst\": 83.88,\n  \"total\": 643.08\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tw2b6u1YDCuqKvtoxGdlc1b8HpfU4iU361aTaDe4n7Tke1AzNwOtVlPt4gGdl2ZGHaywu/3BWMkhIjEjBBbm4XAketki/ePrGZVxQo+vQ0ytuUx71+LTx9/I="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441137,
+ "id": "5DjHavHzNfyk9tMPobvb0Qc",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 213,
+  "prompt_tokens": 430,
+  "total_tokens": 643
+ },
+ "_gateway": {
+  "latency_ms": 13242.0
+ }
+}

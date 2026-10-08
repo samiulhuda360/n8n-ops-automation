@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"Ridgeline Camp Supplies Ltd\", \"gst_number\": \"104-221-907\", \"invoice_number\": \"RCS-3340\", \"invoice_date\": \"2026-09-22\", \"due_date\": \"2026-10-20\", \"po_number\": null, \"currency\": \"NZD\", \"lines\": [{\"description\": \"Camp mug, enamel\", \"quantity\": 120, \"unit_price\": 4.25, \"amount\": 510.00}, {\"description\": \"Spork, titanium\", \"quantity\": 120, \"unit_price\": 3.10, \"amount\": 372.00}], \"subtotal\": 882.00, \"gst\": 132.30, \"total\": 1014.30}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TK4a+l0Xr5KjySlx1BuvzQX+fDqe9BxZhOQQAxayaSdB/JFTMFlJk3gJaLHIvWyMyBBedA1hMe5b81dqI6298d52q4GJDskMQXBRRorsW3QJeB8Y2NQGs1cY="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441139,
+ "id": "8jjHasz9CMOx1e8Poa3CoAM",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 209,
+  "prompt_tokens": 479,
+  "total_tokens": 688
+ },
+ "_gateway": {
+  "latency_ms": 2110.0
+ }
+}

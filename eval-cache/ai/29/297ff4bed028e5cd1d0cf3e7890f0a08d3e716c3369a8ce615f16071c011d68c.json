@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"product_question\",\n  \"priority\": \"normal\",\n  \"needs_person\": false,\n  \"reason\": \"Customer is asking a pre-purchase product question about pack capacity for a trip.\",\n  \"reply_draft\": \"Hi Hamish, thanks for reaching out! The Trailhead 45L and 55L packs share the same harness system and durable ripstop fabric, but the 55L has a slightly longer torso extension and an extra external pocket for longer trips. For a 3-day tramp, either can work depending on your gear volume, and our team would be happy to help you decide based on your setup.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T1v4EM18M7bnBw06DfyxBAzaej13XkDuIEj/hf+E08rZnjp6QfCpJNJxz4JzpWOq9r69y37Gux2D4BobJinxZwW1KMTx9MeFxQVme0APhmnXS4oWKj30NDQU="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441191,
+ "id": "JjnHaomlBeKz1e8P56WDuAQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 146,
+  "prompt_tokens": 458,
+  "total_tokens": 604
+ },
+ "_gateway": {
+  "latency_ms": 1972.3
+ }
+}

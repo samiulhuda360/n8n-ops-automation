@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"corporate_bulk\",\n  \"priority\": \"hot\",\n  \"summary\": \"Daniel Hughes from Kowhai Software Ltd enquires about 120 branded insulated drink bottles for a conference on 14 October with a $3,600 budget.\",\n  \"follow_up_subject\": \"Kowhai Software Ltd bottle order - 14 October conference\",\n  \"follow_up_body\": \"Hi Daniel, thanks for getting in touch with us about branded insulated drink bottles for your upcoming conference on 14 October. We'd love to help you out with this. Could you please send us your logo file in high resolution and let us know your preferred bottle colour? The Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TVMV0cVj5ZJe34kQPQxcs/egsbkQI+1cTTCo9gaQ4FTz2sn397fyj/wrLzLYkVTUDot4m2JoTUB+yrQA2pFQvOx/nfDrVtxL0aLV1B+oiikVEunykm1280N0="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440903,
+ "id": "BjjHatAF4rPV7w_npYO4BA",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 159,
+  "prompt_tokens": 488,
+  "total_tokens": 647
+ },
+ "_gateway": {
+  "latency_ms": 1660.8
+ }
+}

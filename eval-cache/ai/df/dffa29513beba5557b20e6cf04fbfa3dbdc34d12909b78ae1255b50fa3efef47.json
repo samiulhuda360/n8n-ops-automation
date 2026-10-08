@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"Winter tramping means preparing for changing conditions on the trail. A proper layering system helps you stay comfortable as you move through the backcountry. Start with a moisture-managing base layer like our Merino 200, priced at $119, followed by a fleece or puffer mid layer such as the Ridge fleece for $139, and finish with a weather-resistant shell. Avoid cotton since it retains moisture. Adjust your clothing levels before you start to sweat to maintain a steady temperature throughout your hike. Read more on our blog: https://acmeoutdoorgear.example.com/blog/layering-101 #NewZealand #Tramping #OutdoorGear\",\n  \"instagram\": \"Staying comfortable on winter tramping trips comes down to the right combination of layers. Keep sweat away with a merino or synthetic base, trap your body heat with a fleece or puffer mid layer, and block wind and rain with a shell. Steer clear of cotton, as it stays wet. Try our Merino 200 base layer for $119 and the Ridge fleece for $139. Remember to adjust your layers before you get too warm on the trail. Link in bio. #AcmeOutdoorGear #WinterTramping #NewZealandOutdoors #Bushcraft #HikingNZ\",\n  \"x\": \"Master winter tramping with three layers: a merino or synthetic base, a fleece or puffer mid layer, and a protective shell. Avoid cotton. Try the Merino 200 ($119) and Ridge fleece ($139). https://acmeoutdoorgear.example.com/blog/layering-101 #TrampingNZ #NewZealand\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TKI0HK0kB5EYmPzCdO3fiUtlfGZELCpKx9Shhkq/ojsdAEN59/wZ7a3LBDhzp5HMCe97RutNq68YfwqHV/t8fXVvXcLWfNPLPwIMtWOOb1GLw7Ht/G13Jv8g="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440761,
+ "id": "czfHasKhO6Ou1e8P-f2XyQI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 363,
+  "prompt_tokens": 377,
+  "total_tokens": 740
+ },
+ "_gateway": {
+  "latency_ms": 6063.6
+ }
+}

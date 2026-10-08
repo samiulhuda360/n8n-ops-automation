@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"supplier_name\": \"Harbour Freight Logistics Ltd\",\n  \"gst_number\": \"116-532-004\",\n  \"invoice_number\": \"HFL-2377\",\n  \"invoice_date\": \"2026-09-16\",\n  \"due_date\": \"2026-09-30\",\n  \"po_number\": null,\n  \"currency\": \"NZD\",\n  \"lines\": [\n    {\n      \"description\": \"Courier, North Island zone\",\n      \"quantity\": 210,\n      \"unit_price\": 6.80,\n      \"amount\": 1428.00\n    }\n  ],\n  \"subtotal\": 1428.00,\n  \"gst\": 214.20,\n  \"total\": 1642.20\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TKQPSYfO2y1BhQBx/yfOFvQCtIomj2H0fBPxtYdRz82RZfEaYbaQFf97+GdWA3Q8xVt8ot6dWguxWQIxqzaqCBGhIJEa2pBmdyuiona75s+BKMJvTX+NMNkc="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441091,
+ "id": "wjjHaoTDC-zs2roPzISHkAs",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 213,
+  "prompt_tokens": 432,
+  "total_tokens": 645
+ },
+ "_gateway": {
+  "latency_ms": 1795.4
+ }
+}

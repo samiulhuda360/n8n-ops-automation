@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"warranty_or_fault\",\n  \"priority\": \"urgent\",\n  \"needs_person\": true,\n  \"reason\": \"The customer is reporting a swollen, overheating rechargeable battery, which poses a safety risk.\",\n  \"reply_draft\": \"Hi Erin, please stop using and charging the headlamp immediately, and store it in a safe place away from flammable materials. Our team takes safety very seriously and will be in touch shortly to assist you with this.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TcJe2uvCjJ6xkmDS2rc8HsmeWg/jetf2GmgfgvJfNG/+yugcQWyuK+bgDCwPCJYZC0qalmQXSUPPRN7ljQcCnAK+F90gsZWkeyeAU5r7PiHu/DwHMUsa1FVs="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441564,
+ "id": "mjrHapaIEpbZ9tMP6MbH6Qc",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 106,
+  "prompt_tokens": 446,
+  "total_tokens": 552
+ },
+ "_gateway": {
+  "latency_ms": 2483.7
+ }
+}

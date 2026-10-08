@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"wholesale\", \"priority\": \"warm\", \"summary\": \"Sophie Clarke from Lakeside Gear Co, a new shop opening in Wanaka next autumn, is requesting the trade price list and minimum order quantities.\", \"follow_up_subject\": \"Following up: Stocking Acme Outdoor Gear at Lakeside Gear Co\", \"follow_up_body\": \"Hi Sophie, It was great meeting you at the trade show! We'd love to help you get set up for your new store opening in Wanaka. To help us send the right information, could you let us know which product categories you plan to focus on first, and your estimated opening date? The Acme Outdoor Gear team\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TOJ2UHfsR3Y2Wo20UQlcV7ZA2Swec50PaU0DR63zUmOnp4hiCy2H3y39b0XyTUlfGim3ywEvirDb75ieFkHW8hBq82uGuKku6cllzp/16b41vfrGeO1AcaaY="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440901,
+ "id": "AzjHap7XFbnW9tMP-vaEiQU",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 140,
+  "prompt_tokens": 489,
+  "total_tokens": 629
+ },
+ "_gateway": {
+  "latency_ms": 2346.1
+ }
+}

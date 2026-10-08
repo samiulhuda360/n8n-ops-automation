@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"Planning a day walk around Christchurch? The Port Hills and surrounding areas offer fantastic options right on the doorstep of the city. We have put together a list of five local favourites, ranging from the short Rapaki Track and the Bridle Path, to the Godley Head loop, the Avon River walk, and the longer Mount Herbert route from Diamond Harbour. A quick tip for your trip: remember to pack water and an extra layer, as the Port Hills can get quite windy. Check out the full guide for details on walking times and choose your next weekend adventure. https://acmeoutdoorgear.example.com/blog/christchurch-day-walks #Christchurch #DayWalks #NewZealandOutdoors\",\n  \"instagram\": \"Looking for your next walk near Christchurch? We have rounded up five great local tracks to explore, including the Bridle Path, Godley Head loop, Mount Herbert from Diamond Harbour, Rapaki Track, and the flat Avon River walk. Wherever you head, make sure to take plenty of water and an extra layer of clothing since the Port Hills can get windy. Read the full post for walking times and local inspiration. Link in bio. #Christchurch #PortHills #NZWalks #ExploreNZ #AcmeOutdoorGear\",\n  \"x\": \"Planning a walk near Christchurch? Explore five local favourites including the Bridle Path, Godley Head, and Mount Herbert. Remember your water and an extra layer for the windy Port Hills. https://acmeoutdoorgear.example.com/blog/christchurch-day-walks #Christchurch #NZWalks\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TpVJbdsaOzcN0W2UXU83ljsp7OFJ1FI5cMDAMqwcw4NX6a4km/Bjooi8O9qy87L8X1ny7ilpG512ean/XC4wB2as3GzKT6OetQR2E6GNinkJAjVxNEVar8bE="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440749,
+ "id": "ZTfHasexE4uU1e8PvOTf4Qg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 343,
+  "prompt_tokens": 375,
+  "total_tokens": 718
+ },
+ "_gateway": {
+  "latency_ms": 8293.3
+ }
+}

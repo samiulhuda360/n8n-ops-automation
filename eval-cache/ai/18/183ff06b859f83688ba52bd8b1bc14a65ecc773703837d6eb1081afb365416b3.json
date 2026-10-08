@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"warranty_or_fault\",\n  \"priority\": \"high\",\n  \"needs_person\": true,\n  \"reason\": \"The customer is currently on the Heaphy Track with a broken tent pole and needs immediate assistance.\",\n  \"reply_draft\": \"Hi Nikau, I'm sorry to hear your tent pole snapped while on the Heaphy Track. Because you're currently out on your trip, our team will look into your options and get back to you as soon as possible.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TaVNAyLLR/2RNuKrGdDi20USBpKUZ2FF1/xBG22r8XE3Szp47Vua2gGHHWP+YJiQdodFQDcF5emdBOUQfNIoutsE057R01duMZPqpJ2urAeCSMsLbHhFNDX8="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441219,
+ "id": "QTnHariUPPGq1e8Pxdql8AQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 113,
+  "prompt_tokens": 451,
+  "total_tokens": 564
+ },
+ "_gateway": {
+  "latency_ms": 1673.0
+ }
+}

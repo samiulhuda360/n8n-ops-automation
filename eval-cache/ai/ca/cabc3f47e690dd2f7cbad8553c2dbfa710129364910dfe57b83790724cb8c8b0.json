@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"complaint\",\n  \"priority\": \"high\",\n  \"needs_person\": true,\n  \"reason\": \"The customer is complaining about a delayed refund and previous unanswered emails.\",\n  \"reply_draft\": \"Kia ora Sean, I am really sorry for the delay with your refund and that you haven't heard back from us yet. I have passed this directly to our finance team to check on immediately, and we will be in touch shortly.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TzcCMdRZP0eY2tVNXXslPxC0aULL3jkaF0LNL9pgLHmx0Uwr338cHOB1OCB9my4VLFPuIaNlJtGDob6K8dFrmwEofL6vPWKRAc7iy00/aCGSS+Qb9Es+8A5A="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441590,
+ "id": "rjrHatikPJbWrfcPktqt-AY",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 104,
+  "prompt_tokens": 447,
+  "total_tokens": 551
+ },
+ "_gateway": {
+  "latency_ms": 7748.2
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"supplier_name\": \"BLUEGUM OUTDOOR PTY LTD\",\n  \"gst_number\": null,\n  \"invoice_number\": \"BGO4471\",\n  \"invoice_date\": \"2026-09-10\",\n  \"due_date\": \"2026-10-10\",\n  \"po_number\": \"PO-2026-0146\",\n  \"currency\": \"AUD\",\n  \"lines\": [\n    {\n      \"description\": \"Hydration bladder 2 L\",\n      \"quantity\": 150,\n      \"unit_price\": 9.80,\n      \"amount\": 1470.00\n    },\n    {\n      \"description\": \"Bite valve spare\",\n      \"quantity\": 150,\n      \"unit_price\": 1.20,\n      \"amount\": 180.00\n    }\n  ],\n  \"subtotal\": 1650.00,\n  \"gst\": 0.00,\n  \"total\": 1650.00\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T6+gczCjAm/MrGbjfK0GD6wod/gj/qHrt6Z8aPoBQNqXoZMzc2Af8O9cvyRURSL6tR/UgWObWCuqg6HICz5rM4vGZR+ekEKQSK+J5mXEZLiUhqSPQLYlbnMQ="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441076,
+ "id": "sjjHatj2JZn-1e8Pn6ar2QQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 266,
+  "prompt_tokens": 463,
+  "total_tokens": 729
+ },
+ "_gateway": {
+  "latency_ms": 1962.0
+ }
+}

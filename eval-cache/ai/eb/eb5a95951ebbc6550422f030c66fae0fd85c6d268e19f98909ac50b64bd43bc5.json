@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"retail_customer\", \"priority\": null, \"summary\": \"An individual customer is asking about the torso fit of the Trailhead 45L pack for her height and plans to buy one this week.\", \"follow_up_subject\": \"\", \"follow_up_body\": \"\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TCWt4e9OXXd/FakyOp2yvldt2ypzswA8KFgDe4RGyIEW8pnb5+l8xl5AgJ3BHLyU8ots+mtzEYsfbN9wO/kzJQkslKNy9GssL9CxF9HT78/QXO/SzsHhxx5Q="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440890,
+ "id": "-TfHaqyZGIHarfcPtKuU-A0",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 62,
+  "prompt_tokens": 491,
+  "total_tokens": 553
+ },
+ "_gateway": {
+  "latency_ms": 1431.8
+ }
+}

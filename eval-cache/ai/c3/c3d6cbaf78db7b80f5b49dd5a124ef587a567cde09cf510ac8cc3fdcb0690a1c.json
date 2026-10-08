@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"club_or_school\", \"priority\": \"hot\", \"summary\": \"Rotorua Intermediate School requires 30 sleeping mats and 15 two-person tents for their Year 8 camp by 13 November, with a budget of $4,500.\", \"follow_up_subject\": \"Acme Outdoor Gear enquiry for Rotorua Intermediate School camp\", \"follow_up_body\": \"Hi Aroha,\\n\\nThanks for reaching out! We'd love to help out with gear for your Year 8 camp coming up in November.\\n\\nCould you let us know if you have specific preferences for the sleeping mats or tents, and the best delivery address so we can look into shipping times for you?\\n\\nThe Acme Outdoor Gear team\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Thop2P4aXBgaQFVZGRffQIFsHFlRr4A4fc6p0Z9C8zv4mTZ23G7BoFD5EFOyrTrj9G5L9ZM2RxWn4DMq3ianhxjpdUsOdAnVQuuqE0yccRVyozq+UFY/Lze4="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440888,
+ "id": "9jfHauK2Ouz01e8PjZuhyQg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 165,
+  "prompt_tokens": 508,
+  "total_tokens": 673
+ },
+ "_gateway": {
+  "latency_ms": 1670.8
+ }
+}

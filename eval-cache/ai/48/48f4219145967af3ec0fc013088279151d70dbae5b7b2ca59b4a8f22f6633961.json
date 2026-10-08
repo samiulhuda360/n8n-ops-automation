@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"wholesale\",\n  \"priority\": \"hot\",\n  \"summary\": \"Existing wholesale contact Kaimai Adventure Store wants to add 40 Alpine 0 degree sleeping bags to their November delivery.\",\n  \"follow_up_subject\": \"Adding 40 Alpine sleeping bags to your November delivery\",\n  \"follow_up_body\": \"Hi Hana, thanks for reaching out. We can certainly look into adding 40 Alpine 0 degree sleeping bags to your upcoming November delivery. Could you confirm if you need any other items added at the same time, and whether the delivery address remains the same? The Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TUT4cePziRsI1Dp8IsRSwGSjeHoLvHGcwfBx/AI6VRbUPEQXb3ffqjP9oWfl/vtPGXEQSj7Rg29sLe5mr+a9nR1jWegmPYWs8aRwIGVMHv4SPmtkrpej5Rjo="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440880,
+ "id": "7zfHasbUGrCPvr0PhorQoQY",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 141,
+  "prompt_tokens": 494,
+  "total_tokens": 635
+ },
+ "_gateway": {
+  "latency_ms": 1557.1
+ }
+}

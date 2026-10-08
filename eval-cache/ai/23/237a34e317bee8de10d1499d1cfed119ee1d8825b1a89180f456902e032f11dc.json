@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"Planning a hike on the Milford Track? Our Fiordland jacket is designed to handle serious rain with a 3-layer membrane rated to 20,000 mm, fully taped seams, and pit zips for venting. Weighing just 380 g, it packs down into its own pocket, making it a practical choice for your next outdoor adventure in New Zealand. Available now for $329. Discover more on our blog: https://acmeoutdoorgear.example.com/blog/fiordland-jacket #HikingNZ #Fiordland #OutdoorGear\",\n  \"instagram\": \"Gear up for your next adventure with the Fiordland jacket, tested by customers on the Milford Track in serious rain. Built with a 3-layer membrane rated to 20,000 mm, fully taped seams, and pit zips for temperature control, it weighs only 380 g and packs into its own pocket for easy storage. Priced at $329, it is a reliable layer for wet weather exploring. Read more on the blog. Link in bio. #AcmeOutdoorGear #FiordlandJacket #NewZealandHiking #MilfordTrack #RainJacket\",\n  \"x\": \"Tackling the Milford Track? The Fiordland jacket features a 3-layer 20,000 mm membrane, taped seams, and pit zips. Weighs 380 g and packs into its own pocket. $329. https://acmeoutdoorgear.example.com/blog/fiordland-jacket #Fiordland #HikingNZ\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T3RASw2QQETqPhhmOAHi/7DZLTsksT1bQUytFa7vUBlVnVlBbuL6aqmblzbC6rBmOvDWBIdgDVmRWAfA5VuYzkvIL4x7apb0+gpyZahFzF+y8+a3CpuO5tPc="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440717,
+ "id": "RzfHavXMMO311e8P7IrYqAY",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 354,
+  "prompt_tokens": 386,
+  "total_tokens": 740
+ },
+ "_gateway": {
+  "latency_ms": 5850.8
+ }
+}

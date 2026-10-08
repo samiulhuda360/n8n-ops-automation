@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"spam\",\n  \"priority\": null,\n  \"summary\": \"An outreach message offering paid guest posts and link swapping.\",\n  \"follow_up_subject\": \"\",\n  \"follow_up_body\": \"\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TnxE6LsKWbk2Uy2mfsdqhCYAf+hdY2RrBz+FCwvkmqIB8TyxVEQT3vpRTXcMx9tFGS18z0elJKzl3QUm7qbucDzM9Y54Pbr8ZE0wapBuKCAfj29DZQP1Xcis="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440910,
+ "id": "DTjHatLAGvH_1e8PjO7syQI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 55,
+  "prompt_tokens": 492,
+  "total_tokens": 547
+ },
+ "_gateway": {
+  "latency_ms": 1214.5
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"lines\": [\n    \"Revenue reached $9,791 across 46 orders, down 7.4% against the same day last week.\",\n    \"Average order value was $212.86 with 83 units sold.\",\n    \"Channel split revenue: online $5,174.10, store $3,531, and wholesale $1,086.25.\",\n    \"Top product was Fiordland rain jacket, and there were 1 refunds.\",\n    \"No alerts today.\"\n  ]\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T7Msl6ZQweTQ8B1fN5TjPJpAx4UWuL1T2S6Ea79W3u8EEU6KdiEXeD2NM+fP2s4+swAauXK494peaRkFUIeWrMVyosO/SR7tkZS7fC1iZWiw+H+F8rwxM96M="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440852,
+ "id": "0TfHaruIPLu21e8PzcK32QI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 127,
+  "prompt_tokens": 470,
+  "total_tokens": 597
+ },
+ "_gateway": {
+  "latency_ms": 2936.0
+ }
+}

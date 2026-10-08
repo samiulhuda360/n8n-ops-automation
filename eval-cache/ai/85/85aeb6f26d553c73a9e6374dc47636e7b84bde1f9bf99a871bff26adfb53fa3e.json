@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"restricted\",\n  \"restricted\": true,\n  \"reason\": \"Items intended for personal use rather than business are classified as restricted.\",\n  \"approver_summary\": \"Ben Walker from Operations wants noise-cancelling headphones for personal gym use from Capital Office Supplies Ltd for $310 NZD.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tqpg4mLeAg6IAPkksxI6hW6XokQxz+HBt0ucLOUKtsiTqBV8QkFGudPtvh7QK6QJdoMLGTtE+Ms16WUw5YHtoLcBlcio35q+M+Ll2HPSeLreQYYf+CI22jzI="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441007,
+ "id": "azjHatTbNrCPvr0PhorQoQY",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 73,
+  "prompt_tokens": 319,
+  "total_tokens": 392
+ },
+ "_gateway": {
+  "latency_ms": 3796.4
+ }
+}

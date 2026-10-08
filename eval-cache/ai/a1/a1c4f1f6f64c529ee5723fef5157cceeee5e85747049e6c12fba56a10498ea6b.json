@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"spam\",\n  \"priority\": null,\n  \"summary\": \"An unsolicited pitch for a digital token investment scheme offering unrealistic monthly returns.\",\n  \"follow_up_subject\": \"\",\n  \"follow_up_body\": \"\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0ThbDhbDvi8Le9M9MdYSzd8G1zxVsbRtsKyatXXG1/BVhQhPKE0EpbQHVIwZe6fEVk2xsCUf5cb1/QOS+3p6qrK2NudiHvz9Iju2wsE8BZlZDjuMx1AXUv+EU="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440897,
+ "id": "ADjHaqjoN7nW9tMP-vaEiQU",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 58,
+  "prompt_tokens": 488,
+  "total_tokens": 546
+ },
+ "_gateway": {
+  "latency_ms": 1310.5
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"supplier_name\": \"BLUEGUM OUTDOOR PTY LTD\",\n  \"gst_number\": null,\n  \"invoice_number\": \"BGO4502\",\n  \"invoice_date\": \"2026-09-30\",\n  \"due_date\": \"2026-10-30\",\n  \"po_number\": null,\n  \"currency\": \"AUD\",\n  \"lines\": [\n    {\n      \"description\": \"Collapsible water bottle 1 L\",\n      \"quantity\": 200,\n      \"unit_price\": 6.40,\n      \"amount\": 1280.00\n    }\n  ],\n  \"subtotal\": 1280.00,\n  \"gst\": 0.00,\n  \"total\": 1280.00\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TDxwpxNEnIGBWaFVt60D9xeI0ySlqatsx0+vM7ApiHLAAOxkSTO06Ar5jaObo3h+S9wTitwf6mI7pEY63VF9weN1jbbc8v3H5g5F2pVfOomhGfE3JQSVqGdU="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441543,
+ "id": "hjrHaoSiG-HqrfcP76SRaA",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 204,
+  "prompt_tokens": 426,
+  "total_tokens": 630
+ },
+ "_gateway": {
+  "latency_ms": 1830.8
+ }
+}

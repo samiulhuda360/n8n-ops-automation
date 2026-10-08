@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"warranty_or_fault\", \"priority\": \"urgent\", \"needs_person\": true, \"reason\": \"Hairline crack in a carabiner used by children is a safety risk.\", \"reply_draft\": \"Hi Kirsty, thank you for reaching out. Yes, please stop using the hammock kit immediately out of an abundance of caution. Our team will review this right away and get back to you shortly.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TV4wke+MMbC19Zn94w9KFN1nPc4V9TUjVGdh82NiwAtQczkWFRrcp2R2n8rIzrfxym6dcMuZOjI6iD3Yx7ewNhv+0mmBdtue54GZB3f8uIbHdmAzDuIVcohI="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441188,
+ "id": "IznHaq37IIaj9tMPxrD8oAg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 89,
+  "prompt_tokens": 452,
+  "total_tokens": 541
+ },
+ "_gateway": {
+  "latency_ms": 1559.8
+ }
+}

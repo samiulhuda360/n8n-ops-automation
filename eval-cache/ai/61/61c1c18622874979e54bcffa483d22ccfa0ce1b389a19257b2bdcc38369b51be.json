@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"marketing\",\n  \"restricted\": false,\n  \"reason\": \"Printed promotional material falls under the marketing category.\",\n  \"approver_summary\": \"Jess Moana from Marketing wants flyers from Pixel Print Studio Ltd for $380 NZD to promote the spring sleeping bag sale.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T+0NWfrKH9zWsbhIo+7sRKJFKRN9EXcsbWuF8oxZ13hq+50vHZGgq8vyhJk7RJxPi88upLiXDUJ7sLaNkiW1Dw5BsBGFHFNmLxPPDCP+53EAnAq4j6caqbzI="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440953,
+ "id": "NjjHat_mFdiN1e8PgYv-uAg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 69,
+  "prompt_tokens": 309,
+  "total_tokens": 378
+ },
+ "_gateway": {
+  "latency_ms": 4056.2
+ }
+}

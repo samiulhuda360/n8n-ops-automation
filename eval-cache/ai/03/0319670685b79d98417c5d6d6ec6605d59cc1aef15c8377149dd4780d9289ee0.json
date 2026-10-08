@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"club_or_school\",\n  \"priority\": \"hot\",\n  \"summary\": \"Canterbury University Tramping Club wants to purchase around 20 packs for members for late February and is asking about group discounts.\",\n  \"follow_up_subject\": \"Group discount inquiry for Canterbury University Tramping Club\",\n  \"follow_up_body\": \"Hi Liam,\\n\\nThanks for getting in touch! We'd love to help out the Canterbury University Tramping Club with packs for your members.\\n\\nTo help us find the best options for your club, could you let us know what style of packs you are after (e.g., day packs or multi-day tramping packs) and if you have a preferred price point in mind?\\n\\nThe Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T3uxGDhqqRTsH6oFsrWIhufWIlzdeXqzxSG1tMmpevAX2QI4kBElsyFTGJUBgqr0Jvt5n8Q7xa/qJ7FstBNfzdTj32ILtYCg8JF5dGYOTIbsQbTRqSt3Cm+8="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441460,
+ "id": "MzrHas2ZHu6_vr0PlM-YMA",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 176,
+  "prompt_tokens": 479,
+  "total_tokens": 655
+ },
+ "_gateway": {
+  "latency_ms": 1841.7
+ }
+}

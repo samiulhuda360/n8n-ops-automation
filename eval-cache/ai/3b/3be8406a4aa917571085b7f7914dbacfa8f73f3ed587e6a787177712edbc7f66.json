@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"lines\": [\"Revenue was $13,315 across 51 orders, up 25.9% against the same day last week.\", \"Average order value was $261.07 with 81 units sold.\", \"Channel revenue: online $4,976.40, store $3,792.50, and wholesale $4,545.75.\", \"Top product was Kea 3-season tent, and there were 1 refunds.\", \"No alerts today.\"]}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TMz2bTZ0zB/2xRD1GlLkTPPJKsBc2k4TWP5FXXRDLtqAaNMpBbzKQ5y7TikjOk6x4QPLdTmFJAK/Ei3Sr26iGZIPw86MsDsAfljN6GeMx3TfDdQiudTlZyZQ="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441403,
+ "id": "9TnHaubLFMOx1e8Poa3CoAM",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 115,
+  "prompt_tokens": 479,
+  "total_tokens": 594
+ },
+ "_gateway": {
+  "latency_ms": 6381.9
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"return_or_exchange\",\n  \"priority\": \"normal\",\n  \"needs_person\": false,\n  \"reason\": \"Customer wants to exchange unworn boots for a different size.\",\n  \"reply_draft\": \"Hi Ben, thanks for reaching out. Yes, you can definitely exchange your boots for a size 43 as long as they are unworn and in their original box. Our team will review your request and get back to you with the next steps soon.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TPe9QCnp/EPjvkQ/vV/RGp2KUJj67C9VkkYSiL+/vSdZ4SEbrLetnQbPNh/Hespo42NgPEFRKZ0VwC63YyY5YeGzsuaiwu2K1es8CxEexLgZme+MhjB1WvUw="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441162,
+ "id": "BjnHauCaGZ3U9tMP77vP4Qg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 110,
+  "prompt_tokens": 453,
+  "total_tokens": 563
+ },
+ "_gateway": {
+  "latency_ms": 4559.0
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"order_status\", \"priority\": \"normal\", \"needs_person\": false, \"reason\": \"Customer is asking about the status of their order tracking.\", \"reply_draft\": \"Kia ora Grace, thanks for reaching out. We will check with the courier company regarding your tracking update and get back to you as soon as we have more information.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T3mTbK8xTfF4DLJi2jllNodMyStRd5y+X5qRqkVhIzurZEGEeFGn40e5jFLR8Aqs+VJIGNUXZlBj0di9VtQLA8DPK+82D3XHGJLRwER1lmMKx9c++Zvq54Nk="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441568,
+ "id": "nzrHarOdEbforfcP0M6V2A4",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 76,
+  "prompt_tokens": 439,
+  "total_tokens": 515
+ },
+ "_gateway": {
+  "latency_ms": 1733.1
+ }
+}

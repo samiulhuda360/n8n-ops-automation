@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"supplier_name\": \"TASMAN TRAIL FOOTWEAR LTD\",\n  \"gst_number\": \"123-456-789\",\n  \"invoice_number\": \"TTF/8839\",\n  \"invoice_date\": \"2026-09-14\",\n  \"due_date\": \"2026-10-14\",\n  \"po_number\": null,\n  \"currency\": \"NZD\",\n  \"lines\": [\n    {\n      \"description\": \"Gaiters, waterproof, pair\",\n      \"quantity\": 50,\n      \"unit_price\": 18.40,\n      \"amount\": 920.00\n    },\n    {\n      \"description\": \"Boot laces 150 cm, pair\",\n      \"quantity\": 100,\n      \"unit_price\": 1.90,\n      \"amount\": 190.00\n    }\n  ],\n  \"subtotal\": 1110.00,\n  \"gst\": 166.50,\n  \"total\": 1276.50\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TmLsYR8xc5hWbjsfM5qtqjCC83adUAz7ZyT+C4FFKYJHn9FCJJzC9re2znCGjEbS9Lb79oFmo9Of8WvJXH5Gy/EfXL9im9DqVyy/CHHDEr5wWCazZajlMpuU="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441085,
+ "id": "uTjHapuzDt_81e8Pieze0Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 274,
+  "prompt_tokens": 448,
+  "total_tokens": 722
+ },
+ "_gateway": {
+  "latency_ms": 4634.2
+ }
+}

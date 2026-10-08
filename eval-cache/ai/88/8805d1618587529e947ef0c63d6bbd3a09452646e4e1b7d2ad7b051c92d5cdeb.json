@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"order_status\",\n  \"priority\": \"normal\",\n  \"needs_person\": false,\n  \"reason\": \"Customer is requesting a simple delivery address change for an unshipped order.\",\n  \"reply_draft\": \"Hi Isla, thanks for reaching out. We'll check on order A1102 and update your delivery address if it hasn't dispatched yet, and we'll let you know once it's sorted.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TlyEgQUEAUnwVfV+NtkkvyOCKPTPtZF28zRxz5JRws5kxlGUO/aZANn3a+7kWqhfmqEytO2HWyTY3ykEXVWEJotFJYYbZt/PdGnQa7GAucNaRUyP1NrJqBxc="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441193,
+ "id": "KDnHar_XJouM1e8P0PHO4Ac",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 103,
+  "prompt_tokens": 446,
+  "total_tokens": 549
+ },
+ "_gateway": {
+  "latency_ms": 1738.0
+ }
+}

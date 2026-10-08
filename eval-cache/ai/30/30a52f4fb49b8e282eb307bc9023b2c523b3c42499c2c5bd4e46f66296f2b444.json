@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"office_and_equipment\", \"restricted\": false, \"reason\": \"Store consumables and cleaning supplies fall under office and equipment.\", \"approver_summary\": \"Nadia Faleolo wants till rolls and cleaning supplies from Capital Office Supplies Ltd for $95 NZD to maintain store operations.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TEh3FbFp2WwM4+szSM0BYR0Fk35HtNXoX49is1ByFKrKx8zLf6AcAzeasmekyJcgsC3jY09A4HZuCvKYmyybOBBHxFlmwlogAx2dCfvVywdh0CJT34+iO6Qc="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441484,
+ "id": "SzrHapeWCc3e9tMPxsjzoAQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 65,
+  "prompt_tokens": 306,
+  "total_tokens": 371
+ },
+ "_gateway": {
+  "latency_ms": 1620.2
+ }
+}

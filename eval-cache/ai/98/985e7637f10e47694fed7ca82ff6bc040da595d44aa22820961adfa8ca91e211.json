@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"travel\",\n  \"restricted\": false,\n  \"reason\": \"This request is for business travel expenses.\",\n  \"approver_summary\": \"Ruby Chen from Retail wants return flights from Auckland to Wellington for two staff from Metro Travel Desk Ltd for $460 NZD to help set up the new store.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TqIdrXoYNjyxIAD4/p+hiO0cAdvhhgRuewwtfsIHuddQPi1Ixoj/sLRA0tJHVQMdIBZXKCfZzLR73XJDaTqfV3qOyMuwqg5xyrEmPBoD+j99YXdA+3rCJLIs="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440955,
+ "id": "OjjHarzfE5mK0-kPt7KQuAo",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 75,
+  "prompt_tokens": 315,
+  "total_tokens": 390
+ },
+ "_gateway": {
+  "latency_ms": 1560.7
+ }
+}

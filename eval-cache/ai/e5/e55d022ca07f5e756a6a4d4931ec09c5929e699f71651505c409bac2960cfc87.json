@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"club_or_school\",\n  \"priority\": \"hot\",\n  \"summary\": \"Taradale Primary School needs 90 children's rain ponchos for a school trip in three weeks with a $1,350 budget.\",\n  \"follow_up_subject\": \"Taradale Primary School rain ponchos enquiry\",\n  \"follow_up_body\": \"Hi Moana,\\n\\nThanks for reaching out to us. We'd love to help out with the rain ponchos for your upcoming school trip in three weeks.\\n\\nCould you let us know if you need any specific sizes and your preferred delivery address so we can get that quote sorted for you?\\n\\nThe Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T0m0FWX+kwk8nBJ/SRF0b0SZWl1Zmb4qe4a+yvEMirGPtCKrRRxDAyGJuonZAkwQvh8OKBIypPJWhiOZbzJH4wefhTZZSRGFfb+w55JkkQOVzKDImNEP7ySM="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441468,
+ "id": "OzrHasOiCIaj9tMPxrD8oAg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 161,
+  "prompt_tokens": 490,
+  "total_tokens": 651
+ },
+ "_gateway": {
+  "latency_ms": 2084.9
+ }
+}

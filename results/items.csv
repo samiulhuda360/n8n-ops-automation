@@ -1,12 +1,12 @@
 mode,workflow,item,split,correct,failed_checks,expected,got,guard_hits,decided_by
-rules,content-repurpose,B01,dev,False,all_posts_pass_checks,claims=False mention=['Tongariro'],claims=[] passed=1/3,numbers_not_in_blog,template
+rules,content-repurpose,B01,dev,True,,claims=False mention=['Tongariro'],claims=[] passed=3/3,,template
 rules,content-repurpose,B02,dev,True,,claims=False mention=['Kea'],claims=[] passed=3/3,,template
 rules,content-repurpose,B03,dev,False,all_posts_pass_checks,claims=True mention=['Fiordland'],"claims=['best', '100%', 'guaranteed'] passed=0/3",blog_has_claims_to_check;risky_claim,template
 rules,content-repurpose,B04,dev,False,key_facts_in_every_post,"claims=False mention=['20%', 'Alpine']",claims=[] passed=3/3,,template
 rules,content-repurpose,B05,dev,False,key_facts_in_every_post,claims=False mention=['24 hours'],claims=[] passed=3/3,,template
 rules,content-repurpose,B06,dev,True,,"claims=False mention=['Wellington', '14 November']",claims=[] passed=3/3,,template
-rules,content-repurpose,B07,dev,False,all_posts_pass_checks,claims=True mention=['Ember 2'],"claims=['clinically proven', 'than any other'] passed=0/3",blog_has_claims_to_check;numbers_not_in_blog;risky_claim,template
-rules,content-repurpose,B08,dev,False,all_posts_pass_checks,claims=False mention=['Christchurch'],claims=[] passed=1/3,numbers_not_in_blog,template
+rules,content-repurpose,B07,dev,False,all_posts_pass_checks,claims=True mention=['Ember 2'],"claims=['clinically proven', 'than any other'] passed=0/3",blog_has_claims_to_check;risky_claim,template
+rules,content-repurpose,B08,dev,True,,claims=False mention=['Christchurch'],claims=[] passed=3/3,,template
 rules,content-repurpose,B09,dev,False,all_posts_pass_checks,claims=True mention=['repair'],claims=['for life'] passed=0/3,blog_has_claims_to_check;risky_claim,template
 rules,content-repurpose,B10,dev,True,,claims=False mention=['layer'],claims=[] passed=3/3,,template
 rules,content-repurpose,B11,heldout,True,,claims=False mention=['Trailhead 55L'],claims=[] passed=3/3,,template
@@ -15,26 +15,26 @@ rules,content-repurpose,B13,heldout,False,key_facts_in_every_post,"claims=False 
 rules,content-repurpose,B14,heldout,True,,claims=False mention=['Leave No Trace'],claims=[] passed=3/3,,template
 rules,content-repurpose,B15,heldout,False,all_posts_pass_checks,claims=True mention=['Lumen'],claims=['ever made'] passed=0/3,blog_has_claims_to_check;risky_claim,template
 rules,kpi-digest,K10,dev,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K11,dev,False,posted_numbers_grounded,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K12,dev,False,posted_numbers_grounded,alerts=['revenue_drop'],alerts=['revenue_drop'] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K13,dev,False,posted_numbers_grounded,alerts=['revenue_drop'],alerts=['revenue_drop'] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K11,dev,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K12,dev,True,,alerts=['revenue_drop'],alerts=['revenue_drop'] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K13,dev,True,,alerts=['revenue_drop'],alerts=['revenue_drop'] / template (AI off or no answer),,template (AI off or no answer)
 rules,kpi-digest,K14,dev,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
 rules,kpi-digest,K15,dev,True,,alerts=['refund_spike'],alerts=['refund_spike'] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K16,dev,False,posted_numbers_grounded,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K17,dev,False,posted_numbers_grounded,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K18,dev,False,posted_numbers_grounded,alerts=['refund_spike'],alerts=['refund_spike'] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K19,dev,False,posted_numbers_grounded,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K20,dev,False,posted_numbers_grounded,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K21,dev,False,posted_numbers_grounded,alerts=['revenue_drop'],alerts=['revenue_drop'] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K22,dev,False,posted_numbers_grounded,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K16,dev,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K17,dev,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K18,dev,True,,alerts=['refund_spike'],alerts=['refund_spike'] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K19,dev,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K20,dev,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K21,dev,True,,alerts=['revenue_drop'],alerts=['revenue_drop'] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K22,dev,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
 rules,kpi-digest,K23,dev,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K24,heldout,False,posted_numbers_grounded,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K25,heldout,False,posted_numbers_grounded,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K24,heldout,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K25,heldout,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
 rules,kpi-digest,K26,heldout,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K27,heldout,False,posted_numbers_grounded,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K28,heldout,False,posted_numbers_grounded,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
-rules,kpi-digest,K29,heldout,False,posted_numbers_grounded,"alerts=['revenue_drop', 'store_zero']","alerts=['revenue_drop', 'store_zero'] / template (AI off or no answer)",,template (AI off or no answer)
-rules,kpi-digest,K30,heldout,False,posted_numbers_grounded,alerts=['revenue_drop'],alerts=['revenue_drop'] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K27,heldout,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K28,heldout,True,,alerts=[],alerts=[] / template (AI off or no answer),,template (AI off or no answer)
+rules,kpi-digest,K29,heldout,True,,"alerts=['revenue_drop', 'store_zero']","alerts=['revenue_drop', 'store_zero'] / template (AI off or no answer)",,template (AI off or no answer)
+rules,kpi-digest,K30,heldout,True,,alerts=['revenue_drop'],alerts=['revenue_drop'] / template (AI off or no answer),,template (AI off or no answer)
 rules,lead-intake,L01,dev,True,,wholesale / hot / dup=False,wholesale / hot / dup=False,,rules
 rules,lead-intake,L02,dev,False,priority,wholesale / hot / dup=True,wholesale / cold / dup=True,,rules
 rules,lead-intake,L03,dev,True,,spam / None / dup=False,spam / None / dup=False,,rules
@@ -74,11 +74,11 @@ rules,purchase-approval,P12,dev,True,,auto_approve / software,auto_approve / sof
 rules,purchase-approval,P13,dev,True,,director / stock,director / stock,"R3 over $5,000",rules
 rules,purchase-approval,P14,dev,True,,auto_approve / marketing|office_and_equipment,auto_approve / marketing,,rules
 rules,purchase-approval,P15,dev,False,category;route,finance_review / restricted,auto_approve / office_and_equipment,,rules
-rules,purchase-approval,P16,dev,False,route,manager / packaging_and_freight,director / packaging_and_freight,R4 over $500;R7 requester cannot approve their own request,rules
+rules,purchase-approval,P16,dev,True,,director / packaging_and_freight,director / packaging_and_freight,R4 over $500;R7 requester cannot approve their own request,rules
 rules,purchase-approval,P17,heldout,True,,auto_approve / office_and_equipment,auto_approve / office_and_equipment,,rules
 rules,purchase-approval,P18,heldout,True,,director / marketing,director / marketing,"R3 over $5,000",rules
 rules,purchase-approval,P19,heldout,True,,return_to_requester / stock|office_and_equipment,return_to_requester / office_and_equipment,R1 budget code missing or not valid,rules
-rules,purchase-approval,P20,heldout,False,route,manager / travel,director / travel,R4 over $500;R7 requester cannot approve their own request,rules
+rules,purchase-approval,P20,heldout,True,,director / travel,director / travel,R4 over $500;R7 requester cannot approve their own request,rules
 rules,purchase-approval,P21,heldout,False,category;route,finance_review / restricted,manager / office_and_equipment,R5 supplier not on the approved list,rules
 rules,purchase-approval,P22,heldout,True,,manager / software,manager / software,R6 possible split purchase ($780 with the same supplier in 14 days),rules
 rules,purchase-approval,P23,heldout,True,,manager / packaging_and_freight,manager / packaging_and_freight,R4 over $500,rules
@@ -131,3 +131,135 @@ rules,support-triage,S21,heldout,True,,spam / low / person=False,spam / low / pe
 rules,support-triage,S22,heldout,True,,wholesale_enquiry / high / person=True,wholesale_enquiry / high / person=True,,rules
 rules,support-triage,S23,heldout,True,,complaint/return_or_exchange / high / person=True,complaint / high / person=True,,rules
 rules,support-triage,S24,heldout,True,,return_or_exchange / normal / person=False,return_or_exchange / normal / person=False,,rules
+ai,content-repurpose,B01,dev,True,,claims=False mention=['Tongariro'],claims=[] passed=3/3,,ai
+ai,content-repurpose,B02,dev,False,all_posts_pass_checks,claims=False mention=['Kea'],claims=[] passed=2/3,numbers_not_in_blog,ai
+ai,content-repurpose,B03,dev,True,,claims=True mention=['Fiordland'],"claims=['best', '100%', 'guaranteed'] passed=3/3",blog_has_claims_to_check,ai
+ai,content-repurpose,B04,dev,True,,"claims=False mention=['20%', 'Alpine']",claims=[] passed=3/3,,ai
+ai,content-repurpose,B05,dev,False,all_posts_pass_checks,claims=False mention=['24 hours'],claims=[] passed=2/3,risky_claim,ai
+ai,content-repurpose,B06,dev,False,key_facts_in_every_post,"claims=False mention=['Wellington', '14 November']",claims=[] passed=3/3,,ai
+ai,content-repurpose,B07,dev,True,,claims=True mention=['Ember 2'],"claims=['clinically proven', 'than any other'] passed=3/3",blog_has_claims_to_check,ai
+ai,content-repurpose,B08,dev,True,,claims=False mention=['Christchurch'],claims=[] passed=3/3,,ai
+ai,content-repurpose,B09,dev,True,,claims=True mention=['repair'],claims=['for life'] passed=3/3,blog_has_claims_to_check,ai
+ai,content-repurpose,B10,dev,True,,claims=False mention=['layer'],claims=[] passed=3/3,,ai
+ai,content-repurpose,B11,heldout,True,,claims=False mention=['Trailhead 55L'],claims=[] passed=3/3,,ai
+ai,content-repurpose,B12,heldout,True,,claims=True mention=['poncho'],claims=['completely safe'] passed=3/3,blog_has_claims_to_check,ai
+ai,content-repurpose,B13,heldout,True,,"claims=False mention=['30%', '27 November']",claims=[] passed=3/3,,ai
+ai,content-repurpose,B14,heldout,True,,claims=False mention=['Leave No Trace'],claims=[] passed=3/3,,ai
+ai,content-repurpose,B15,heldout,False,all_posts_pass_checks,claims=True mention=['Lumen'],claims=['ever made'] passed=0/3,blog_has_claims_to_check;numbers_not_in_blog,ai
+ai,kpi-digest,K10,dev,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K11,dev,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K12,dev,True,,alerts=['revenue_drop'],"alerts=['revenue_drop'] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K13,dev,True,,alerts=['revenue_drop'],"alerts=['revenue_drop'] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K14,dev,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K15,dev,True,,alerts=['refund_spike'],alerts=['refund_spike'] / template (AI text failed the check: ungrounded_numbers),ai_text_rejected,template (AI text failed the check: ungrounded_numbers)
+ai,kpi-digest,K16,dev,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K17,dev,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K18,dev,True,,alerts=['refund_spike'],"alerts=['refund_spike'] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K19,dev,True,,alerts=[],alerts=[] / template (AI text failed the check: ungrounded_numbers),ai_text_rejected,template (AI text failed the check: ungrounded_numbers)
+ai,kpi-digest,K20,dev,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K21,dev,True,,alerts=['revenue_drop'],"alerts=['revenue_drop'] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K22,dev,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K23,dev,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K24,heldout,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K25,heldout,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K26,heldout,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K27,heldout,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K28,heldout,True,,alerts=[],"alerts=[] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K29,heldout,True,,"alerts=['revenue_drop', 'store_zero']","alerts=['revenue_drop', 'store_zero'] / AI, all numbers checked",,"AI, all numbers checked"
+ai,kpi-digest,K30,heldout,True,,alerts=['revenue_drop'],"alerts=['revenue_drop'] / AI, all numbers checked",,"AI, all numbers checked"
+ai,lead-intake,L01,dev,True,,wholesale / hot / dup=False,wholesale / hot / dup=False,,ai
+ai,lead-intake,L02,dev,True,,wholesale / hot / dup=True,wholesale / hot / dup=True,,ai
+ai,lead-intake,L03,dev,True,,spam / None / dup=False,spam / None / dup=False,,ai
+ai,lead-intake,L04,dev,True,,corporate_bulk / warm / dup=False,corporate_bulk / warm / dup=False,,ai
+ai,lead-intake,L05,dev,True,,club_or_school / hot / dup=False,club_or_school / hot / dup=False,,ai
+ai,lead-intake,L06,dev,True,,retail_customer / None / dup=False,retail_customer / None / dup=False,,ai
+ai,lead-intake,L07,dev,True,,sponsorship_or_partnership / cold / dup=False,sponsorship_or_partnership / cold / dup=False,,ai
+ai,lead-intake,L08,dev,True,,club_or_school / warm / dup=True,club_or_school / warm / dup=True,,ai
+ai,lead-intake,L09,dev,True,,spam / None / dup=False,spam / None / dup=False,,ai
+ai,lead-intake,L10,dev,True,,wholesale / warm / dup=False,wholesale / warm / dup=False,,ai
+ai,lead-intake,L11,dev,True,,corporate_bulk / hot / dup=False,corporate_bulk / hot / dup=False,,ai
+ai,lead-intake,L12,dev,True,,sponsorship_or_partnership / warm / dup=False,sponsorship_or_partnership / warm / dup=False,,ai
+ai,lead-intake,L13,dev,True,,retail_customer / None / dup=False,retail_customer / None / dup=False,,ai
+ai,lead-intake,L14,dev,True,,spam / None / dup=False,spam / None / dup=False,,ai
+ai,lead-intake,L15,dev,True,,club_or_school / cold / dup=False,club_or_school / cold / dup=False,,ai
+ai,lead-intake,L16,dev,True,,wholesale / hot / dup=True,wholesale / hot / dup=True,draft_mentions_price_or_promise,ai
+ai,lead-intake,L17,heldout,True,,wholesale / hot / dup=True,wholesale / hot / dup=True,,ai
+ai,lead-intake,L18,heldout,True,,corporate_bulk / warm / dup=False,corporate_bulk / warm / dup=False,,ai
+ai,lead-intake,L19,heldout,True,,spam / None / dup=False,spam / None / dup=False,,ai
+ai,lead-intake,L20,heldout,True,,retail_customer / None / dup=False,retail_customer / None / dup=False,,ai
+ai,lead-intake,L21,heldout,False,priority,club_or_school / warm / dup=False,club_or_school / hot / dup=False,draft_mentions_price_or_promise,ai
+ai,lead-intake,L22,heldout,True,,sponsorship_or_partnership / hot / dup=False,sponsorship_or_partnership / hot / dup=False,,ai
+ai,lead-intake,L23,heldout,True,,wholesale / warm / dup=False,wholesale / warm / dup=False,instructions_in_message,ai
+ai,lead-intake,L24,heldout,True,,club_or_school / hot / dup=False,club_or_school / hot / dup=False,,ai
+ai,purchase-approval,P01,dev,True,,auto_approve / office_and_equipment,auto_approve / office_and_equipment,,ai
+ai,purchase-approval,P02,dev,True,,manager / marketing,manager / marketing,R4 over $500,ai
+ai,purchase-approval,P03,dev,True,,director / packaging_and_freight,director / packaging_and_freight,"R3 over $5,000",ai
+ai,purchase-approval,P04,dev,True,,return_to_requester / office_and_equipment,return_to_requester / office_and_equipment,R1 budget code missing or not valid,ai
+ai,purchase-approval,P05,dev,True,,manager / marketing,manager / marketing,R6 possible split purchase ($800 with the same supplier in 14 days),ai
+ai,purchase-approval,P06,dev,True,,auto_approve / travel,auto_approve / travel,,ai
+ai,purchase-approval,P07,dev,True,,manager / office_and_equipment|packaging_and_freight,manager / packaging_and_freight,R5 supplier not on the approved list,ai
+ai,purchase-approval,P08,dev,True,,manager / software,manager / software,R4 over $500,ai
+ai,purchase-approval,P09,dev,True,,finance_review / restricted,finance_review / restricted,"R2 restricted spend (keyword ""voucher"")",ai
+ai,purchase-approval,P10,dev,True,,finance_review / restricted,finance_review / restricted,R2 restricted spend (description);R5 supplier not on the approved list,ai
+ai,purchase-approval,P11,dev,True,,manager / stock,manager / stock,R4 over $500,ai
+ai,purchase-approval,P12,dev,True,,auto_approve / software,auto_approve / software,,ai
+ai,purchase-approval,P13,dev,True,,director / stock,director / stock,"R3 over $5,000",ai
+ai,purchase-approval,P14,dev,True,,auto_approve / marketing|office_and_equipment,auto_approve / marketing,,ai
+ai,purchase-approval,P15,dev,True,,finance_review / restricted,finance_review / restricted,R2 restricted spend (description),ai
+ai,purchase-approval,P16,dev,True,,director / packaging_and_freight,director / packaging_and_freight,R4 over $500;R7 requester cannot approve their own request,ai
+ai,purchase-approval,P17,heldout,True,,auto_approve / office_and_equipment,auto_approve / office_and_equipment,,ai
+ai,purchase-approval,P18,heldout,True,,director / marketing,director / marketing,"R3 over $5,000",ai
+ai,purchase-approval,P19,heldout,True,,return_to_requester / stock|office_and_equipment,return_to_requester / stock,R1 budget code missing or not valid,ai
+ai,purchase-approval,P20,heldout,True,,director / travel,director / travel,R4 over $500;R7 requester cannot approve their own request,ai
+ai,purchase-approval,P21,heldout,True,,finance_review / restricted,finance_review / restricted,R2 restricted spend (description);R5 supplier not on the approved list,ai
+ai,purchase-approval,P22,heldout,True,,manager / software,manager / software,R6 possible split purchase ($780 with the same supplier in 14 days),ai
+ai,purchase-approval,P23,heldout,True,,manager / packaging_and_freight,manager / packaging_and_freight,R4 over $500,ai
+ai,purchase-approval,P24,heldout,True,,auto_approve / office_and_equipment,auto_approve / office_and_equipment,,ai
+ai,supplier-invoice,I01,dev,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I02,dev,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I03,dev,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I04,dev,True,,exception ['gst_mismatch'],exception ['gst_mismatch'],gst_mismatch,ai
+ai,supplier-invoice,I05,dev,True,,exception ['total_mismatch'],exception ['total_mismatch'],total_mismatch,ai
+ai,supplier-invoice,I06,dev,True,,exception ['unknown_supplier'],exception ['unknown_supplier'],unknown_supplier,ai
+ai,supplier-invoice,I07,dev,True,,exception ['duplicate_invoice'],exception ['duplicate_invoice'],duplicate_invoice,ai
+ai,supplier-invoice,I08,dev,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I09,dev,True,,exception ['po_mismatch'],exception ['po_mismatch'],po_mismatch,ai
+ai,supplier-invoice,I10,dev,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I11,dev,True,,exception ['lines_mismatch'],exception ['lines_mismatch'],lines_mismatch,ai
+ai,supplier-invoice,I12,dev,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I13,dev,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I14,dev,True,,exception ['gst_mismatch'],exception ['gst_mismatch'],gst_mismatch,ai
+ai,supplier-invoice,I15,dev,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I16,dev,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I17,heldout,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I18,heldout,True,,exception ['gst_mismatch'],exception ['gst_mismatch'],gst_mismatch,ai
+ai,supplier-invoice,I19,heldout,True,,exception ['unknown_supplier'],exception ['unknown_supplier'],unknown_supplier,ai
+ai,supplier-invoice,I20,heldout,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I21,heldout,True,,exception ['duplicate_invoice'],exception ['duplicate_invoice'],duplicate_invoice,ai
+ai,supplier-invoice,I22,heldout,True,,draft_bill [],draft_bill [],,ai
+ai,supplier-invoice,I23,heldout,True,,exception ['total_mismatch'],exception ['total_mismatch'],total_mismatch,ai
+ai,supplier-invoice,I24,heldout,True,,exception ['po_mismatch'],exception ['po_mismatch'],po_mismatch,ai
+ai,support-triage,S01,dev,True,,order_status / normal / person=False,order_status / normal / person=False,,ai
+ai,support-triage,S02,dev,True,,warranty_or_fault/complaint / urgent / person=True,warranty_or_fault / urgent / person=True,safety_wording,ai
+ai,support-triage,S03,dev,True,,product_question / normal / person=False,product_question / normal / person=False,,ai
+ai,support-triage,S04,dev,True,,return_or_exchange / normal / person=False,return_or_exchange / normal / person=False,,ai
+ai,support-triage,S05,dev,True,,complaint/warranty_or_fault / urgent / person=True,complaint / urgent / person=True,legal_wording,ai
+ai,support-triage,S06,dev,True,,spam / low / person=False,spam / low / person=False,,ai
+ai,support-triage,S07,dev,True,,wholesale_enquiry / high / person=True,wholesale_enquiry / high / person=True,,ai
+ai,support-triage,S08,dev,True,,warranty_or_fault / high / person=True,warranty_or_fault / high / person=True,,ai
+ai,support-triage,S09,dev,True,,complaint/order_status / high / person=True,complaint / high / person=True,,ai
+ai,support-triage,S10,dev,True,,warranty_or_fault / urgent / person=True,warranty_or_fault / urgent / person=True,safety_wording,ai
+ai,support-triage,S11,dev,True,,product_question / normal / person=False,product_question / normal / person=False,,ai
+ai,support-triage,S12,dev,True,,order_status / normal / person=False,order_status / normal / person=False,,ai
+ai,support-triage,S13,dev,True,,return_or_exchange / normal / person=True,return_or_exchange / normal / person=True,instructions_in_email,ai
+ai,support-triage,S14,dev,True,,return_or_exchange / normal / person=False,return_or_exchange / normal / person=False,,ai
+ai,support-triage,S15,dev,True,,feedback / low / person=False,feedback / low / person=False,,ai
+ai,support-triage,S16,dev,True,,warranty_or_fault / high / person=True,warranty_or_fault / high / person=True,,ai
+ai,support-triage,S17,heldout,True,,warranty_or_fault / urgent / person=True,warranty_or_fault / urgent / person=True,,ai
+ai,support-triage,S18,heldout,True,,complaint / urgent / person=True,complaint / urgent / person=True,legal_wording,ai
+ai,support-triage,S19,heldout,True,,order_status / normal / person=False,order_status / normal / person=False,,ai
+ai,support-triage,S20,heldout,True,,product_question / normal / person=False,product_question / normal / person=False,,ai
+ai,support-triage,S21,heldout,True,,spam / low / person=False,spam / low / person=False,,ai
+ai,support-triage,S22,heldout,True,,wholesale_enquiry / high / person=True,wholesale_enquiry / high / person=True,,ai
+ai,support-triage,S23,heldout,True,,complaint/return_or_exchange / high / person=True,complaint / high / person=True,,ai
+ai,support-triage,S24,heldout,True,,return_or_exchange / normal / person=False,return_or_exchange / normal / person=False,,ai

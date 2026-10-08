@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"stock\",\n  \"restricted\": false,\n  \"reason\": \"These items are retail products intended for resale to customers.\",\n  \"approver_summary\": \"Ruby Chen wants to buy Kea tents for retail stock from Ridgeline Camp Supplies Ltd for $12,500 NZD.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TTTDb69xkR+bTtYeWecn6qDbNmWEfsrvTxRFegJzPYTBpXMQFK1gdozhQR+Gj31yWurl/pArExJfVi3OYWt+1RpaICTr8AVkws3K+RcoahNNOueC5uE2Emjo="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440988,
+ "id": "WjjHavS-I8P11e8P-ai_4Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 72,
+  "prompt_tokens": 313,
+  "total_tokens": 385
+ },
+ "_gateway": {
+  "latency_ms": 2169.5
+ }
+}

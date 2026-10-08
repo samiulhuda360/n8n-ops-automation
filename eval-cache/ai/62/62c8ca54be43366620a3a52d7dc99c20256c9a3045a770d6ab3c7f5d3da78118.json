@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"club_or_school\",\n  \"priority\": \"warm\",\n  \"summary\": \"Harbourside Rowing Club is inquiring about club pricing for drink bottles and rain shells for 25 members this season.\",\n  \"follow_up_subject\": \"Acme Outdoor Gear - Drink bottles and rain shells for Harbourside Rowing Club\",\n  \"follow_up_body\": \"Hi Tomasi,\\n\\nIt's great to hear from Harbourside Rowing Club again! We'd love to help you out with drink bottles and rain shells for your 25 members this season.\\n\\nTo help us point you in the right direction, are you looking for any specific colours or branding on the gear, and do you have a target timeframe in mind for when you'd like everything ready?\\n\\nThe Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T67VxAztsOkHrpid9tS5IAaW8CtgpBC+xmMx6nBpjEvjzttR9YPa11DoXBTs+WIVK2Xa+cQJbtMdM+ckD5/JMCTibsGk0kGD7vkYSNu4kE68PfbOTNej2DOU="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440895,
+ "id": "_jfHavahHbXY9tMPgYT4gAM",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 186,
+  "prompt_tokens": 493,
+  "total_tokens": 679
+ },
+ "_gateway": {
+  "latency_ms": 1678.1
+ }
+}

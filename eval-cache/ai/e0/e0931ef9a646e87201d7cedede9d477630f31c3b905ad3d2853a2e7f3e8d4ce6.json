@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"retail_customer\",\n  \"priority\": null,\n  \"summary\": \"Customer is asking about returning a tent purchased from the Christchurch store for a larger model.\",\n  \"follow_up_subject\": \"\",\n  \"follow_up_body\": \"\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TLZ/BijH3O6HWLDXuKixh2xgDejuV1aCpo+i52UMXjLfqCsvqhDZ321QwfWzT1D3NTm280LjJRZQgZoJuOlZMom+UO1eflrSjxYy/xx2HGTmL7PgXVulzQaU="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441458,
+ "id": "KzrHaq6ADqf91e8PyYjdSQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 63,
+  "prompt_tokens": 478,
+  "total_tokens": 541
+ },
+ "_gateway": {
+  "latency_ms": 8387.3
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"spam\",\n  \"priority\": null,\n  \"summary\": \"An unsolicited sales pitch offering website error-fixing services.\",\n  \"follow_up_subject\": \"\",\n  \"follow_up_body\": \"\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TZqXDYXZdQUwxw5qGYo8zDHcbKDk+KscbZ/9G0f2ii98/3OlrGL68nSSLiDYhx4/5FJ3SKA6XW8H0SLLC6lGpHhqtC5HnYayi23wUUXLXQiLF5eDTGMjxjiw="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441450,
+ "id": "KDrHar2cJI-N1e8PmqLvyQc",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 55,
+  "prompt_tokens": 491,
+  "total_tokens": 546
+ },
+ "_gateway": {
+  "latency_ms": 2358.0
+ }
+}

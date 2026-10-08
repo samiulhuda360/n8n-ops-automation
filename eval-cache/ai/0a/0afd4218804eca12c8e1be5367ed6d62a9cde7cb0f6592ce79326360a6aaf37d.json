@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"corporate_bulk\",\n  \"priority\": \"warm\",\n  \"summary\": \"Peter Lowe from Lowe Civil Engineering is requesting a quote for high-vis rain jackets and first-aid kits for 35 site crew members.\",\n  \"follow_up_subject\": \"High-vis rain jackets and first-aid kits for Lowe Civil Engineering\",\n  \"follow_up_body\": \"Hi Peter,\\n\\nThanks for getting in touch with Acme Outdoor Gear. We'd be happy to help equip your site crews with high-vis rain jackets and first-aid kits for your team of 35.\\n\\nTo help us put together the right options for you, could you let me know if you have any specific safety standards or branding requirements in mind?\\n\\nThe Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TvZqF5r/bUm7a38RCih0gB5T4c7OVl0nEZKMCJf9D6tl5HJBShKw7yitQtK9EUomaShuhAr4shcqvHFr4RyYYSRmziYELuukv3fTUlWQ8Sq+qcq3O3cXMKFE="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441447,
+ "id": "JjrHatrPCaOu1e8P-f2XyQI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 177,
+  "prompt_tokens": 482,
+  "total_tokens": 659
+ },
+ "_gateway": {
+  "latency_ms": 1960.6
+ }
+}

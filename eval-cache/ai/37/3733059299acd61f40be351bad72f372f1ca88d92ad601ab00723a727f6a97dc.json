@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"software\",\n  \"restricted\": false,\n  \"reason\": \"Monthly subscription for software licences used by employees.\",\n  \"approver_summary\": \"Leo Martin from IT wants to buy a monthly password-manager seat from CloudDesk Software Ltd for $39 NZD for a new hire in customer service.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TO4T/QsFoxJQbEeNgZ/Tfviw1fF1u/2Y+pJFuDGjH8u/oMNkxsLjBjfuD9MKofaTaImxa65DRIoenO8Qasiv5HkTaWkfv8PugPGq7QJbnbiKcXIe+y8Oyma4="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440986,
+ "id": "SzjHaq-RDI791e8PrZWOoAg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 74,
+  "prompt_tokens": 311,
+  "total_tokens": 385
+ },
+ "_gateway": {
+  "latency_ms": 15445.4
+ }
+}

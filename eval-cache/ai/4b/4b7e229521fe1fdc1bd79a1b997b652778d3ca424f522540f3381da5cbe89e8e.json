@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"return_or_exchange\",\n  \"priority\": \"normal\",\n  \"needs_person\": false,\n  \"reason\": \"The customer is asking to exchange an unwanted duplicate gift for store credit.\",\n  \"reply_draft\": \"Hi Tara, happy birthday! We can certainly help you look into swapping your duplicate drink bottle for store credit once we know a bit more details. Our team will review your request and get back to you shortly.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T9stIw9nB4OGLZrCfwuMxpr4S9WFZSouon8ISyFszhn9F+aDaLxzMvukyygrLpv5gb4FOd7NV9h4cRrp2ATQ9boFs0+Y3WeHtWasILNlvJs6N8oqQKq7x26o="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441591,
+ "id": "tjrHaq3YLK7s1e8P8Ym8QA",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 102,
+  "prompt_tokens": 439,
+  "total_tokens": 541
+ },
+ "_gateway": {
+  "latency_ms": 1772.1
+ }
+}

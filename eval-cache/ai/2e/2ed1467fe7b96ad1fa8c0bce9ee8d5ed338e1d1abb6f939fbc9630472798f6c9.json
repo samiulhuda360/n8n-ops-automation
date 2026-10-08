@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"Harbour Freight Logistics Ltd\", \"gst_number\": \"116-532-004\", \"invoice_number\": \"HFL-2291\", \"invoice_date\": \"2026-09-29\", \"due_date\": \"2026-10-13\", \"po_number\": null, \"currency\": \"NZD\", \"lines\": [{\"description\": \"Linehaul Auckland-Christchurch, pallets\", \"quantity\": 4, \"unit_price\": 210.00, \"amount\": 840.00}], \"subtotal\": 840.00, \"gst\": 126.00, \"total\": 966.00}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TThdutLKm213oW7gDTfzHrcqbogcv/Be9HlM+dwb8r6oa6v8XpBB3saThQQRdlxtPoOSzCUs5LM/d6H9pZtdKwZrDWU8eWOBMlAfyNAKDUhSt8QxbKZETE44="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441541,
+ "id": "gzrHauXZGLuj9tMPsPK5-AI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 172,
+  "prompt_tokens": 429,
+  "total_tokens": 601
+ },
+ "_gateway": {
+  "latency_ms": 2986.0
+ }
+}

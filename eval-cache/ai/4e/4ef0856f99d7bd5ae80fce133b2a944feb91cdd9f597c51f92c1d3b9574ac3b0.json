@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"complaint\", \"priority\": \"high\", \"needs_person\": true, \"reason\": \"This is a repeat complaint about a severely delayed order with no previous response.\", \"reply_draft\": \"Hi Dave, I am so sorry for the delay with your order A1067 and that you haven't heard back from us until now. I have escalated this directly to our logistics team to investigate immediately, and someone will be in touch with you today with an update.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TqSoZdnknT5yQYvBbCXY8y85x7s5vhCrwuEHXqVVFQpUUDIqeFo1xqLLaf0VAOq6s1qLgHBRHWqr0BGXyW1aU+De+RHu1AYd+r70ZrVYhIpPgmBrfkzzTp+8="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441187,
+ "id": "GjnHaoOjC8a01e8Pr92s4Qg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 103,
+  "prompt_tokens": 451,
+  "total_tokens": 554
+ },
+ "_gateway": {
+  "latency_ms": 9342.6
+ }
+}

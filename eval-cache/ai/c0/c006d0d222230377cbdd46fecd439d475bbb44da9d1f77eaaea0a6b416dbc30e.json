@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"wholesale\",\n  \"priority\": \"hot\",\n  \"summary\": \"Existing wholesale contact Te Aroha Outdoors wants to double their spring order of rain jackets and gaiters by October 15.\",\n  \"follow_up_subject\": \"Re: Spring order for Te Aroha Outdoors\",\n  \"follow_up_body\": \"Kia ora Mere, it's great to hear spring has been so busy for you! We'd love to help you restock. Could you please confirm the specific quantities and sizes you need for the rain jackets and gaiters so we can check availability for your preferred delivery date? The Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TKjm5SSmWtciiGlr+MGNGVErUHAvnv+4FU71LZnFlIw4kkS8v/0qTgvhq33OtUePCCoYl1TFXIyyb6d93/FHhLpy2PIBLf9TdAkfgdGRGZHyQX3Z7SjjVKQ0="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441445,
+ "id": "IDrHao-PA9_81e8Pieze0Ag",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 143,
+  "prompt_tokens": 493,
+  "total_tokens": 636
+ },
+ "_gateway": {
+  "latency_ms": 6050.1
+ }
+}

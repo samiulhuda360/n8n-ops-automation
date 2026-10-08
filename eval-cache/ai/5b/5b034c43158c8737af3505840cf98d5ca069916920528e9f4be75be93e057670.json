@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"linkedin\": \"Spring is a great time to get your gear sorted for warmer weather camping across Aotearoa. From 10 to 20 October, we are offering 20% off all Alpine sleeping bags both in our stores and online. This includes the Alpine 0, which is rated to 0 degrees comfort, and the Alpine -5. Please note that stock is limited in the long sizes, and the discount does not apply to wholesale orders or gift cards. Head over to our website to check out the details and pick up what you need for your next trip. https://acmeoutdoorgear.example.com/blog/spring-sale #AcmeOutdoorGear #SpringSale #CampingNZ\",\n  \"instagram\": \"Planning some spring camping around New Zealand? From 10 to 20 October, you can save 20% on all Alpine sleeping bags in stores and online. Included in the sale are the Alpine 0, rated to 0 degrees comfort, and the Alpine -5. Stock is limited for long sizes, so be in quick. This offer excludes wholesale orders and gift cards. Check out the link in our bio for all the details. \\n\\n#AcmeOutdoorGear #SpringSale #CampingNZ #NewZealandOutdoors #SleepUnderTheStars\",\n  \"x\": \"Spring sale is on from 10 to 20 October! Get 20% off all Alpine sleeping bags, including the Alpine 0 and Alpine -5, in stores and online. Stock is limited for long sizes. https://acmeoutdoorgear.example.com/blog/spring-sale #AcmeOutdoorGear #CampingNZ\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TPQPZUH22IZ/QDFJ3Zs6sWYLjryYCMAgC2tPL5egNsu+v/YWPJDXIsWyft8xEGszkKGPLWMmmTYCsBEdElTJQ11cY26n8J9y8cX3bMdkX6ss9qt+v78Sb94Y="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791440724,
+ "id": "TTfHao_hKuz01e8PjZuhyQg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 359,
+  "prompt_tokens": 362,
+  "total_tokens": 721
+ },
+ "_gateway": {
+  "latency_ms": 7399.2
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"Ridgeline Camp Supplies Ltd\", \"gst_number\": \"104-221-907\", \"invoice_number\": \"RCS-3307\", \"invoice_date\": \"2026-09-05\", \"due_date\": \"2026-10-20\", \"po_number\": \"PO-2026-0145\", \"currency\": \"NZD\", \"lines\": [{\"description\": \"Self-inflating sleeping mat\", \"quantity\": 40, \"unit_price\": 38.75, \"amount\": 1550.00}, {\"description\": \"Stuff sack 10 L\", \"quantity\": 40, \"unit_price\": 6.10, \"amount\": 244.00}], \"subtotal\": 1794.00, \"gst\": 179.40, \"total\": 1973.40}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T++wrGrXOyqTn56sKeR44FnJDxYlzD78ngZgOYfDUO8UysWzv05YHM4oHvNa2En8uR3ae+PnEJ+3dNpYQkEiTheofgtSMgdR6qA+2w4VqT58zPtZiVA0ktrE="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441052,
+ "id": "mzjHauDoBqOu1e8P-f2XyQI",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 225,
+  "prompt_tokens": 496,
+  "total_tokens": 721
+ },
+ "_gateway": {
+  "latency_ms": 1864.3
+ }
+}

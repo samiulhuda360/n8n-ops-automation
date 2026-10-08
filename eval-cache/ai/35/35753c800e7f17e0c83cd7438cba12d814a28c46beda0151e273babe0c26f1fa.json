@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"supplier_name\": \"TASMAN TRAIL FOOTWEAR LTD\", \"gst_number\": \"123-456-789\", \"invoice_number\": \"TTF/8870\", \"invoice_date\": \"2026-09-28\", \"due_date\": \"2026-10-28\", \"po_number\": \"PO-2026-0156\", \"currency\": \"NZD\", \"lines\": [{\"description\": \"Summit hiking boot, sizes 38-46\", \"quantity\": 18, \"unit_price\": 96.00, \"amount\": 1728.00}, {\"description\": \"Insoles, cushioned\", \"quantity\": 40, \"unit_price\": 9.40, \"amount\": 376.00}], \"subtotal\": 2104.00, \"gst\": 315.60, \"total\": 2419.60}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TETz/iauOc9kOtQ9Oulj/aU+Tq5nUefnlNRuELeX8cH8y5t+RAjgVT1Y4j3Z6mMUa4ydd+y/Pv9dgV6tgOIxv2LUT85SI9TJ6ClidFEHKnbvvIk0qNpQIaOg="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441538,
+ "id": "gDrHaufWDuKz1e8P7qWDuAQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 231,
+  "prompt_tokens": 464,
+  "total_tokens": 695
+ },
+ "_gateway": {
+  "latency_ms": 3129.5
+ }
+}

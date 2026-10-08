@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"sponsorship_or_partnership\",\n  \"priority\": \"hot\",\n  \"summary\": \"Wild Screen Outdoor Film Festival is offering their gear partner slot for $2,500 with a confirmation deadline of 20 October 2026.\",\n  \"follow_up_subject\": \"Partnership opportunity with Wild Screen Outdoor Film Festival\",\n  \"follow_up_body\": \"Hi Anna,\\n\\nThanks for reaching out about the Wild Screen Outdoor Film Festival. It sounds like a fantastic event, and we'd love to learn a bit more about the gear partner slot and what kind of exposure it includes. Could you share a few details on the branding and promotional opportunities involved?\\n\\nThe Acme Outdoor Gear team\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TZrgxewFJEOWCfZ4NTIhINzjSz1xVi18kqJvYRJbgvlEHsiK6XVV6Bhb8dZP9xylAhBm5xozYjFdDIyuwk3iK/n9DcslXi6/K4x5eYIef5do7TdG5GP0F0HU="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441463,
+ "id": "NjrHatOaA9fB1e8P8bqjKQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 163,
+  "prompt_tokens": 503,
+  "total_tokens": 666
+ },
+ "_gateway": {
+  "latency_ms": 2371.1
+ }
+}

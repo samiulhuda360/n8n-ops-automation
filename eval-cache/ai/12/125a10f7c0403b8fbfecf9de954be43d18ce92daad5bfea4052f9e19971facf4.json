@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"product_question\",\n  \"priority\": \"normal\",\n  \"needs_person\": false,\n  \"reason\": \"The customer is asking a pre-purchase product question about tent suitability for local conditions.\",\n  \"reply_draft\": \"Hi Amelia, thanks for getting in touch! The Kea 3-season tent is a great option, but late October near Tongariro can certainly bring some strong alpine winds. I'll pass your question on to our camping gear team to give you some specific advice on how it handles those conditions so you can make the best choice.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TxQRr6MgsNYDB9W1Zj7jFNaMVMRcFuSpRNuflE4ajGUVdu/eW+YfYDb6z5dVtu+EABr6jSo8DnkJplhXkjpNr8XYeOoh0P6CxYxMnJKMg1RIcEtasoNlyZ2s="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441157,
+ "id": "AznHavvuNO311e8Ph4rYqAY",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 130,
+  "prompt_tokens": 448,
+  "total_tokens": 578
+ },
+ "_gateway": {
+  "latency_ms": 1867.5
+ }
+}

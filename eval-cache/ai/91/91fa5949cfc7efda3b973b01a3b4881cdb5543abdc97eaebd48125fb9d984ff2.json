@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"product_question\", \"priority\": \"normal\", \"needs_person\": false, \"reason\": \"Customer is asking a routine product availability question.\", \"reply_draft\": \"Kia ora Henry, thanks for reaching out. Yes, we do carry replacement pegs for the Kea tent, and I'll have our team check current stock levels and get back to you with details on how you can grab some.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T6nADbMYndm4lg2beCVOYuE8lLOxqAhshF09GsFhdGvrtmF1TBZImou/o1PaIEtoWUpUs7Ozv2WB6f0BNlma8cLgLqOKCKTAz3i/E5ViIov5Ta+DloTIWY+M="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441570,
+ "id": "oTrHaoD8LO311e8P7IrYqAY",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 88,
+  "prompt_tokens": 434,
+  "total_tokens": 522
+ },
+ "_gateway": {
+  "latency_ms": 1692.6
+ }
+}

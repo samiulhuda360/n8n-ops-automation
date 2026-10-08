@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"wholesale\",\n  \"priority\": \"warm\",\n  \"summary\": \"Doyle's Hunting & Fishing is requesting our wholesale catalogue and trade terms.\",\n  \"follow_up_subject\": \"Thanks for your interest in stocking Acme Outdoor Gear\",\n  \"follow_up_body\": \"Hi Chris,\\n\\nThanks for reaching out to us at Doyle's Hunting & Fishing. We would love to send through our wholesale catalogue and trade terms for you to review.\\n\\nTo help us get the right information to you, could you let us know which specific product categories you are most interested in, and whether you have a physical store location or online shop?\\n\\nThe Acme Outdoor Gear team\",\n  \"name\": \"Chris Doyle\",\n  \"company\": \"Doyle's Hunting & Fishing\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T8w2Bizs/fYznYM4kqzZrjzOW9dSujgf3Xqc6Xkooz62buXLlZ8UDuKnVwZOUdODbkMstSN55MKmtnXO5rCSWubTp79NbUAKDUtCtUMw3XBPOmes/9kaMaYI="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791441465,
+ "id": "ODrHavbzHYuU1e8PvOTf4Qg",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 179,
+  "prompt_tokens": 491,
+  "total_tokens": 670
+ },
+ "_gateway": {
+  "latency_ms": 1823.8
+ }
+}
