@@ -45,11 +45,17 @@ def build() -> Flow:
     sample = f.code("Sample failure", (220, 200), SAMPLE)
     describe = f.code("Describe the failure", (440, 100), DESCRIBE)
     log = f.mock(
-        "Log the error", (660, 100), "POST", "'/ops/errors'",
+        "Log the error",
+        (660, 100),
+        "POST",
+        "'/ops/errors'",
         body="={{ JSON.stringify({ workflow: $json.workflow, node: $json.node, message: $json.message, execution_id: $json.execution_id, execution_url: $json.execution_url }) }}",
     )
     alert = f.mock(
-        "Alert #ops-alerts", (880, 100), "POST", "'/chat/ops-alerts'",
+        "Alert #ops-alerts",
+        (880, 100),
+        "POST",
+        "'/chat/ops-alerts'",
         body="={{ JSON.stringify({ text: $('Describe the failure').item.json.text }) }}",
     )
     f.link(trig, describe)

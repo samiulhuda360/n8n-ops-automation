@@ -7,6 +7,7 @@ gives the same JSON and a clean git diff.
 
 from __future__ import annotations
 
+import itertools
 import json
 import uuid
 from typing import Any
@@ -16,7 +17,9 @@ from opsflow.paths import JS
 Node = dict[str, Any]
 NS = uuid.UUID("3b8f2c6e-9a41-4f0c-8d57-0e6a2b9c4d11")
 MOCK = "($env.MOCK_BASE_URL || 'http://127.0.0.1:8790')"
-AI_URL = "={{ ($env.AI_BASE_URL || 'https://generativelanguage.googleapis.com/v1beta/openai') + '/chat/completions' }}"
+AI_URL = (
+    "={{ ($env.AI_BASE_URL || 'https://generativelanguage.googleapis.com/v1beta/openai') + '/chat/completions' }}"
+)
 ERROR_WORKFLOW_NAME = "Ops error handler"
 
 
@@ -44,8 +47,15 @@ class Flow:
         self.connections: dict[str, dict[str, list[list[dict[str, Any]]]]] = {}
 
     # --------------------------------------------------------------------------------------------- plumbing
-    def add(self, name: str, type_: str, version: float, position: tuple[int, int], parameters: dict[str, Any],
-            **extra: Any) -> str:
+    def add(
+        self,
+        name: str,
+        type_: str,
+        version: float,
+        position: tuple[int, int],
+        parameters: dict[str, Any],
+        **extra: Any,
+    ) -> str:
         if any(n["name"] == name for n in self.nodes):
             raise ValueError(f"duplicate node name: {name}")
         self.nodes.append(
@@ -68,7 +78,7 @@ class Flow:
         main[output].append({"node": dst, "type": "main", "index": 0})
 
     def chain(self, *names: str) -> None:
-        for a, b in zip(names, names[1:], strict=False):
+        for a, b in itertools.pairwise(names):
             self.link(a, b)
 
     # -------------------------------------------------------------------------------------------- node kinds
@@ -94,17 +104,38 @@ class Flow:
     def manual(self, name: str, pos: tuple[int, int]) -> str:
         return self.add(name, "n8n-nodes-base.manualTrigger", 1, pos, {})
 
-    def code(self, name: str, pos: tuple[int, int], body: str, *, libs: tuple[str, ...] = (), each: bool = False,
-             note: str = "") -> str:
+    def code(
+        self,
+        name: str,
+        pos: tuple[int, int],
+        body: str,
+        *,
+        libs: tuple[str, ...] = (),
+        each: bool = False,
+        note: str = "",
+    ) -> str:
         source = (js_lib(*libs) + "\n\n// ---- node logic\n" if libs else "") + body.strip() + "\n"
-        params = {"mode": "runOnceForEachItem" if each else "runOnceForAllItems", "language": "javaScript",
-                  "jsCode": source}
+        params = {
+            "mode": "runOnceForEachItem" if each else "runOnceForAllItems",
+            "language": "javaScript",
+            "jsCode": source,
+        }
         extra: dict[str, Any] = {"notes": note, "notesInFlow": True} if note else {}
         return self.add(name, "n8n-nodes-base.code", 2, pos, params, **extra)
 
-    def http(self, name: str, pos: tuple[int, int], method: str, url: str, *, body: str | None = None,
-             query: dict[str, str] | None = None, note: str = "", continue_on_fail: bool = False,
-             file_response: bool = False) -> str:
+    def http(
+        self,
+        name: str,
+        pos: tuple[int, int],
+        method: str,
+        url: str,
+        *,
+        body: str | None = None,
+        query: dict[str, str] | None = None,
+        note: str = "",
+        continue_on_fail: bool = False,
+        file_response: bool = False,
+    ) -> str:
         params: dict[str, Any] = {"method": method, "url": url, "options": {"timeout": 30000}}
         if query:
             params["sendQuery"] = True

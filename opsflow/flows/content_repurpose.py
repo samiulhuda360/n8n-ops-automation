@@ -97,11 +97,15 @@ def build() -> Flow:
     load = f.sample_source((0, 200))
     norm = f.code("Normalise post", (440, 100), NORMALISE, libs=("common", "content"), each=True)
     prep = f.code("Prepare AI request", (660, 100), PREPARE, libs=("common",), each=True)
-    check = f.code("Check posts", (1320, 100), CHECK, libs=("common", "content"),
-                   note="Channel rules, numbers, claims")
+    check = f.code(
+        "Check posts", (1320, 100), CHECK, libs=("common", "content"), note="Channel rules, numbers, claims"
+    )
     f.ai_step(prep, "Write social posts (AI)", check, (880, 100), "LinkedIn, Instagram and X drafts")
     queue = f.mock(
-        "Add to review queue", (1540, 100), "POST", "'/content/review-queue'",
+        "Add to review queue",
+        (1540, 100),
+        "POST",
+        "'/content/review-queue'",
         body="={{ JSON.stringify({ sample_id: $json.sample_id, post_id: $json.post_id, blog_title: $json.blog_title, channel: $json.channel, text: $json.text, checks: $json.checks, flags: $json.flags, written_by: $json.written_by, review_status: $json.review_status }) }}",
         note="A person approves and posts",
     )

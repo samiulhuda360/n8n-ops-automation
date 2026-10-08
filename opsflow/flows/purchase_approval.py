@@ -106,7 +106,10 @@ def build() -> Flow:
     norm = f.code("Normalise request", (440, 100), NORMALISE, libs=("common",), each=True)
     policy = f.mock("Get policy", (660, 100), "GET", "'/purchasing/policy'")
     hist = f.mock(
-        "Get recent purchases", (880, 100), "GET", "'/purchasing/history'",
+        "Get recent purchases",
+        (880, 100),
+        "GET",
+        "'/purchasing/history'",
         query={
             "requester": "={{ $('Normalise request').item.json.request.requester }}",
             "supplier": "={{ $('Normalise request').item.json.request.supplier }}",
@@ -114,11 +117,20 @@ def build() -> Flow:
         note="For the split-purchase rule",
     )
     prep = f.code("Prepare AI request", (1100, 100), PREPARE, libs=("common",), each=True)
-    apply = f.code("Apply spending policy", (1760, 100), APPLY, libs=("common", "purchase"), each=True,
-                   note="Policy rules decide; AI only categorises")
+    apply = f.code(
+        "Apply spending policy",
+        (1760, 100),
+        APPLY,
+        libs=("common", "purchase"),
+        each=True,
+        note="Policy rules decide; AI only categorises",
+    )
     f.ai_step(prep, "Read the description (AI)", apply, (1320, 100), "Category and approver summary")
     audit = f.mock(
-        "Audit: routed", (1980, 100), "POST", "'/audit'",
+        "Audit: routed",
+        (1980, 100),
+        "POST",
+        "'/audit'",
         body="={{ JSON.stringify({ sample_id: $json.sample_id, request_id: $json.request_id, event: 'routed', route: $json.route, approver: $json.approver, category: $json.category, categorised_by: $json.categorised_by, rules: $json.rules, amount_nzd: $json.amount_nzd, actor: 'policy' }) }}",
     )
     settled = f.if_(
@@ -127,19 +139,33 @@ def build() -> Flow:
         "['auto_approve', 'return_to_requester'].includes($('Apply spending policy').item.json.route)",
     )
     tell = f.mock(
-        "Tell requester", (2420, 0), "POST", "'/chat/purchasing'",
+        "Tell requester",
+        (2420, 0),
+        "POST",
+        "'/chat/purchasing'",
         body="={{ JSON.stringify({ text: $('Apply spending policy').item.json.route === 'auto_approve' ? 'Approved: ' + $('Apply spending policy').item.json.request_id + ' ($' + $('Apply spending policy').item.json.amount_nzd + ' from ' + $('Apply spending policy').item.json.supplier + ') is within policy. Go ahead and order.' : 'Returned: ' + $('Apply spending policy').item.json.request_id + ' needs a valid budget code before it can be approved.' }) }}",
     )
     loop = f.add(
-        "One request at a time", "n8n-nodes-base.splitInBatches", 3, (2420, 260), {"options": {}},
-        notes="Each approval waits for its own form", notesInFlow=True,
+        "One request at a time",
+        "n8n-nodes-base.splitInBatches",
+        3,
+        (2420, 260),
+        {"options": {}},
+        notes="Each approval waits for its own form",
+        notesInFlow=True,
     )
     create = f.mock(
-        "Create approval request", (2640, 340), "POST", "'/approvals'",
+        "Create approval request",
+        (2640, 340),
+        "POST",
+        "'/approvals'",
         body="={{ JSON.stringify({ sample_id: $('Apply spending policy').item.json.sample_id, request_id: $('Apply spending policy').item.json.request_id, requester: $('Apply spending policy').item.json.requester, amount_nzd: $('Apply spending policy').item.json.amount_nzd, supplier: $('Apply spending policy').item.json.supplier, category: $('Apply spending policy').item.json.category, route: $('Apply spending policy').item.json.route, approver: $('Apply spending policy').item.json.approver, summary: $('Apply spending policy').item.json.approver_summary, rules: $('Apply spending policy').item.json.rules, form_url: $execution.resumeFormUrl }) }}",
     )
     ask = f.mock(
-        "Ask the approver", (2860, 340), "POST", "'/chat/approvals'",
+        "Ask the approver",
+        (2860, 340),
+        "POST",
+        "'/chat/approvals'",
         body="={{ JSON.stringify({ text: $json.approver + ', please review ' + $json.request_id + ': ' + $json.summary + ' Policy: ' + $json.rules.join('; ') + '. Decide here: ' + $execution.resumeFormUrl }) }}",
     )
     wait = f.add(
@@ -159,7 +185,11 @@ def build() -> Flow:
                         "fieldLabel": "Decision",
                         "fieldType": "dropdown",
                         "fieldOptions": {
-                            "values": [{"option": "Approve"}, {"option": "Reject"}, {"option": "Ask for more information"}]
+                            "values": [
+                                {"option": "Approve"},
+                                {"option": "Reject"},
+                                {"option": "Ask for more information"},
+                            ]
                         },
                         "requiredField": True,
                     },
@@ -173,16 +203,24 @@ def build() -> Flow:
     )
     record = f.code("Record decision", (3300, 340), RECORD, each=True, note="Only the expected approver counts")
     audit2 = f.mock(
-        "Audit: decision", (3520, 340), "POST", "'/audit'",
+        "Audit: decision",
+        (3520, 340),
+        "POST",
+        "'/audit'",
         body="={{ JSON.stringify({ sample_id: $json.sample_id, request_id: $json.request_id, event: 'decision', route: $json.route, decision: $json.decision, approver: $json.approver, actor: $json.answered_by, comment: $json.comment, rules: $json.rules }) }}",
     )
     update = f.mock(
-        "Update approval", (3740, 340), "POST",
+        "Update approval",
+        (3740, 340),
+        "POST",
         "'/approvals/' + $('Record decision').item.json.approval_id + '/decision'",
         body="={{ JSON.stringify({ decision: $('Record decision').item.json.decision, answered_by: $('Record decision').item.json.answered_by, comment: $('Record decision').item.json.comment }) }}",
     )
     notify = f.mock(
-        "Tell requester the decision", (3960, 340), "POST", "'/chat/purchasing'",
+        "Tell requester the decision",
+        (3960, 340),
+        "POST",
+        "'/chat/purchasing'",
         body="={{ JSON.stringify({ text: $('Record decision').item.json.request_id + ' was ' + $('Record decision').item.json.decision + ' by ' + $('Record decision').item.json.answered_by + ($('Record decision').item.json.comment ? ': ' + $('Record decision').item.json.comment : '.') }) }}",
     )
     f.link(hook, norm)

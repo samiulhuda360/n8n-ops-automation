@@ -119,31 +119,50 @@ def build() -> Flow:
     dedupe = f.code("Check duplicates", (880, 100), DEDUPE, note="CRM matches plus repeats in this batch")
     prep = f.code("Prepare AI request", (1100, 100), PREPARE, libs=("common",), each=True)
     apply = f.code(
-        "Apply lead rules", (1760, 100), APPLY, libs=("common", "leads"), each=True,
+        "Apply lead rules",
+        (1760, 100),
+        APPLY,
+        libs=("common", "leads"),
+        each=True,
         note="Spam and injection rules override the model",
     )
     f.ai_step(prep, "Qualify lead (AI)", apply, (1320, 100), "Category, priority, summary, draft")
     spam = f.if_("Spam?", (1980, 100), "$json.route === 'discard'")
     log = f.mock(
-        "Log discarded lead", (2200, -60), "POST", "'/leads/log'",
+        "Log discarded lead",
+        (2200, -60),
+        "POST",
+        "'/leads/log'",
         body="={{ JSON.stringify({ sample_id: $json.sample_id, email: $json.email, route: $json.route, reason: $json.flags.join(', ') || 'classified as spam', decided_by: $json.decided_by }) }}",
     )
     retail = f.if_("Retail question?", (2200, 160), "$json.route === 'support'")
     support = f.mock(
-        "Forward to support", (2420, 60), "POST", "'/helpdesk/tickets'",
+        "Forward to support",
+        (2420, 60),
+        "POST",
+        "'/helpdesk/tickets'",
         body="={{ JSON.stringify({ sample_id: $json.sample_id, from: $json.email, subject: 'Website form: ' + $json.name, text: $json.message, category: 'from lead form', priority: 'normal', queue: 'reply drafts', status: 'new', guard_hits: $json.flags }) }}",
     )
     new = f.if_("New contact?", (2420, 280), "!$json.duplicate")
     create = f.mock(
-        "Create CRM row", (2640, 200), "POST", "'/crm/contacts'",
+        "Create CRM row",
+        (2640, 200),
+        "POST",
+        "'/crm/contacts'",
         body="={{ JSON.stringify({ sample_id: $json.sample_id, name: $json.name, company: $json.company, email: $json.email, phone: $json.phone, category: $json.category, priority: $json.priority, source: $json.source, owner: $json.owner, summary: $json.summary, flags: $json.flags }) }}",
     )
     note = f.mock(
-        "Add note to existing contact", (2640, 380), "POST", "'/crm/notes'",
+        "Add note to existing contact",
+        (2640, 380),
+        "POST",
+        "'/crm/notes'",
         body="={{ JSON.stringify({ sample_id: $json.sample_id, contact_id: $json.matched_contact_id, email: $json.email, phone: $json.phone, note: 'New enquiry (' + $json.category + ', ' + $json.priority + '): ' + ($json.summary || $json.message.slice(0, 200)) }) }}",
     )
     draft = f.mock(
-        "Queue follow-up for approval", (2860, 280), "POST", "'/crm/drafts'",
+        "Queue follow-up for approval",
+        (2860, 280),
+        "POST",
+        "'/crm/drafts'",
         body="={{ JSON.stringify({ sample_id: $('Apply lead rules').item.json.sample_id, contact_id: $json.contact_id || $json.id, to: $('Apply lead rules').item.json.email, subject: $('Apply lead rules').item.json.draft.subject, body: $('Apply lead rules').item.json.draft.body, flags: $('Apply lead rules').item.json.flags }) }}",
         note="Waits for a salesperson; never sent automatically",
     )

@@ -81,7 +81,8 @@ function allowedNumbers(k) {
   }
   const [y, m, d] = k.report_date.split('-').map(Number);
   const [py, pm, pd] = shiftDate(k.report_date, -7).split('-').map(Number);
-  [y, m, d, py, pm, pd, 7].forEach((n) => out.add(n));
+  // dates, the alert thresholds (20% drop, 5% refunds) and numbers inside the top product's name
+  [y, m, d, py, pm, pd, 7, 20, 5, ...numbersIn(k.top_product || '')].forEach((n) => out.add(Math.abs(n)));
   return out;
 }
 

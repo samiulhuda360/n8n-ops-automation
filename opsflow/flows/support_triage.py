@@ -72,17 +72,29 @@ def build() -> Flow:
     load = f.sample_source((0, 200))
     norm = f.code("Normalise email", (440, 100), NORMALISE, libs=("common",), each=True)
     prep = f.code("Prepare AI request", (660, 100), PREPARE, libs=("common",), each=True)
-    apply = f.code("Apply support rules", (1320, 100), APPLY, libs=("common", "support"), each=True,
-                   note="Safety and legal words always go to a person")
+    apply = f.code(
+        "Apply support rules",
+        (1320, 100),
+        APPLY,
+        libs=("common", "support"),
+        each=True,
+        note="Safety and legal words always go to a person",
+    )
     f.ai_step(prep, "Classify and draft (AI)", apply, (880, 100), "Category, priority, reply draft")
     ticket = f.mock(
-        "Create helpdesk ticket", (1540, 100), "POST", "'/helpdesk/tickets'",
+        "Create helpdesk ticket",
+        (1540, 100),
+        "POST",
+        "'/helpdesk/tickets'",
         body="={{ JSON.stringify({ sample_id: $json.sample_id, from: $json.from, subject: $json.subject, text: $json.text, category: $json.category, priority: $json.priority, needs_person: $json.needs_person, queue: $json.queue, status: $json.status, reason: $json.reason, reply_draft: $json.reply_draft, guard_hits: $json.guard_hits, decided_by: $json.decided_by }) }}",
         note="The draft is stored; nothing is sent",
     )
     urgent = f.if_("Urgent?", (1760, 100), "$json.priority === 'urgent'")
     chat = f.mock(
-        "Alert #support-escalations", (1980, 20), "POST", "'/chat/support-escalations'",
+        "Alert #support-escalations",
+        (1980, 20),
+        "POST",
+        "'/chat/support-escalations'",
         body="={{ JSON.stringify({ text: 'URGENT ticket ' + $json.id + ' from ' + $json.from + ': ' + $json.subject + ' (' + ($json.guard_hits.join(', ') || $json.category) + '). Please call the customer today.' }) }}",
     )
     f.link(hook, norm)

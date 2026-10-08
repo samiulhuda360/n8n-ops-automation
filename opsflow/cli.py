@@ -1,11 +1,11 @@
 """Command line entry point.
 
-    python -m opsflow build                 # regenerate workflows/*.json from opsflow/flows
-    python -m opsflow validate              # check the workflow files (CI runs this)
-    python -m opsflow mock                  # run the mock business systems on :8790
-    python -m opsflow eval [--modes rules,ai] [--split all|dev|heldout] [--gateway live|replay]
-    python -m opsflow report                # rebuild results/RESULTS.md from results/summary.json
-    python -m opsflow demo                  # mock systems + n8n editor with the workflows imported
+python -m opsflow build                 # regenerate workflows/*.json from opsflow/flows
+python -m opsflow validate              # check the workflow files (CI runs this)
+python -m opsflow mock                  # run the mock business systems on :8790
+python -m opsflow eval [--modes rules,ai] [--split all|dev|heldout] [--gateway live|replay]
+python -m opsflow report                # rebuild results/RESULTS.md from results/summary.json
+python -m opsflow demo                  # mock systems + n8n editor with the workflows imported
 """
 
 from __future__ import annotations
@@ -18,7 +18,9 @@ import sys
 def main(argv: list[str] | None = None) -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
-    parser = argparse.ArgumentParser(prog="opsflow", description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
+    parser = argparse.ArgumentParser(
+        prog="opsflow", description=__doc__, formatter_class=argparse.RawTextHelpFormatter
+    )
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("build", help="generate workflows/*.json")
     sub.add_parser("validate", help="check the workflow files")

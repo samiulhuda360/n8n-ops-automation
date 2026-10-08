@@ -52,8 +52,8 @@ function checkPost(channel, text, blog) {
 }
 
 function firstSentences(body, n) {
-  const parts = String(body || '').match(/[^.!?]+[.!?]+/g) || [String(body || '')];
-  return parts.slice(0, n).join(' ').trim();
+  // Split after sentence punctuation followed by a space, so "19.4 km" stays whole.
+  return String(body || '').split(/(?<=[.!?])\s+/).slice(0, n).join(' ').trim();
 }
 
 /** The baseline without a model: title, opening sentences and the link, trimmed to each channel. */

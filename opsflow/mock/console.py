@@ -13,8 +13,16 @@ TABS: dict[str, tuple[str, list[tuple[str, str, list[str]]]]] = {
     "leads": (
         "Leads",
         [
-            ("crm_contacts", "CRM sheet", ["id", "name", "company", "email", "category", "priority", "source", "owner"]),
-            ("crm_drafts", "Follow-up drafts awaiting approval", ["id", "contact_id", "to", "subject", "status", "flags"]),
+            (
+                "crm_contacts",
+                "CRM sheet",
+                ["id", "name", "company", "email", "category", "priority", "source", "owner"],
+            ),
+            (
+                "crm_drafts",
+                "Follow-up drafts awaiting approval",
+                ["id", "contact_id", "to", "subject", "status", "flags"],
+            ),
             ("crm_notes", "Notes added to existing contacts", ["id", "contact_id", "note"]),
             ("lead_log", "Discarded or forwarded", ["id", "sample_id", "email", "route", "reason"]),
         ],
@@ -25,11 +33,24 @@ TABS: dict[str, tuple[str, list[tuple[str, str, list[str]]]]] = {
             (
                 "bills",
                 "Draft bills",
-                ["id", "supplier_name", "invoice_number", "invoice_date", "due_date", "currency", "subtotal", "gst",
-                 "total", "status"],
+                [
+                    "id",
+                    "supplier_name",
+                    "invoice_number",
+                    "invoice_date",
+                    "due_date",
+                    "currency",
+                    "subtotal",
+                    "gst",
+                    "total",
+                    "status",
+                ],
             ),
-            ("invoice_exceptions", "Exception queue", ["id", "supplier_name", "invoice_number", "total", "reasons",
-                                                       "status"]),
+            (
+                "invoice_exceptions",
+                "Exception queue",
+                ["id", "supplier_name", "invoice_number", "total", "reasons", "status"],
+            ),
         ],
     ),
     "support": (
@@ -39,15 +60,23 @@ TABS: dict[str, tuple[str, list[tuple[str, str, list[str]]]]] = {
     "approvals": (
         "Purchasing",
         [
-            ("approvals", "Approval requests", ["id", "request_id", "requester", "amount_nzd", "route", "approver",
-                                                "status"]),
+            (
+                "approvals",
+                "Approval requests",
+                ["id", "request_id", "requester", "amount_nzd", "route", "approver", "status"],
+            ),
             ("audit_log", "Audit log", ["id", "request_id", "event", "route", "rules", "actor", "created_at"]),
         ],
     ),
     "content": (
         "Content",
-        [("review_queue", "Review queue (nothing is posted automatically)", ["id", "post_id", "channel", "text",
-                                                                              "checks", "status"])],
+        [
+            (
+                "review_queue",
+                "Review queue (nothing is posted automatically)",
+                ["id", "post_id", "channel", "text", "checks", "status"],
+            )
+        ],
     ),
     "chat": (
         "Chat",
@@ -89,8 +118,23 @@ td.long { white-space:pre-wrap }
 .empty { color:var(--muted); padding:14px 16px }
 """
 
-WARN_WORDS = ("exception", "urgent", "person", "escalat", "reject", "spam", "fail", "mismatch", "duplicate",
-              "director", "finance", "needs edit", "unknown", "open", "pending")
+WARN_WORDS = (
+    "exception",
+    "urgent",
+    "person",
+    "escalat",
+    "reject",
+    "spam",
+    "fail",
+    "mismatch",
+    "duplicate",
+    "director",
+    "finance",
+    "needs edit",
+    "unknown",
+    "open",
+    "pending",
+)
 
 
 def _cell(value: Any) -> str:
@@ -148,7 +192,7 @@ def render_console(state: dict[str, list[Record]], tab: str = "overview") -> str
         for collection, heading, cols in TABS[tab][1]:
             rows = _new_rows(state, collection)
             parts.append(
-                f'<section><h2>{html.escape(heading)}<small>{len(rows)} rows</small></h2>{_table(rows, cols)}</section>'
+                f"<section><h2>{html.escape(heading)}<small>{len(rows)} rows</small></h2>{_table(rows, cols)}</section>"
             )
         content = "".join(parts)
     else:
@@ -167,7 +211,7 @@ def render_console(state: dict[str, list[Record]], tab: str = "overview") -> str
         cards = "".join(f'<div class="card"><b>{n}</b><span>{html.escape(t)}</span></div>' for t, n in counts)
         latest = state.get("chat_messages", [])[-3:]
         msgs = "".join(
-            f'<section><h2>#{html.escape(m.get("channel", ""))}<small>{html.escape(m.get("created_at", ""))}</small>'
+            f"<section><h2>#{html.escape(m.get('channel', ''))}<small>{html.escape(m.get('created_at', ''))}</small>"
             f'</h2><div class="empty" style="white-space:pre-wrap;color:var(--ink)">{html.escape(m.get("text", ""))}'
             "</div></section>"
             for m in reversed(latest)

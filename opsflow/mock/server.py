@@ -251,8 +251,11 @@ def build_api(ai_mode: str = "live", log_path: Path | None = None, cache_dir: Pa
     return Api(Store(), gateway)
 
 
+class MockServer(ThreadingHTTPServer):
+    daemon_threads = True
+    request_queue_size = 128  # n8n sends a burst of parallel requests per node
+
+
 def serve(port: int = 8790, ai_mode: str = "live", log_path: Path | None = None) -> ThreadingHTTPServer:
     api = build_api(ai_mode, log_path)
-    server = ThreadingHTTPServer(("127.0.0.1", port), make_handler(api))
-    server.daemon_threads = True
-    return server
+    return MockServer(("127.0.0.1", port), make_handler(api))

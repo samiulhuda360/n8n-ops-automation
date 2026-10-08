@@ -35,7 +35,8 @@ def run_data(stdout: str) -> dict[str, Any]:
         start = stdout.find("{")
     if start < 0:
         raise RuntimeError(f"no execution JSON in the n8n output:\n{stdout[-3000:]}")
-    return json.loads(stdout[start:])
+    data, _ = json.JSONDecoder().raw_decode(stdout[start:])
+    return data
 
 
 def node_items(execution: dict[str, Any], node: str, output: int = 0) -> list[dict[str, Any]]:

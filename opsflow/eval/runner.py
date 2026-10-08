@@ -93,8 +93,10 @@ def run_all(
                 execution = n8n.execute(workflows[slug]["id"])
                 wall = time.perf_counter() - started
                 run = WorkflowRun(slug, mode, execution, state(base), wall, read_calls(call_log, before))
-                log(f"  {mode:5} {slug:18} {run.status:8} {wall:6.1f}s  model calls: {len(run.ai_calls)}"
-                    + (f"  ERROR {run.error}" if run.error else ""))
+                log(
+                    f"  {mode:5} {slug:18} {run.status:8} {wall:6.1f}s  model calls: {len(run.ai_calls)}"
+                    + (f"  ERROR {run.error}" if run.error else "")
+                )
                 runs.append(run)
     finally:
         server.shutdown()

@@ -34,3 +34,9 @@ ignore = ["RUF001", "RUF002", "RUF003"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.ruff.lint.per-file-ignores]
+# Prompts, JavaScript glue and n8n expressions are kept on one line each so they read like the n8n editor shows them.
+"opsflow/flows/*.py" = ["E501"]
+"opsflow/mock/console.py" = ["E501"]
+"opsflow/eval/report.py" = ["E501"]

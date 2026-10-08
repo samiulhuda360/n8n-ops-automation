@@ -96,12 +96,21 @@ def build() -> Flow:
         {"operation": "pdf", "binaryPropertyName": "data", "options": {}},
     )
     prep = f.code("Prepare AI request", (1100, 100), PREPARE, libs=("common",), each=True)
-    parse = f.code("Parse extraction", (1760, 100), PARSE, libs=("common", "invoice"), each=True,
-                   note="Schema check; regex baseline if no AI")
+    parse = f.code(
+        "Parse extraction",
+        (1760, 100),
+        PARSE,
+        libs=("common", "invoice"),
+        each=True,
+        note="Schema check; regex baseline if no AI",
+    )
     f.ai_step(prep, "Extract fields (AI)", parse, (1320, 100), "Invoice JSON schema")
     sup = f.mock("Get suppliers", (1980, 100), "GET", "'/accounting/suppliers'")
     bills = f.mock(
-        "Find existing bills", (2200, 100), "GET", "'/accounting/bills'",
+        "Find existing bills",
+        (2200, 100),
+        "GET",
+        "'/accounting/bills'",
         query={"invoice_number": "={{ $('Parse extraction').item.json.invoice.invoice_number || 'none' }}"},
     )
     po = f.http(
@@ -112,16 +121,28 @@ def build() -> Flow:
         continue_on_fail=True,
         note="404 when the invoice has no PO",
     )
-    validate = f.code("Validate invoice", (2640, 100), VALIDATE, libs=("common", "invoice"), each=True,
-                      note="GST, totals, PO, duplicates, grounding")
+    validate = f.code(
+        "Validate invoice",
+        (2640, 100),
+        VALIDATE,
+        libs=("common", "invoice"),
+        each=True,
+        note="GST, totals, PO, duplicates, grounding",
+    )
     ok = f.if_("Ready to bill?", (2860, 100), "$json.route === 'draft_bill'")
     bill = f.mock(
-        "Create draft bill", (3080, 0), "POST", "'/accounting/bills'",
+        "Create draft bill",
+        (3080, 0),
+        "POST",
+        "'/accounting/bills'",
         body="={{ JSON.stringify({ sample_id: $json.sample_id, supplier_id: $json.supplier_id, supplier_name: $json.supplier_name, invoice_number: $json.invoice_number, invoice_date: $json.invoice_date, due_date: $json.due_date, po_number: $json.po_number, currency: $json.currency, lines: $json.lines, subtotal: $json.subtotal, gst: $json.gst, total: $json.total, extracted_by: $json.extracted_by }) }}",
         note="Status is always DRAFT",
     )
     exc = f.mock(
-        "Add to exception queue", (3080, 200), "POST", "'/accounting/exceptions'",
+        "Add to exception queue",
+        (3080, 200),
+        "POST",
+        "'/accounting/exceptions'",
         body="={{ JSON.stringify({ sample_id: $json.sample_id, attachment: $json.attachment, supplier_name: $json.supplier_name, invoice_number: $json.invoice_number, total: $json.total, currency: $json.currency, reasons: $json.reasons, extracted: $json, extracted_by: $json.extracted_by }) }}",
     )
     summary = f.code("Accounts summary", (2860, -140), SUMMARY)

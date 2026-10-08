@@ -35,8 +35,9 @@ def close(a: Any, b: Any, tol: float) -> bool:
     return abs(float(a) - float(b)) <= tol
 
 
-def row(sample_id: str, label: dict[str, Any], checks: dict[str, bool | None], expected: str, got: str,
-        **extra: Any) -> Row:
+def row(
+    sample_id: str, label: dict[str, Any], checks: dict[str, bool | None], expected: str, got: str, **extra: Any
+) -> Row:
     applicable = [v for v in checks.values() if v is not None]
     return {
         "id": sample_id,
@@ -86,10 +87,26 @@ def score_leads(run: WorkflowRun, lab: dict[str, dict[str, Any]]) -> tuple[list[
     return rows, written
 
 
-INVOICE_FIELDS = ("supplier_name", "gst_number", "invoice_number", "invoice_date", "due_date", "po_number",
-                  "currency", "subtotal", "gst", "total")
-CORE_REASONS = {"gst_mismatch", "total_mismatch", "lines_mismatch", "unknown_supplier", "duplicate_invoice",
-                "po_mismatch"}
+INVOICE_FIELDS = (
+    "supplier_name",
+    "gst_number",
+    "invoice_number",
+    "invoice_date",
+    "due_date",
+    "po_number",
+    "currency",
+    "subtotal",
+    "gst",
+    "total",
+)
+CORE_REASONS = {
+    "gst_mismatch",
+    "total_mismatch",
+    "lines_mismatch",
+    "unknown_supplier",
+    "duplicate_invoice",
+    "po_mismatch",
+}
 
 
 def score_invoices(run: WorkflowRun, lab: dict[str, dict[str, Any]]) -> tuple[list[Row], dict[str, Any]]:
@@ -166,17 +183,38 @@ def score_support(run: WorkflowRun, lab: dict[str, dict[str, Any]]) -> tuple[lis
     return rows, written
 
 
-KPI_TOLERANCE = {"revenue": 0.011, "aov": 0.011, "refund_rate_pct": 0.051, "wholesale_share_pct": 0.051,
-                 "revenue_week_before": 0.011, "change_vs_week_before_pct": 0.051, "top_product_revenue": 0.011,
-                 "orders": 0, "units": 0, "refunds": 0}
+KPI_TOLERANCE = {
+    "revenue": 0.011,
+    "aov": 0.011,
+    "refund_rate_pct": 0.051,
+    "wholesale_share_pct": 0.051,
+    "revenue_week_before": 0.011,
+    "change_vs_week_before_pct": 0.051,
+    "top_product_revenue": 0.011,
+    "orders": 0,
+    "units": 0,
+    "refunds": 0,
+}
 
 
 def allowed_numbers(k: dict[str, Any], report_date: str) -> set[float]:
     """An independent version of the workflow's number check, built from the expected KPIs."""
     from datetime import date, timedelta
 
-    base = [k[f] for f in ("revenue", "orders", "aov", "units", "refunds", "refund_rate_pct", "wholesale_share_pct",
-                           "revenue_week_before", "top_product_revenue")]
+    base = [
+        k[f]
+        for f in (
+            "revenue",
+            "orders",
+            "aov",
+            "units",
+            "refunds",
+            "refund_rate_pct",
+            "wholesale_share_pct",
+            "revenue_week_before",
+            "top_product_revenue",
+        )
+    ]
     base += list(k["revenue_by_channel"].values()) + list(k["orders_by_channel"].values())
     if k["change_vs_week_before_pct"] is not None:
         base += [k["change_vs_week_before_pct"], abs(k["change_vs_week_before_pct"])]
@@ -187,7 +225,8 @@ def allowed_numbers(k: dict[str, Any], report_date: str) -> set[float]:
             out |= {round(v / 1000, 1), float(round(v / 1000))}
     d = date.fromisoformat(report_date)
     p = d - timedelta(days=7)
-    out |= {float(x) for x in (d.year, d.month, d.day, p.year, p.month, p.day, 7)}
+    out |= {float(x) for x in (d.year, d.month, d.day, p.year, p.month, p.day, 7, 20, 5)}
+    out |= {abs(n) for n in numbers_in(k.get("top_product") or "")}
     return out
 
 
@@ -208,12 +247,14 @@ def score_kpi(run: WorkflowRun, lab: dict[str, dict[str, Any]]) -> tuple[list[Ro
         exp = label["expected"]
         k = got["kpis"]
         numeric_ok = all(close(k[f], exp[f], tol) for f, tol in KPI_TOLERANCE.items())
-        channels_ok = all(close(k["revenue_by_channel"][c], exp["revenue_by_channel"][c], 0.011)
-                          for c in exp["revenue_by_channel"])
+        channels_ok = all(
+            close(k["revenue_by_channel"][c], exp["revenue_by_channel"][c], 0.011) for c in exp["revenue_by_channel"]
+        )
         allowed = allowed_numbers(exp, label["input"]["report_date"])
         posted = [n for line in got["lines"] for n in numbers_in(line)]
-        ungrounded = [n for n in posted if not any(abs(abs(a) - abs(n)) < (0.0102 if n == int(n) else 0.051)
-                                                   for a in allowed)]
+        ungrounded = [
+            n for n in posted if not any(abs(abs(a) - abs(n)) < (0.0102 if n == int(n) else 0.051) for a in allowed)
+        ]
         checks = {
             "kpis": numeric_ok and channels_ok and k["top_product"] == exp["top_product"],
             "alerts": k["alerts"] == exp["alerts"],
@@ -227,7 +268,8 @@ def score_kpi(run: WorkflowRun, lab: dict[str, dict[str, Any]]) -> tuple[list[Ro
                 checks,
                 f"alerts={exp['alerts']}",
                 f"alerts={k['alerts']} / {got['summary_source']}",
-                guard_hits=[] if got["summary_source"].startswith("AI") or "AI off" in got["summary_source"]
+                guard_hits=[]
+                if got["summary_source"].startswith("AI") or "AI off" in got["summary_source"]
                 else ["ai_text_rejected"],
                 straight_through=True,
                 decided_by=got["summary_source"],
@@ -367,7 +409,7 @@ def model_calls(run: WorkflowRun) -> dict[str, Any]:
     def pct(p: float) -> float | None:
         if not latencies:
             return None
-        return latencies[min(len(latencies) - 1, int(round(p * (len(latencies) - 1))))]
+        return latencies[min(len(latencies) - 1, round(p * (len(latencies) - 1)))]
 
     return {
         "calls": len(calls),

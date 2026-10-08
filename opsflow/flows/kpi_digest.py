@@ -86,17 +86,29 @@ def build() -> Flow:
     load = f.sample_source((0, 200))
     norm = f.code("Normalise date", (440, 100), NORMALISE, libs=("common", "kpi"), each=True)
     query = f.mock(
-        "Query sales", (660, 100), "POST", "'/sales/query'",
+        "Query sales",
+        (660, 100),
+        "POST",
+        "'/sales/query'",
         body="={{ JSON.stringify({ sql: $json.sql, params: [$json.report_date, $json.prev_date] }) }}",
         note="Read-only SQL, grouped by day, channel, status and product",
     )
     compute = f.code("Compute KPIs", (880, 100), COMPUTE, libs=("common", "kpi"), each=True)
     prep = f.code("Prepare AI request", (1100, 100), PREPARE, libs=("common",), each=True)
-    check = f.code("Check every number", (1760, 100), CHECK, libs=("common", "kpi"), each=True,
-                   note="Ungrounded numbers -> template")
+    check = f.code(
+        "Check every number",
+        (1760, 100),
+        CHECK,
+        libs=("common", "kpi"),
+        each=True,
+        note="Ungrounded numbers -> template",
+    )
     f.ai_step(prep, "Write summary (AI)", check, (1320, 100), "Five lines from the facts")
     post = f.mock(
-        "Post to #daily-kpis", (1980, 100), "POST", "'/chat/daily-kpis'",
+        "Post to #daily-kpis",
+        (1980, 100),
+        "POST",
+        "'/chat/daily-kpis'",
         body="={{ JSON.stringify({ sample_id: $json.sample_id, report_date: $json.report_date, text: $json.message.text, blocks: $json.message.blocks, summary_source: $json.summary_source }) }}",
         note="Slack-format message to the chat webhook",
     )
