@@ -26,6 +26,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("validate", help="check the workflow files")
     mock = sub.add_parser("mock", help="run the mock business systems")
     mock.add_argument("--port", type=int, default=8790)
+    mock.add_argument("--host", default="127.0.0.1", help="0.0.0.0 inside Docker")
     mock.add_argument("--ai-mode", choices=("live", "replay", "off"), default="live")
     ev = sub.add_parser("eval", help="run every workflow on the labelled samples and score it")
     ev.add_argument("--modes", default="rules,ai")
@@ -51,8 +52,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "mock":
         from opsflow.mock.server import serve
 
-        server = serve(args.port, args.ai_mode)
-        print(f"mock systems on http://127.0.0.1:{args.port} (console at /, model gateway {args.ai_mode})")
+        server = serve(args.port, args.ai_mode, host=args.host)
+        print(f"mock systems on http://{args.host}:{args.port} (console at /, model gateway {args.ai_mode})")
         try:
             server.serve_forever()
         except KeyboardInterrupt:

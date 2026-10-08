@@ -256,6 +256,8 @@ class MockServer(ThreadingHTTPServer):
     request_queue_size = 128  # n8n sends a burst of parallel requests per node
 
 
-def serve(port: int = 8790, ai_mode: str = "live", log_path: Path | None = None) -> ThreadingHTTPServer:
+def serve(
+    port: int = 8790, ai_mode: str = "live", log_path: Path | None = None, host: str = "127.0.0.1"
+) -> ThreadingHTTPServer:
     api = build_api(ai_mode, log_path)
-    return MockServer(("127.0.0.1", port), make_handler(api))
+    return MockServer((host, port), make_handler(api))

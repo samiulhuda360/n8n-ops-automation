@@ -169,7 +169,11 @@ def _table(rows: list[Record], columns: list[str]) -> str:
         for c in columns:
             v = row.get(c)
             cls = ' class="long"' if isinstance(v, str) and len(v) > 80 else ""
-            if c in ("status", "review_status", "route", "priority", "category", "queue") and isinstance(v, str) and v:
+            if (
+                c in ("status", "review_status", "route", "priority", "category", "queue")
+                and isinstance(v, str)
+                and v
+            ):
                 cells.append(f"<td>{_tag(v)}</td>")
             else:
                 cells.append(f"<td{cls}>{_cell(v)}</td>")
