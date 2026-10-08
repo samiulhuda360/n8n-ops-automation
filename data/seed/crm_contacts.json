@@ -1,0 +1,98 @@
+[
+ {
+  "id": "C0001",
+  "name": "Hana Whitfield",
+  "company": "Kaimai Adventure Store",
+  "email": "hana.whitfield@example.com",
+  "phone": "021 555 0101",
+  "category": "wholesale",
+  "priority": "warm",
+  "source": "existing customer",
+  "owner": "Sales team",
+  "seed": true
+ },
+ {
+  "id": "C0002",
+  "name": "Tomasi Fifita",
+  "company": "Harbourside Rowing Club",
+  "email": "tomasi.fifita@example.com",
+  "phone": "022 555 0102",
+  "category": "club_or_school",
+  "priority": "warm",
+  "source": "existing customer",
+  "owner": "Sales team",
+  "seed": true
+ },
+ {
+  "id": "C0003",
+  "name": "Priya Raman",
+  "company": "Northcote Scouts",
+  "email": "priya.raman@example.com",
+  "phone": "027 555 0103",
+  "category": "club_or_school",
+  "priority": "warm",
+  "source": "existing customer",
+  "owner": "Sales team",
+  "seed": true
+ },
+ {
+  "id": "C0004",
+  "name": "Ben Carver",
+  "company": "Carver Events Ltd",
+  "email": "ben.carver@example.com",
+  "phone": "09 555 0104",
+  "category": "sponsorship_or_partnership",
+  "priority": "warm",
+  "source": "existing customer",
+  "owner": "Sales team",
+  "seed": true
+ },
+ {
+  "id": "C0005",
+  "name": "Mere Tane",
+  "company": "Te Aroha Outdoors",
+  "email": "mere.tane@example.com",
+  "phone": "021 555 0105",
+  "category": "wholesale",
+  "priority": "warm",
+  "source": "existing customer",
+  "owner": "Sales team",
+  "seed": true
+ },
+ {
+  "id": "C0006",
+  "name": "Lucy Ng",
+  "company": "Ng & Partners Accounting",
+  "email": "lucy.ng@example.com",
+  "phone": "021 555 0106",
+  "category": "corporate_bulk",
+  "priority": "warm",
+  "source": "existing customer",
+  "owner": "Sales team",
+  "seed": true
+ },
+ {
+  "id": "C0007",
+  "name": "Sam O'Brien",
+  "company": "",
+  "email": "sam.obrien@example.com",
+  "phone": "022 555 0107",
+  "category": "retail_customer",
+  "priority": "warm",
+  "source": "existing customer",
+  "owner": "Sales team",
+  "seed": true
+ },
+ {
+  "id": "C0008",
+  "name": "Grace Liu",
+  "company": "Summit School",
+  "email": "grace.liu@example.com",
+  "phone": "03 555 0108",
+  "category": "club_or_school",
+  "priority": "warm",
+  "source": "existing customer",
+  "owner": "Sales team",
+  "seed": true
+ }
+]

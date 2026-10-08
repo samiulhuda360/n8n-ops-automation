@@ -1,0 +1,42 @@
+{
+ "currency": "NZD",
+ "auto_approve_max": 500,
+ "manager_max": 5000,
+ "split_window_days": 14,
+ "budget_codes": [
+  "RET-2026",
+  "WHS-2026",
+  "MKT-2026",
+  "OPS-2026",
+  "IT-2026"
+ ],
+ "approved_suppliers": [
+  "Capital Office Supplies Ltd",
+  "Pixel Print Studio Ltd",
+  "Harbour Freight Logistics Ltd",
+  "Ridgeline Camp Supplies Ltd",
+  "Kauri Coast Packaging Ltd",
+  "CloudDesk Software Ltd",
+  "Metro Travel Desk Ltd",
+  "Southern Alps Textiles Ltd"
+ ],
+ "restricted_keywords": [
+  "gift card",
+  "voucher",
+  "alcohol",
+  "wine",
+  "beer",
+  "spirits",
+  "cash advance",
+  "personal use"
+ ],
+ "managers": {
+  "Retail": "Emma Clarke",
+  "Wholesale": "Tom Reed",
+  "Marketing": "Aisha Khan",
+  "Operations": "Luke Bennett",
+  "IT": "Luke Bennett"
+ },
+ "director": "Sarah Mitchell",
+ "finance": "Raj Iyer"
+}

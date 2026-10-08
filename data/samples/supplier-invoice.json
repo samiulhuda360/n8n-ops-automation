@@ -1,0 +1,678 @@
+{
+ "workflow": "supplier-invoice",
+ "description": "Invented supplier invoices as PDFs in three layouts (A: table, B: alternative labels and long dates, C: prose-like). Labels: every header field, the route (draft_bill or exception) and the exception reasons. Items marked heldout were never used while tuning prompts or rules.",
+ "items": [
+  {
+   "id": "I01",
+   "split": "dev",
+   "input": {
+    "message_id": "<i01@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice SAT-10477 from Southern Alps Textiles Ltd",
+    "attachment_name": "I01-sat-10477.pdf",
+    "attachment_path": "/files/invoices/I01-sat-10477.pdf"
+   },
+   "expected": {
+    "supplier_name": "Southern Alps Textiles Ltd",
+    "gst_number": "112-345-678",
+    "invoice_number": "SAT-10477",
+    "invoice_date": "2026-09-02",
+    "due_date": "2026-10-20",
+    "po_number": "PO-2026-0141",
+    "currency": "NZD",
+    "subtotal": 1188.0,
+    "gst": 178.2,
+    "total": 1366.2,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 2,
+    "layout": "A"
+   }
+  },
+  {
+   "id": "I02",
+   "split": "dev",
+   "input": {
+    "message_id": "<i02@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice KCP50213 from Kauri Coast Packaging Ltd",
+    "attachment_name": "I02-kcp50213.pdf",
+    "attachment_path": "/files/invoices/I02-kcp50213.pdf"
+   },
+   "expected": {
+    "supplier_name": "Kauri Coast Packaging Ltd",
+    "gst_number": "98-765-432",
+    "invoice_number": "KCP50213",
+    "invoice_date": "2026-09-03",
+    "due_date": "2026-10-03",
+    "po_number": "PO-2026-0143",
+    "currency": "NZD",
+    "subtotal": 1059.0,
+    "gst": 158.85,
+    "total": 1217.85,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 2,
+    "layout": "B"
+   }
+  },
+  {
+   "id": "I03",
+   "split": "dev",
+   "input": {
+    "message_id": "<i03@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice TTF/8812 from Tasman Trail Footwear Ltd",
+    "attachment_name": "I03-ttf-8812.pdf",
+    "attachment_path": "/files/invoices/I03-ttf-8812.pdf"
+   },
+   "expected": {
+    "supplier_name": "Tasman Trail Footwear Ltd",
+    "gst_number": "123-456-789",
+    "invoice_number": "TTF/8812",
+    "invoice_date": "2026-09-04",
+    "due_date": "2026-10-04",
+    "po_number": "PO-2026-0144",
+    "currency": "NZD",
+    "subtotal": 3456.0,
+    "gst": 518.4,
+    "total": 3974.4,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 1,
+    "layout": "C"
+   }
+  },
+  {
+   "id": "I04",
+   "split": "dev",
+   "input": {
+    "message_id": "<i04@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice RCS-3307 from Ridgeline Camp Supplies Ltd",
+    "attachment_name": "I04-rcs-3307.pdf",
+    "attachment_path": "/files/invoices/I04-rcs-3307.pdf"
+   },
+   "expected": {
+    "supplier_name": "Ridgeline Camp Supplies Ltd",
+    "gst_number": "104-221-907",
+    "invoice_number": "RCS-3307",
+    "invoice_date": "2026-09-05",
+    "due_date": "2026-10-20",
+    "po_number": "PO-2026-0145",
+    "currency": "NZD",
+    "subtotal": 1794.0,
+    "gst": 179.4,
+    "total": 1973.4,
+    "route": "exception",
+    "reasons": [
+     "gst_mismatch"
+    ],
+    "line_count": 2,
+    "layout": "A"
+   }
+  },
+  {
+   "id": "I05",
+   "split": "dev",
+   "input": {
+    "message_id": "<i05@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice HFL-2350 from Harbour Freight Logistics Ltd",
+    "attachment_name": "I05-hfl-2350.pdf",
+    "attachment_path": "/files/invoices/I05-hfl-2350.pdf"
+   },
+   "expected": {
+    "supplier_name": "Harbour Freight Logistics Ltd",
+    "gst_number": "116-532-004",
+    "invoice_number": "HFL-2350",
+    "invoice_date": "2026-09-07",
+    "due_date": "2026-09-21",
+    "po_number": null,
+    "currency": "NZD",
+    "subtotal": 932.4,
+    "gst": 139.86,
+    "total": 1162.26,
+    "route": "exception",
+    "reasons": [
+     "total_mismatch"
+    ],
+    "line_count": 2,
+    "layout": "B"
+   }
+  },
+  {
+   "id": "I06",
+   "split": "dev",
+   "input": {
+    "message_id": "<i06@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice CPP-0091 from Coastline Promo Products Ltd",
+    "attachment_name": "I06-cpp-0091.pdf",
+    "attachment_path": "/files/invoices/I06-cpp-0091.pdf"
+   },
+   "expected": {
+    "supplier_name": "Coastline Promo Products Ltd",
+    "gst_number": "131-777-210",
+    "invoice_number": "CPP-0091",
+    "invoice_date": "2026-09-08",
+    "due_date": "2026-10-20",
+    "po_number": null,
+    "currency": "NZD",
+    "subtotal": 760.0,
+    "gst": 114.0,
+    "total": 874.0,
+    "route": "exception",
+    "reasons": [
+     "unknown_supplier"
+    ],
+    "line_count": 2,
+    "layout": "A"
+   }
+  },
+  {
+   "id": "I07",
+   "split": "dev",
+   "input": {
+    "message_id": "<i07@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice SAT-10388 from Southern Alps Textiles Ltd",
+    "attachment_name": "I07-sat-10388.pdf",
+    "attachment_path": "/files/invoices/I07-sat-10388.pdf"
+   },
+   "expected": {
+    "supplier_name": "Southern Alps Textiles Ltd",
+    "gst_number": "112-345-678",
+    "invoice_number": "SAT-10388",
+    "invoice_date": "2026-09-09",
+    "due_date": "2026-10-20",
+    "po_number": "PO-2026-0131",
+    "currency": "NZD",
+    "subtotal": 952.0,
+    "gst": 142.8,
+    "total": 1094.8,
+    "route": "exception",
+    "reasons": [
+     "duplicate_invoice"
+    ],
+    "line_count": 1,
+    "layout": "A"
+   }
+  },
+  {
+   "id": "I08",
+   "split": "dev",
+   "input": {
+    "message_id": "<i08@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice BGO4471 from Bluegum Outdoor Pty Ltd",
+    "attachment_name": "I08-bgo4471.pdf",
+    "attachment_path": "/files/invoices/I08-bgo4471.pdf"
+   },
+   "expected": {
+    "supplier_name": "Bluegum Outdoor Pty Ltd",
+    "gst_number": null,
+    "invoice_number": "BGO4471",
+    "invoice_date": "2026-09-10",
+    "due_date": "2026-10-10",
+    "po_number": "PO-2026-0146",
+    "currency": "AUD",
+    "subtotal": 1650.0,
+    "gst": 0.0,
+    "total": 1650.0,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 2,
+    "layout": "C"
+   }
+  },
+  {
+   "id": "I09",
+   "split": "dev",
+   "input": {
+    "message_id": "<i09@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice KCP50240 from Kauri Coast Packaging Ltd",
+    "attachment_name": "I09-kcp50240.pdf",
+    "attachment_path": "/files/invoices/I09-kcp50240.pdf"
+   },
+   "expected": {
+    "supplier_name": "Kauri Coast Packaging Ltd",
+    "gst_number": "98-765-432",
+    "invoice_number": "KCP50240",
+    "invoice_date": "2026-09-11",
+    "due_date": "2026-10-11",
+    "po_number": "PO-2026-0147",
+    "currency": "NZD",
+    "subtotal": 1044.0,
+    "gst": 156.6,
+    "total": 1200.6,
+    "route": "exception",
+    "reasons": [
+     "po_mismatch"
+    ],
+    "line_count": 2,
+    "layout": "B"
+   }
+  },
+  {
+   "id": "I10",
+   "split": "dev",
+   "input": {
+    "message_id": "<i10@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice TTF/8839 from Tasman Trail Footwear Ltd",
+    "attachment_name": "I10-ttf-8839.pdf",
+    "attachment_path": "/files/invoices/I10-ttf-8839.pdf"
+   },
+   "expected": {
+    "supplier_name": "Tasman Trail Footwear Ltd",
+    "gst_number": "123-456-789",
+    "invoice_number": "TTF/8839",
+    "invoice_date": "2026-09-14",
+    "due_date": "2026-10-14",
+    "po_number": null,
+    "currency": "NZD",
+    "subtotal": 1110.0,
+    "gst": 166.5,
+    "total": 1276.5,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 2,
+    "layout": "C"
+   }
+  },
+  {
+   "id": "I11",
+   "split": "dev",
+   "input": {
+    "message_id": "<i11@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice RCS-3321 from Ridgeline Camp Supplies Ltd",
+    "attachment_name": "I11-rcs-3321.pdf",
+    "attachment_path": "/files/invoices/I11-rcs-3321.pdf"
+   },
+   "expected": {
+    "supplier_name": "Ridgeline Camp Supplies Ltd",
+    "gst_number": "104-221-907",
+    "invoice_number": "RCS-3321",
+    "invoice_date": "2026-09-15",
+    "due_date": "2026-10-20",
+    "po_number": "PO-2026-0149",
+    "currency": "NZD",
+    "subtotal": 970.0,
+    "gst": 145.5,
+    "total": 1115.5,
+    "route": "exception",
+    "reasons": [
+     "lines_mismatch"
+    ],
+    "line_count": 2,
+    "layout": "A"
+   }
+  },
+  {
+   "id": "I12",
+   "split": "dev",
+   "input": {
+    "message_id": "<i12@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice HFL-2377 from Harbour Freight Logistics Ltd",
+    "attachment_name": "I12-hfl-2377.pdf",
+    "attachment_path": "/files/invoices/I12-hfl-2377.pdf"
+   },
+   "expected": {
+    "supplier_name": "Harbour Freight Logistics Ltd",
+    "gst_number": "116-532-004",
+    "invoice_number": "HFL-2377",
+    "invoice_date": "2026-09-16",
+    "due_date": "2026-09-30",
+    "po_number": null,
+    "currency": "NZD",
+    "subtotal": 1428.0,
+    "gst": 214.2,
+    "total": 1642.2,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 1,
+    "layout": "B"
+   }
+  },
+  {
+   "id": "I13",
+   "split": "dev",
+   "input": {
+    "message_id": "<i13@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice SAT-10502 from Southern Alps Textiles Ltd",
+    "attachment_name": "I13-sat-10502.pdf",
+    "attachment_path": "/files/invoices/I13-sat-10502.pdf"
+   },
+   "expected": {
+    "supplier_name": "Southern Alps Textiles Ltd",
+    "gst_number": "112-345-678",
+    "invoice_number": "SAT-10502",
+    "invoice_date": "2026-09-17",
+    "due_date": "2026-10-20",
+    "po_number": "PO-2026-0150",
+    "currency": "NZD",
+    "subtotal": 1436.0,
+    "gst": 215.4,
+    "total": 1651.4,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 5,
+    "layout": "A"
+   }
+  },
+  {
+   "id": "I14",
+   "split": "dev",
+   "input": {
+    "message_id": "<i14@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice TTF/8851 from Tasman Trail Footwear Ltd",
+    "attachment_name": "I14-ttf-8851.pdf",
+    "attachment_path": "/files/invoices/I14-ttf-8851.pdf"
+   },
+   "expected": {
+    "supplier_name": "Tasman Trail Footwear Ltd",
+    "gst_number": "123-456-789",
+    "invoice_number": "TTF/8851",
+    "invoice_date": "2026-09-18",
+    "due_date": "2026-10-18",
+    "po_number": "PO-2026-0151",
+    "currency": "NZD",
+    "subtotal": 2112.0,
+    "gst": 211.2,
+    "total": 2323.2,
+    "route": "exception",
+    "reasons": [
+     "gst_mismatch"
+    ],
+    "line_count": 1,
+    "layout": "C"
+   }
+  },
+  {
+   "id": "I15",
+   "split": "dev",
+   "input": {
+    "message_id": "<i15@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice KCP50262 from Kauri Coast Packaging Ltd",
+    "attachment_name": "I15-kcp50262.pdf",
+    "attachment_path": "/files/invoices/I15-kcp50262.pdf"
+   },
+   "expected": {
+    "supplier_name": "Kauri Coast Packaging Ltd",
+    "gst_number": "98-765-432",
+    "invoice_number": "KCP50262",
+    "invoice_date": "2026-09-21",
+    "due_date": "2026-10-21",
+    "po_number": null,
+    "currency": "NZD",
+    "subtotal": 559.2,
+    "gst": 83.88,
+    "total": 643.08,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 1,
+    "layout": "B"
+   }
+  },
+  {
+   "id": "I16",
+   "split": "dev",
+   "input": {
+    "message_id": "<i16@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice RCS-3340 from Ridgeline Camp Supplies Ltd",
+    "attachment_name": "I16-rcs-3340.pdf",
+    "attachment_path": "/files/invoices/I16-rcs-3340.pdf"
+   },
+   "expected": {
+    "supplier_name": "Ridgeline Camp Supplies Ltd",
+    "gst_number": "104-221-907",
+    "invoice_number": "RCS-3340",
+    "invoice_date": "2026-09-22",
+    "due_date": "2026-10-20",
+    "po_number": null,
+    "currency": "NZD",
+    "subtotal": 882.0,
+    "gst": 132.3,
+    "total": 1014.3,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 2,
+    "layout": "A"
+   }
+  },
+  {
+   "id": "I17",
+   "split": "heldout",
+   "input": {
+    "message_id": "<i17@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice SAT-10531 from Southern Alps Textiles Ltd",
+    "attachment_name": "I17-sat-10531.pdf",
+    "attachment_path": "/files/invoices/I17-sat-10531.pdf"
+   },
+   "expected": {
+    "supplier_name": "Southern Alps Textiles Ltd",
+    "gst_number": "112-345-678",
+    "invoice_number": "SAT-10531",
+    "invoice_date": "2026-09-23",
+    "due_date": "2026-10-20",
+    "po_number": "PO-2026-0153",
+    "currency": "NZD",
+    "subtotal": 1535.0,
+    "gst": 230.25,
+    "total": 1765.25,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 2,
+    "layout": "A"
+   }
+  },
+  {
+   "id": "I18",
+   "split": "heldout",
+   "input": {
+    "message_id": "<i18@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice KCP50288 from Kauri Coast Packaging Ltd",
+    "attachment_name": "I18-kcp50288.pdf",
+    "attachment_path": "/files/invoices/I18-kcp50288.pdf"
+   },
+   "expected": {
+    "supplier_name": "Kauri Coast Packaging Ltd",
+    "gst_number": "98-765-432",
+    "invoice_number": "KCP50288",
+    "invoice_date": "2026-09-24",
+    "due_date": "2026-10-24",
+    "po_number": "PO-2026-0154",
+    "currency": "NZD",
+    "subtotal": 948.0,
+    "gst": 94.8,
+    "total": 1042.8,
+    "route": "exception",
+    "reasons": [
+     "gst_mismatch"
+    ],
+    "line_count": 1,
+    "layout": "B"
+   }
+  },
+  {
+   "id": "I19",
+   "split": "heldout",
+   "input": {
+    "message_id": "<i19@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice PPA7720 from Peak Performance Apparel Ltd",
+    "attachment_name": "I19-ppa7720.pdf",
+    "attachment_path": "/files/invoices/I19-ppa7720.pdf"
+   },
+   "expected": {
+    "supplier_name": "Peak Performance Apparel Ltd",
+    "gst_number": "125-640-388",
+    "invoice_number": "PPA7720",
+    "invoice_date": "2026-09-25",
+    "due_date": "2026-10-25",
+    "po_number": null,
+    "currency": "NZD",
+    "subtotal": 585.0,
+    "gst": 87.75,
+    "total": 672.75,
+    "route": "exception",
+    "reasons": [
+     "unknown_supplier"
+    ],
+    "line_count": 1,
+    "layout": "B"
+   }
+  },
+  {
+   "id": "I20",
+   "split": "heldout",
+   "input": {
+    "message_id": "<i20@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice TTF/8870 from Tasman Trail Footwear Ltd",
+    "attachment_name": "I20-ttf-8870.pdf",
+    "attachment_path": "/files/invoices/I20-ttf-8870.pdf"
+   },
+   "expected": {
+    "supplier_name": "Tasman Trail Footwear Ltd",
+    "gst_number": "123-456-789",
+    "invoice_number": "TTF/8870",
+    "invoice_date": "2026-09-28",
+    "due_date": "2026-10-28",
+    "po_number": "PO-2026-0156",
+    "currency": "NZD",
+    "subtotal": 2104.0,
+    "gst": 315.6,
+    "total": 2419.6,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 2,
+    "layout": "C"
+   }
+  },
+  {
+   "id": "I21",
+   "split": "heldout",
+   "input": {
+    "message_id": "<i21@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice HFL-2291 from Harbour Freight Logistics Ltd",
+    "attachment_name": "I21-hfl-2291.pdf",
+    "attachment_path": "/files/invoices/I21-hfl-2291.pdf"
+   },
+   "expected": {
+    "supplier_name": "Harbour Freight Logistics Ltd",
+    "gst_number": "116-532-004",
+    "invoice_number": "HFL-2291",
+    "invoice_date": "2026-09-29",
+    "due_date": "2026-10-13",
+    "po_number": null,
+    "currency": "NZD",
+    "subtotal": 840.0,
+    "gst": 126.0,
+    "total": 966.0,
+    "route": "exception",
+    "reasons": [
+     "duplicate_invoice"
+    ],
+    "line_count": 1,
+    "layout": "B"
+   }
+  },
+  {
+   "id": "I22",
+   "split": "heldout",
+   "input": {
+    "message_id": "<i22@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice BGO4502 from Bluegum Outdoor Pty Ltd",
+    "attachment_name": "I22-bgo4502.pdf",
+    "attachment_path": "/files/invoices/I22-bgo4502.pdf"
+   },
+   "expected": {
+    "supplier_name": "Bluegum Outdoor Pty Ltd",
+    "gst_number": null,
+    "invoice_number": "BGO4502",
+    "invoice_date": "2026-09-30",
+    "due_date": "2026-10-30",
+    "po_number": null,
+    "currency": "AUD",
+    "subtotal": 1280.0,
+    "gst": 0.0,
+    "total": 1280.0,
+    "route": "draft_bill",
+    "reasons": [],
+    "line_count": 1,
+    "layout": "C"
+   }
+  },
+  {
+   "id": "I23",
+   "split": "heldout",
+   "input": {
+    "message_id": "<i23@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice RCS-3366 from Ridgeline Camp Supplies Ltd",
+    "attachment_name": "I23-rcs-3366.pdf",
+    "attachment_path": "/files/invoices/I23-rcs-3366.pdf"
+   },
+   "expected": {
+    "supplier_name": "Ridgeline Camp Supplies Ltd",
+    "gst_number": "104-221-907",
+    "invoice_number": "RCS-3366",
+    "invoice_date": "2026-10-01",
+    "due_date": "2026-11-20",
+    "po_number": "PO-2026-0158",
+    "currency": "NZD",
+    "subtotal": 957.0,
+    "gst": 143.55,
+    "total": 1190.55,
+    "route": "exception",
+    "reasons": [
+     "total_mismatch"
+    ],
+    "line_count": 2,
+    "layout": "A"
+   }
+  },
+  {
+   "id": "I24",
+   "split": "heldout",
+   "input": {
+    "message_id": "<i24@mail.example.com>",
+    "from": "accounts@example.com",
+    "subject": "Invoice SAT-10560 from Southern Alps Textiles Ltd",
+    "attachment_name": "I24-sat-10560.pdf",
+    "attachment_path": "/files/invoices/I24-sat-10560.pdf"
+   },
+   "expected": {
+    "supplier_name": "Southern Alps Textiles Ltd",
+    "gst_number": "112-345-678",
+    "invoice_number": "SAT-10560",
+    "invoice_date": "2026-10-02",
+    "due_date": "2026-11-20",
+    "po_number": "PO-2026-0159",
+    "currency": "NZD",
+    "subtotal": 1666.0,
+    "gst": 249.9,
+    "total": 1915.9,
+    "route": "exception",
+    "reasons": [
+     "po_mismatch"
+    ],
+    "line_count": 1,
+    "layout": "A"
+   }
+  }
+ ]
+}

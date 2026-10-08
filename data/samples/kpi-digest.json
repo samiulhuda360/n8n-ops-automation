@@ -1,0 +1,672 @@
+{
+ "workflow": "kpi-digest",
+ "description": "Report dates for the daily KPI digest. Expected KPIs and alerts are computed by an independent Python implementation (opsflow/kpi.py) straight from data/seed/sales_orders.csv; the workflow computes them with SQL plus JavaScript. Planted events: online outage 12 Sep, refund spike 15 Sep, large wholesale day 22 Sep, store outage 29 Sep. Dates from 24 Sep are held out.",
+ "items": [
+  {
+   "id": "K10",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-10"
+   },
+   "expected": {
+    "revenue": 9663.9,
+    "orders": 51,
+    "aov": 189.49,
+    "units": 61,
+    "refunds": 2,
+    "refund_rate_pct": 3.8,
+    "revenue_by_channel": {
+     "online": 5964.4,
+     "store": 3699.5,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 35,
+     "store": 16,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 8765.1,
+    "change_vs_week_before_pct": 10.3,
+    "top_product": "Fiordland rain jacket",
+    "top_product_revenue": 1974.0,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K11",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-11"
+   },
+   "expected": {
+    "revenue": 10902.2,
+    "orders": 52,
+    "aov": 209.66,
+    "units": 65,
+    "refunds": 1,
+    "refund_rate_pct": 1.9,
+    "revenue_by_channel": {
+     "online": 5408.6,
+     "store": 5493.6,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 28,
+     "store": 24,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 11465.8,
+    "change_vs_week_before_pct": -4.9,
+    "top_product": "Trailhead 45L pack",
+    "top_product_revenue": 1992.0,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K12",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-12"
+   },
+   "expected": {
+    "revenue": 4917.5,
+    "orders": 26,
+    "aov": 189.13,
+    "units": 32,
+    "refunds": 1,
+    "refund_rate_pct": 3.7,
+    "revenue_by_channel": {
+     "online": 449.9,
+     "store": 4467.6,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 4,
+     "store": 22,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 8592.5,
+    "change_vs_week_before_pct": -42.8,
+    "top_product": "Fiordland rain jacket",
+    "top_product_revenue": 987.0,
+    "alerts": [
+     "revenue_drop"
+    ]
+   }
+  },
+  {
+   "id": "K13",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-13"
+   },
+   "expected": {
+    "revenue": 9600.3,
+    "orders": 52,
+    "aov": 184.62,
+    "units": 61,
+    "refunds": 1,
+    "refund_rate_pct": 1.9,
+    "revenue_by_channel": {
+     "online": 5367.5,
+     "store": 4232.8,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 28,
+     "store": 24,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 12318.5,
+    "change_vs_week_before_pct": -22.1,
+    "top_product": "Alpine 0 sleeping bag",
+    "top_product_revenue": 1645.0,
+    "alerts": [
+     "revenue_drop"
+    ]
+   }
+  },
+  {
+   "id": "K14",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-14"
+   },
+   "expected": {
+    "revenue": 14866.25,
+    "orders": 57,
+    "aov": 260.81,
+    "units": 94,
+    "refunds": 0,
+    "refund_rate_pct": 0.0,
+    "revenue_by_channel": {
+     "online": 6559.4,
+     "store": 4145.0,
+     "wholesale": 4161.85
+    },
+    "orders_by_channel": {
+     "online": 37,
+     "store": 19,
+     "wholesale": 1
+    },
+    "wholesale_share_pct": 28.0,
+    "revenue_week_before": 8461.5,
+    "change_vs_week_before_pct": 75.7,
+    "top_product": "Alpine 0 sleeping bag",
+    "top_product_revenue": 5148.85,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K15",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-15"
+   },
+   "expected": {
+    "revenue": 7755.5,
+    "orders": 40,
+    "aov": 193.89,
+    "units": 44,
+    "refunds": 7,
+    "refund_rate_pct": 14.9,
+    "revenue_by_channel": {
+     "online": 4928.6,
+     "store": 2826.9,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 24,
+     "store": 16,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 8406.7,
+    "change_vs_week_before_pct": -7.7,
+    "top_product": "Kea 3-season tent",
+    "top_product_revenue": 1796.0,
+    "alerts": [
+     "refund_spike"
+    ]
+   }
+  },
+  {
+   "id": "K16",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-16"
+   },
+   "expected": {
+    "revenue": 10577.5,
+    "orders": 52,
+    "aov": 203.41,
+    "units": 62,
+    "refunds": 0,
+    "refund_rate_pct": 0.0,
+    "revenue_by_channel": {
+     "online": 6053.5,
+     "store": 4524.0,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 31,
+     "store": 21,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 11799.25,
+    "change_vs_week_before_pct": -10.4,
+    "top_product": "Trailhead 45L pack",
+    "top_product_revenue": 2241.0,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K17",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-17"
+   },
+   "expected": {
+    "revenue": 12983.25,
+    "orders": 51,
+    "aov": 254.57,
+    "units": 82,
+    "refunds": 0,
+    "refund_rate_pct": 0.0,
+    "revenue_by_channel": {
+     "online": 6255.3,
+     "store": 3274.5,
+     "wholesale": 3453.45
+    },
+    "orders_by_channel": {
+     "online": 31,
+     "store": 19,
+     "wholesale": 1
+    },
+    "wholesale_share_pct": 26.6,
+    "revenue_week_before": 9663.9,
+    "change_vs_week_before_pct": 34.3,
+    "top_product": "Trailhead 55L pack",
+    "top_product_revenue": 5247.45,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K18",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-18"
+   },
+   "expected": {
+    "revenue": 10575.6,
+    "orders": 50,
+    "aov": 211.51,
+    "units": 58,
+    "refunds": 3,
+    "refund_rate_pct": 5.7,
+    "revenue_by_channel": {
+     "online": 6510.7,
+     "store": 4064.9,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 33,
+     "store": 17,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 10902.2,
+    "change_vs_week_before_pct": -3.0,
+    "top_product": "Trailhead 45L pack",
+    "top_product_revenue": 2241.0,
+    "alerts": [
+     "refund_spike"
+    ]
+   }
+  },
+  {
+   "id": "K19",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-19"
+   },
+   "expected": {
+    "revenue": 9536.7,
+    "orders": 49,
+    "aov": 194.63,
+    "units": 60,
+    "refunds": 1,
+    "refund_rate_pct": 2.0,
+    "revenue_by_channel": {
+     "online": 3644.3,
+     "store": 5892.4,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 23,
+     "store": 26,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 4917.5,
+    "change_vs_week_before_pct": 93.9,
+    "top_product": "Trailhead 55L pack",
+    "top_product_revenue": 2093.0,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K20",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-20"
+   },
+   "expected": {
+    "revenue": 8483.9,
+    "orders": 48,
+    "aov": 176.75,
+    "units": 61,
+    "refunds": 0,
+    "refund_rate_pct": 0.0,
+    "revenue_by_channel": {
+     "online": 5096.5,
+     "store": 3387.4,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 26,
+     "store": 22,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 9600.3,
+    "change_vs_week_before_pct": -11.6,
+    "top_product": "Trailhead 45L pack",
+    "top_product_revenue": 1494.0,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K21",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-21"
+   },
+   "expected": {
+    "revenue": 9547.2,
+    "orders": 56,
+    "aov": 170.49,
+    "units": 89,
+    "refunds": 0,
+    "refund_rate_pct": 0.0,
+    "revenue_by_channel": {
+     "online": 6523.2,
+     "store": 2480.6,
+     "wholesale": 543.4
+    },
+    "orders_by_channel": {
+     "online": 37,
+     "store": 18,
+     "wholesale": 1
+    },
+    "wholesale_share_pct": 5.7,
+    "revenue_week_before": 14866.25,
+    "change_vs_week_before_pct": -35.8,
+    "top_product": "Alpine 0 sleeping bag",
+    "top_product_revenue": 1645.0,
+    "alerts": [
+     "revenue_drop"
+    ]
+   }
+  },
+  {
+   "id": "K22",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-22"
+   },
+   "expected": {
+    "revenue": 18298.0,
+    "orders": 61,
+    "aov": 299.97,
+    "units": 176,
+    "refunds": 1,
+    "refund_rate_pct": 1.6,
+    "revenue_by_channel": {
+     "online": 7791.6,
+     "store": 4021.9,
+     "wholesale": 6484.5
+    },
+    "orders_by_channel": {
+     "online": 36,
+     "store": 19,
+     "wholesale": 6
+    },
+    "wholesale_share_pct": 35.4,
+    "revenue_week_before": 7755.5,
+    "change_vs_week_before_pct": 135.9,
+    "top_product": "Trailhead 45L pack",
+    "top_product_revenue": 3523.35,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K23",
+   "split": "dev",
+   "input": {
+    "report_date": "2026-09-23"
+   },
+   "expected": {
+    "revenue": 9791.35,
+    "orders": 46,
+    "aov": 212.86,
+    "units": 83,
+    "refunds": 1,
+    "refund_rate_pct": 2.1,
+    "revenue_by_channel": {
+     "online": 5174.1,
+     "store": 3531.0,
+     "wholesale": 1086.25
+    },
+    "orders_by_channel": {
+     "online": 30,
+     "store": 15,
+     "wholesale": 1
+    },
+    "wholesale_share_pct": 11.1,
+    "revenue_week_before": 10577.5,
+    "change_vs_week_before_pct": -7.4,
+    "top_product": "Fiordland rain jacket",
+    "top_product_revenue": 1645.0,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K24",
+   "split": "heldout",
+   "input": {
+    "report_date": "2026-09-24"
+   },
+   "expected": {
+    "revenue": 12331.35,
+    "orders": 45,
+    "aov": 274.03,
+    "units": 86,
+    "refunds": 1,
+    "refund_rate_pct": 2.2,
+    "revenue_by_channel": {
+     "online": 5737.6,
+     "store": 2614.5,
+     "wholesale": 3979.25
+    },
+    "orders_by_channel": {
+     "online": 29,
+     "store": 14,
+     "wholesale": 2
+    },
+    "wholesale_share_pct": 32.3,
+    "revenue_week_before": 12983.25,
+    "change_vs_week_before_pct": -5.0,
+    "top_product": "Trailhead 55L pack",
+    "top_product_revenue": 3827.2,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K25",
+   "split": "heldout",
+   "input": {
+    "report_date": "2026-09-25"
+   },
+   "expected": {
+    "revenue": 13314.65,
+    "orders": 51,
+    "aov": 261.07,
+    "units": 81,
+    "refunds": 1,
+    "refund_rate_pct": 1.9,
+    "revenue_by_channel": {
+     "online": 4976.4,
+     "store": 3792.5,
+     "wholesale": 4545.75
+    },
+    "orders_by_channel": {
+     "online": 25,
+     "store": 24,
+     "wholesale": 2
+    },
+    "wholesale_share_pct": 34.1,
+    "revenue_week_before": 10575.6,
+    "change_vs_week_before_pct": 25.9,
+    "top_product": "Kea 3-season tent",
+    "top_product_revenue": 5545.15,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K26",
+   "split": "heldout",
+   "input": {
+    "report_date": "2026-09-26"
+   },
+   "expected": {
+    "revenue": 12025.7,
+    "orders": 60,
+    "aov": 200.43,
+    "units": 71,
+    "refunds": 0,
+    "refund_rate_pct": 0.0,
+    "revenue_by_channel": {
+     "online": 6019.1,
+     "store": 6006.6,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 27,
+     "store": 33,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 9536.7,
+    "change_vs_week_before_pct": 26.1,
+    "top_product": "Fiordland rain jacket",
+    "top_product_revenue": 2303.0,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K27",
+   "split": "heldout",
+   "input": {
+    "report_date": "2026-09-27"
+   },
+   "expected": {
+    "revenue": 10045.1,
+    "orders": 66,
+    "aov": 152.2,
+    "units": 77,
+    "refunds": 2,
+    "refund_rate_pct": 2.9,
+    "revenue_by_channel": {
+     "online": 5543.2,
+     "store": 4501.9,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 36,
+     "store": 30,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 8483.9,
+    "change_vs_week_before_pct": 18.4,
+    "top_product": "Kea daypack 22L",
+    "top_product_revenue": 1547.0,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K28",
+   "split": "heldout",
+   "input": {
+    "report_date": "2026-09-28"
+   },
+   "expected": {
+    "revenue": 11611.75,
+    "orders": 54,
+    "aov": 215.03,
+    "units": 104,
+    "refunds": 1,
+    "refund_rate_pct": 1.8,
+    "revenue_by_channel": {
+     "online": 4099.1,
+     "store": 5505.9,
+     "wholesale": 2006.75
+    },
+    "orders_by_channel": {
+     "online": 29,
+     "store": 23,
+     "wholesale": 2
+    },
+    "wholesale_share_pct": 17.3,
+    "revenue_week_before": 9547.2,
+    "change_vs_week_before_pct": 21.6,
+    "top_product": "Merino 200 base layer",
+    "top_product_revenue": 2588.25,
+    "alerts": []
+   }
+  },
+  {
+   "id": "K29",
+   "split": "heldout",
+   "input": {
+    "report_date": "2026-09-29"
+   },
+   "expected": {
+    "revenue": 5289.6,
+    "orders": 28,
+    "aov": 188.91,
+    "units": 34,
+    "refunds": 0,
+    "refund_rate_pct": 0.0,
+    "revenue_by_channel": {
+     "online": 5289.6,
+     "store": 0,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 28,
+     "store": 0,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 18298.0,
+    "change_vs_week_before_pct": -71.1,
+    "top_product": "Fiordland rain jacket",
+    "top_product_revenue": 1974.0,
+    "alerts": [
+     "revenue_drop",
+     "store_zero"
+    ]
+   }
+  },
+  {
+   "id": "K30",
+   "split": "heldout",
+   "input": {
+    "report_date": "2026-09-30"
+   },
+   "expected": {
+    "revenue": 7065.1,
+    "orders": 43,
+    "aov": 164.3,
+    "units": 48,
+    "refunds": 0,
+    "refund_rate_pct": 0.0,
+    "revenue_by_channel": {
+     "online": 4984.6,
+     "store": 2080.5,
+     "wholesale": 0
+    },
+    "orders_by_channel": {
+     "online": 27,
+     "store": 16,
+     "wholesale": 0
+    },
+    "wholesale_share_pct": 0.0,
+    "revenue_week_before": 9791.35,
+    "change_vs_week_before_pct": -27.8,
+    "top_product": "Kea 3-season tent",
+    "top_product_revenue": 1347.0,
+    "alerts": [
+     "revenue_drop"
+    ]
+   }
+  }
+ ]
+}

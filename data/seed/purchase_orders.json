@@ -1,0 +1,137 @@
+[
+ {
+  "po_number": "PO-2026-0141",
+  "supplier_id": "SUP-01",
+  "supplier_name": "Southern Alps Textiles Ltd",
+  "amount_excl_gst": 1188.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0143",
+  "supplier_id": "SUP-02",
+  "supplier_name": "Kauri Coast Packaging Ltd",
+  "amount_excl_gst": 1059.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0144",
+  "supplier_id": "SUP-03",
+  "supplier_name": "Tasman Trail Footwear Ltd",
+  "amount_excl_gst": 3456.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0145",
+  "supplier_id": "SUP-04",
+  "supplier_name": "Ridgeline Camp Supplies Ltd",
+  "amount_excl_gst": 1794.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0131",
+  "supplier_id": "SUP-01",
+  "supplier_name": "Southern Alps Textiles Ltd",
+  "amount_excl_gst": 952.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0146",
+  "supplier_id": "SUP-06",
+  "supplier_name": "Bluegum Outdoor Pty Ltd",
+  "amount_excl_gst": 1650.0,
+  "currency": "AUD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0147",
+  "supplier_id": "SUP-02",
+  "supplier_name": "Kauri Coast Packaging Ltd",
+  "amount_excl_gst": 835.2,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0149",
+  "supplier_id": "SUP-04",
+  "supplier_name": "Ridgeline Camp Supplies Ltd",
+  "amount_excl_gst": 970.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0150",
+  "supplier_id": "SUP-01",
+  "supplier_name": "Southern Alps Textiles Ltd",
+  "amount_excl_gst": 1436.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0151",
+  "supplier_id": "SUP-03",
+  "supplier_name": "Tasman Trail Footwear Ltd",
+  "amount_excl_gst": 2112.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0153",
+  "supplier_id": "SUP-01",
+  "supplier_name": "Southern Alps Textiles Ltd",
+  "amount_excl_gst": 1535.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0154",
+  "supplier_id": "SUP-02",
+  "supplier_name": "Kauri Coast Packaging Ltd",
+  "amount_excl_gst": 948.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0156",
+  "supplier_id": "SUP-03",
+  "supplier_name": "Tasman Trail Footwear Ltd",
+  "amount_excl_gst": 2104.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0158",
+  "supplier_id": "SUP-04",
+  "supplier_name": "Ridgeline Camp Supplies Ltd",
+  "amount_excl_gst": 957.0,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ },
+ {
+  "po_number": "PO-2026-0159",
+  "supplier_id": "SUP-01",
+  "supplier_name": "Southern Alps Textiles Ltd",
+  "amount_excl_gst": 1332.8,
+  "currency": "NZD",
+  "status": "open",
+  "seed": true
+ }
+]

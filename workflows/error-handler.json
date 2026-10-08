@@ -1,0 +1,169 @@
+{
+  "name": "Ops error handler",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "e3ce6346-1d23-57d4-aee1-506574bc5376",
+      "name": "Try with a sample error",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        200
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "7df3ca37-86d8-50a5-adfc-bede2a93f7c6",
+      "name": "When a workflow fails",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "// The shape n8n sends to an error workflow, for trying this one by hand.\nreturn [{ json: {\n  execution: { id: 'sample-231', url: 'http://localhost:5678/workflow/sample/executions/231', lastNodeExecuted: 'Create draft bill', mode: 'webhook',\n    error: { message: 'The service refused the connection (ECONNREFUSED)' } },\n  workflow: { id: 'sample', name: 'Supplier invoice to draft bill' },\n} }];\n"
+      },
+      "id": "f11da1c0-bf73-5ee0-af87-b86f8c1e6fb7",
+      "name": "Sample failure",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "// n8n passes { execution, workflow } to an error workflow.\nreturn $input.all().map((item) => {\n  const e = item.json.execution || {};\n  const wf = item.json.workflow || {};\n  const message = (e.error && e.error.message) || 'Unknown error';\n  return { json: {\n    workflow: wf.name || 'unknown workflow',\n    workflow_id: wf.id || null,\n    execution_id: e.id || null,\n    execution_url: e.url || null,\n    node: e.lastNodeExecuted || null,\n    mode: e.mode || null,\n    message: String(message).slice(0, 500),\n    text: `Workflow \"${wf.name || 'unknown'}\" failed at \"${e.lastNodeExecuted || '?'}\": ${String(message).slice(0, 300)}${e.url ? `\\nExecution: ${e.url}` : ''}`,\n  } };\n});\n"
+      },
+      "id": "d1ab8aa6-d91d-5435-9f06-0df2e952d35b",
+      "name": "Describe the failure",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        100
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ ($env.MOCK_BASE_URL || 'http://127.0.0.1:8790') + '/ops/errors' }}",
+        "options": {
+          "timeout": 30000
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ workflow: $json.workflow, node: $json.node, message: $json.message, execution_id: $json.execution_id, execution_url: $json.execution_url }) }}"
+      },
+      "id": "4b719110-ceae-5330-9a18-4c152eabc355",
+      "name": "Log the error",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        100
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ ($env.MOCK_BASE_URL || 'http://127.0.0.1:8790') + '/chat/ops-alerts' }}",
+        "options": {
+          "timeout": 30000
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ text: $('Describe the failure').item.json.text }) }}"
+      },
+      "id": "2286c322-ef93-5490-8745-dd4b58fd5eaa",
+      "name": "Alert #ops-alerts",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        880,
+        100
+      ]
+    }
+  ],
+  "connections": {
+    "When a workflow fails": {
+      "main": [
+        [
+          {
+            "node": "Describe the failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Try with a sample error": {
+      "main": [
+        [
+          {
+            "node": "Sample failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sample failure": {
+      "main": [
+        [
+          {
+            "node": "Describe the failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Describe the failure": {
+      "main": [
+        [
+          {
+            "node": "Log the error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log the error": {
+      "main": [
+        [
+          {
+            "node": "Alert #ops-alerts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "tags": [],
+  "active": false,
+  "id": "97e5f990cd2b5023",
+  "versionId": "edb6bc95-a189-5165-9378-9bb3c87831b3",
+  "description": "Shared error workflow for all six workflows: logs the failure and alerts #ops-alerts with a link to the failed execution."
+}

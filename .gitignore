@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+
+# Local runtime state
+.env
+.n8n/
+.runtime/
+*.log
+*.sqlite
+*.db
+
+# Large or scratch data
+data/large/
+tmp/

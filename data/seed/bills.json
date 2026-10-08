@@ -1,0 +1,35 @@
+[
+ {
+  "id": "BILL-0001",
+  "supplier_id": "SUP-01",
+  "supplier_name": "Southern Alps Textiles Ltd",
+  "invoice_number": "SAT-10388",
+  "invoice_date": "2026-08-28",
+  "total": 952.0,
+  "currency": "NZD",
+  "status": "AUTHORISED",
+  "seed": true
+ },
+ {
+  "id": "BILL-0002",
+  "supplier_id": "SUP-05",
+  "supplier_name": "Harbour Freight Logistics Ltd",
+  "invoice_number": "HFL-2291",
+  "invoice_date": "2026-09-01",
+  "total": 840.0,
+  "currency": "NZD",
+  "status": "AUTHORISED",
+  "seed": true
+ },
+ {
+  "id": "BILL-0003",
+  "supplier_id": "SUP-02",
+  "supplier_name": "Kauri Coast Packaging Ltd",
+  "invoice_number": "KCP50190",
+  "invoice_date": "2026-08-25",
+  "total": 1210.4,
+  "currency": "NZD",
+  "status": "AUTHORISED",
+  "seed": true
+ }
+]

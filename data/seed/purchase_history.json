@@ -1,0 +1,42 @@
+[
+ {
+  "id": "PR0001",
+  "date": "2026-09-28",
+  "requester": "Jess Moana",
+  "department": "Marketing",
+  "supplier": "Pixel Print Studio Ltd",
+  "amount_nzd": 420.0,
+  "status": "approved",
+  "seed": true
+ },
+ {
+  "id": "PR0002",
+  "date": "2026-09-25",
+  "requester": "Leo Martin",
+  "department": "IT",
+  "supplier": "CloudDesk Software Ltd",
+  "amount_nzd": 300.0,
+  "status": "approved",
+  "seed": true
+ },
+ {
+  "id": "PR0003",
+  "date": "2026-09-20",
+  "requester": "Nadia Faleolo",
+  "department": "Retail",
+  "supplier": "Capital Office Supplies Ltd",
+  "amount_nzd": 120.0,
+  "status": "approved",
+  "seed": true
+ },
+ {
+  "id": "PR0004",
+  "date": "2026-09-02",
+  "requester": "Owen Parata",
+  "department": "Operations",
+  "supplier": "Ridgeline Camp Supplies Ltd",
+  "amount_nzd": 450.0,
+  "status": "approved",
+  "seed": true
+ }
+]

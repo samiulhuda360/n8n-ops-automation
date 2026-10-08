@@ -1,0 +1,513 @@
+{
+ "workflow": "purchase-approval",
+ "description": "Invented purchase requests. Labels: spending category (one or more acceptable) and the approval route required by the policy in data/seed/policy.json. Items marked heldout were never used while tuning prompts or rules.",
+ "items": [
+  {
+   "id": "P01",
+   "split": "dev",
+   "input": {
+    "request_id": "P01",
+    "requester": "Nadia Faleolo",
+    "requester_email": "nadia.faleolo@example.com",
+    "department": "Retail",
+    "supplier": "Capital Office Supplies Ltd",
+    "amount_nzd": 86.5,
+    "budget_code": "RET-2026",
+    "description": "Receipt printer rolls and pens for the Newmarket store counter.",
+    "date": "2026-10-02"
+   },
+   "expected": {
+    "category": [
+     "office_and_equipment"
+    ],
+    "route": "auto_approve"
+   }
+  },
+  {
+   "id": "P02",
+   "split": "dev",
+   "input": {
+    "request_id": "P02",
+    "requester": "Jess Moana",
+    "requester_email": "jess.moana@example.com",
+    "department": "Marketing",
+    "supplier": "Pixel Print Studio Ltd",
+    "amount_nzd": 2400.0,
+    "budget_code": "MKT-2026",
+    "description": "A1 posters and window decals for the Wellington store opening on 14 November.",
+    "date": "2026-10-02"
+   },
+   "expected": {
+    "category": [
+     "marketing"
+    ],
+    "route": "manager"
+   }
+  },
+  {
+   "id": "P03",
+   "split": "dev",
+   "input": {
+    "request_id": "P03",
+    "requester": "Owen Parata",
+    "requester_email": "owen.parata@example.com",
+    "department": "Operations",
+    "supplier": "Harbour Freight Logistics Ltd",
+    "amount_nzd": 7800.0,
+    "budget_code": "OPS-2026",
+    "description": "Top-up of the Q4 freight contract to cover wholesale deliveries before Christmas.",
+    "date": "2026-10-02"
+   },
+   "expected": {
+    "category": [
+     "packaging_and_freight"
+    ],
+    "route": "director"
+   }
+  },
+  {
+   "id": "P04",
+   "split": "dev",
+   "input": {
+    "request_id": "P04",
+    "requester": "Ruby Chen",
+    "requester_email": "ruby.chen@example.com",
+    "department": "Retail",
+    "supplier": "Capital Office Supplies Ltd",
+    "amount_nzd": 150.0,
+    "budget_code": "",
+    "description": "Label printer tape and a stapler for the stockroom.",
+    "date": "2026-10-03"
+   },
+   "expected": {
+    "category": [
+     "office_and_equipment"
+    ],
+    "route": "return_to_requester"
+   }
+  },
+  {
+   "id": "P05",
+   "split": "dev",
+   "input": {
+    "request_id": "P05",
+    "requester": "Jess Moana",
+    "requester_email": "jess.moana@example.com",
+    "department": "Marketing",
+    "supplier": "Pixel Print Studio Ltd",
+    "amount_nzd": 380.0,
+    "budget_code": "MKT-2026",
+    "description": "Flyers for the spring sleeping bag sale.",
+    "date": "2026-10-03"
+   },
+   "expected": {
+    "category": [
+     "marketing"
+    ],
+    "route": "manager"
+   }
+  },
+  {
+   "id": "P06",
+   "split": "dev",
+   "input": {
+    "request_id": "P06",
+    "requester": "Ruby Chen",
+    "requester_email": "ruby.chen@example.com",
+    "department": "Retail",
+    "supplier": "Metro Travel Desk Ltd",
+    "amount_nzd": 460.0,
+    "budget_code": "RET-2026",
+    "description": "Return flights Auckland to Wellington for two staff to help set up the new store.",
+    "date": "2026-10-03"
+   },
+   "expected": {
+    "category": [
+     "travel"
+    ],
+    "route": "auto_approve"
+   }
+  },
+  {
+   "id": "P07",
+   "split": "dev",
+   "input": {
+    "request_id": "P07",
+    "requester": "Owen Parata",
+    "requester_email": "owen.parata@example.com",
+    "department": "Operations",
+    "supplier": "Waikato Pallet Co",
+    "amount_nzd": 320.0,
+    "budget_code": "OPS-2026",
+    "description": "20 wooden pallets for the warehouse racking.",
+    "date": "2026-10-04"
+   },
+   "expected": {
+    "category": [
+     "office_and_equipment",
+     "packaging_and_freight"
+    ],
+    "route": "manager"
+   }
+  },
+  {
+   "id": "P08",
+   "split": "dev",
+   "input": {
+    "request_id": "P08",
+    "requester": "Leo Martin",
+    "requester_email": "leo.martin@example.com",
+    "department": "Wholesale",
+    "supplier": "CloudDesk Software Ltd",
+    "amount_nzd": 1200.0,
+    "budget_code": "WHS-2026",
+    "description": "Annual licence for the stockist inventory sync app.",
+    "date": "2026-10-04"
+   },
+   "expected": {
+    "category": [
+     "software"
+    ],
+    "route": "manager"
+   }
+  },
+  {
+   "id": "P09",
+   "split": "dev",
+   "input": {
+    "request_id": "P09",
+    "requester": "Nadia Faleolo",
+    "requester_email": "nadia.faleolo@example.com",
+    "department": "Retail",
+    "supplier": "Capital Office Supplies Ltd",
+    "amount_nzd": 450.0,
+    "budget_code": "RET-2026",
+    "description": "Nine $50 supermarket vouchers to thank store staff for the stocktake weekend.",
+    "date": "2026-10-04"
+   },
+   "expected": {
+    "category": [
+     "restricted"
+    ],
+    "route": "finance_review"
+   }
+  },
+  {
+   "id": "P10",
+   "split": "dev",
+   "input": {
+    "request_id": "P10",
+    "requester": "Jess Moana",
+    "requester_email": "jess.moana@example.com",
+    "department": "Marketing",
+    "supplier": "Hawke's Bay Cellars Ltd",
+    "amount_nzd": 280.0,
+    "budget_code": "MKT-2026",
+    "description": "A few cases of local pinot noir for the trade evening with our stockists.",
+    "date": "2026-10-05"
+   },
+   "expected": {
+    "category": [
+     "restricted"
+    ],
+    "route": "finance_review"
+   }
+  },
+  {
+   "id": "P11",
+   "split": "dev",
+   "input": {
+    "request_id": "P11",
+    "requester": "Owen Parata",
+    "requester_email": "owen.parata@example.com",
+    "department": "Operations",
+    "supplier": "Ridgeline Camp Supplies Ltd",
+    "amount_nzd": 4950.0,
+    "budget_code": "OPS-2026",
+    "description": "Restock of 60 self-inflating sleeping mats for summer.",
+    "date": "2026-10-05"
+   },
+   "expected": {
+    "category": [
+     "stock"
+    ],
+    "route": "manager"
+   }
+  },
+  {
+   "id": "P12",
+   "split": "dev",
+   "input": {
+    "request_id": "P12",
+    "requester": "Leo Martin",
+    "requester_email": "leo.martin@example.com",
+    "department": "IT",
+    "supplier": "CloudDesk Software Ltd",
+    "amount_nzd": 39.0,
+    "budget_code": "IT-2026",
+    "description": "Monthly password-manager seat for a new hire in customer service.",
+    "date": "2026-10-05"
+   },
+   "expected": {
+    "category": [
+     "software"
+    ],
+    "route": "auto_approve"
+   }
+  },
+  {
+   "id": "P13",
+   "split": "dev",
+   "input": {
+    "request_id": "P13",
+    "requester": "Ruby Chen",
+    "requester_email": "ruby.chen@example.com",
+    "department": "Retail",
+    "supplier": "Ridgeline Camp Supplies Ltd",
+    "amount_nzd": 12500.0,
+    "budget_code": "RET-2026",
+    "description": "Summer stock of Kea tents for all four stores.",
+    "date": "2026-10-05"
+   },
+   "expected": {
+    "category": [
+     "stock"
+    ],
+    "route": "director"
+   }
+  },
+  {
+   "id": "P14",
+   "split": "dev",
+   "input": {
+    "request_id": "P14",
+    "requester": "Aisha Khan",
+    "requester_email": "aisha.khan@example.com",
+    "department": "Marketing",
+    "supplier": "Pixel Print Studio Ltd",
+    "amount_nzd": 220.0,
+    "budget_code": "MKT-2026",
+    "description": "Business cards for four new staff.",
+    "date": "2026-10-06"
+   },
+   "expected": {
+    "category": [
+     "marketing",
+     "office_and_equipment"
+    ],
+    "route": "auto_approve"
+   }
+  },
+  {
+   "id": "P15",
+   "split": "dev",
+   "input": {
+    "request_id": "P15",
+    "requester": "Ben Walker",
+    "requester_email": "ben.walker@example.com",
+    "department": "Operations",
+    "supplier": "Capital Office Supplies Ltd",
+    "amount_nzd": 310.0,
+    "budget_code": "OPS-2026",
+    "description": "Noise-cancelling headphones that I'd like to keep for myself and use at the gym.",
+    "date": "2026-10-06"
+   },
+   "expected": {
+    "category": [
+     "restricted"
+    ],
+    "route": "finance_review"
+   }
+  },
+  {
+   "id": "P16",
+   "split": "dev",
+   "input": {
+    "request_id": "P16",
+    "requester": "Tom Reed",
+    "requester_email": "tom.reed@example.com",
+    "department": "Wholesale",
+    "supplier": "Harbour Freight Logistics Ltd",
+    "amount_nzd": 640.0,
+    "budget_code": "WHS-2026",
+    "description": "Express courier for an urgent stockist order to Queenstown.",
+    "date": "2026-10-06"
+   },
+   "expected": {
+    "category": [
+     "packaging_and_freight"
+    ],
+    "route": "manager"
+   }
+  },
+  {
+   "id": "P17",
+   "split": "heldout",
+   "input": {
+    "request_id": "P17",
+    "requester": "Nadia Faleolo",
+    "requester_email": "nadia.faleolo@example.com",
+    "department": "Retail",
+    "supplier": "Capital Office Supplies Ltd",
+    "amount_nzd": 95.0,
+    "budget_code": "RET-2026",
+    "description": "Till rolls and cleaning supplies.",
+    "date": "2026-10-06"
+   },
+   "expected": {
+    "category": [
+     "office_and_equipment"
+    ],
+    "route": "auto_approve"
+   }
+  },
+  {
+   "id": "P18",
+   "split": "heldout",
+   "input": {
+    "request_id": "P18",
+    "requester": "Aisha Khan",
+    "requester_email": "aisha.khan@example.com",
+    "department": "Marketing",
+    "supplier": "Pixel Print Studio Ltd",
+    "amount_nzd": 5600.0,
+    "budget_code": "MKT-2026",
+    "description": "2,000 printed copies of the 2027 trade catalogue.",
+    "date": "2026-10-06"
+   },
+   "expected": {
+    "category": [
+     "marketing"
+    ],
+    "route": "director"
+   }
+  },
+  {
+   "id": "P19",
+   "split": "heldout",
+   "input": {
+    "request_id": "P19",
+    "requester": "Owen Parata",
+    "requester_email": "owen.parata@example.com",
+    "department": "Operations",
+    "supplier": "Ridgeline Camp Supplies Ltd",
+    "amount_nzd": 480.0,
+    "budget_code": "OPS-2025",
+    "description": "Replacement tent pegs and guy ropes for the demo tents.",
+    "date": "2026-10-07"
+   },
+   "expected": {
+    "category": [
+     "stock",
+     "office_and_equipment"
+    ],
+    "route": "return_to_requester"
+   }
+  },
+  {
+   "id": "P20",
+   "split": "heldout",
+   "input": {
+    "request_id": "P20",
+    "requester": "Tom Reed",
+    "requester_email": "tom.reed@example.com",
+    "department": "Wholesale",
+    "supplier": "Metro Travel Desk Ltd",
+    "amount_nzd": 1850.0,
+    "budget_code": "WHS-2026",
+    "description": "Trade show trip to Christchurch: flights and two nights' hotel for two people.",
+    "date": "2026-10-07"
+   },
+   "expected": {
+    "category": [
+     "travel"
+    ],
+    "route": "manager"
+   }
+  },
+  {
+   "id": "P21",
+   "split": "heldout",
+   "input": {
+    "request_id": "P21",
+    "requester": "Ruby Chen",
+    "requester_email": "ruby.chen@example.com",
+    "department": "Retail",
+    "supplier": "Bay Trophy & Engraving Ltd",
+    "amount_nzd": 260.0,
+    "budget_code": "RET-2026",
+    "description": "Engraved hip flasks filled with whisky as prizes for the staff sales competition.",
+    "date": "2026-10-07"
+   },
+   "expected": {
+    "category": [
+     "restricted"
+    ],
+    "route": "finance_review"
+   }
+  },
+  {
+   "id": "P22",
+   "split": "heldout",
+   "input": {
+    "request_id": "P22",
+    "requester": "Leo Martin",
+    "requester_email": "leo.martin@example.com",
+    "department": "IT",
+    "supplier": "CloudDesk Software Ltd",
+    "amount_nzd": 480.0,
+    "budget_code": "IT-2026",
+    "description": "Three more help-desk app seats for the support team.",
+    "date": "2026-10-07"
+   },
+   "expected": {
+    "category": [
+     "software"
+    ],
+    "route": "manager"
+   }
+  },
+  {
+   "id": "P23",
+   "split": "heldout",
+   "input": {
+    "request_id": "P23",
+    "requester": "Owen Parata",
+    "requester_email": "owen.parata@example.com",
+    "department": "Operations",
+    "supplier": "Kauri Coast Packaging Ltd",
+    "amount_nzd": 2900.0,
+    "budget_code": "OPS-2026",
+    "description": "Courier bags and boxes for online orders over the Christmas peak.",
+    "date": "2026-10-07"
+   },
+   "expected": {
+    "category": [
+     "packaging_and_freight"
+    ],
+    "route": "manager"
+   }
+  },
+  {
+   "id": "P24",
+   "split": "heldout",
+   "input": {
+    "request_id": "P24",
+    "requester": "Nadia Faleolo",
+    "requester_email": "nadia.faleolo@example.com",
+    "department": "Retail",
+    "supplier": "Capital Office Supplies Ltd",
+    "amount_nzd": 499.0,
+    "budget_code": "RET-2026",
+    "description": "Replacement EFTPOS terminal cable and a label printer.",
+    "date": "2026-10-07"
+   },
+   "expected": {
+    "category": [
+     "office_and_equipment"
+    ],
+    "route": "auto_approve"
+   }
+  }
+ ]
+}
