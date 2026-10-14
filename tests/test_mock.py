@@ -33,7 +33,7 @@ def test_samples_hide_labels(api: Api) -> None:
 
 
 def test_crm_lookup_matches_email_case_and_phone_format(api: Api) -> None:
-    _, by_email = call(api, "GET", "/crm/contacts", email=" HANA.Whitfield@Example.com")
+    _, by_email = call(api, "GET", "/crm/contacts", email=" KATE.Whitfield@Example.com")
     _, by_phone = call(api, "GET", "/crm/contacts", phone="+64 22 555 0102")
     assert by_email["count"] == 1
     assert by_phone["matches"][0]["name"] == "Tomasi Fifita"

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"office_and_equipment\",\n  \"restricted\": false,\n  \"reason\": \"Till rolls and cleaning supplies are store consumables used for daily operations.\",\n  \"approver_summary\": \"Claire Dawson from Retail wants till rolls and cleaning supplies from Capital Office Supplies Ltd for $95 NZD to support store operations.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Teu53elw6RFfCJn4DQjjAcpDQTjrIlwJHd6n1kcMvlDHyNAGycJTS3muvxjHxhxzSfOKKFGYvQw2D6mGy+lahN9nSSfAJLwnpLnxDisFUX+N80yRSezanQYc="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791960721,
+ "id": "kCbPav_1JdK11e8PyoGgkAU",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 76,
+  "prompt_tokens": 304,
+  "total_tokens": 380
+ },
+ "_gateway": {
+  "latency_ms": 1397.8
+ }
+}

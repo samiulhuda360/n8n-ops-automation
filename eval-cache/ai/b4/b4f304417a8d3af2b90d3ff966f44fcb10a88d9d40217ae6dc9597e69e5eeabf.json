@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"office_and_equipment\", \"restricted\": false, \"reason\": \"Purchasing printer rolls and pens falls under office and store consumables.\", \"approver_summary\": \"Claire Dawson wants receipt printer rolls and pens from Capital Office Supplies Ltd for $86.5 NZD to supply the Newmarket store counter.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0Tg2GDZLAP5xu+CRfft6UAqFSLTykAMcwCVeSt95hDujC2505+z/pDiNt9mjWwwpLaWCSbKYTEOhJWOV1LNAu0W7DC4guyuX3kLxIC6IAgqWIhiA7ZDCoNYaw="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791960708,
+ "id": "fybPatqHAb-dvr0Pto_TQQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 68,
+  "prompt_tokens": 311,
+  "total_tokens": 379
+ },
+ "_gateway": {
+  "latency_ms": 29072.0
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"restricted\",\n  \"restricted\": true,\n  \"reason\": \"Vouchers for staff are classified as restricted items under company policy.\",\n  \"approver_summary\": \"Claire Dawson from Retail wants nine $50 supermarket vouchers from Capital Office Supplies Ltd for $450 NZD to thank store staff for the stocktake weekend.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T5UfuQkI7/swWVNRzIzAFO55pvTIw9saPt//i3JJiaPdZ+oh3A/9n/0OQOQOtUzsNBuVY7ttbmIYtsh75mWffiBYoE3zje24MqngzU2/Ec1nVrizwaxDzUHk="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791960714,
+ "id": "hSbPaqrfE6qvvr0P36XiSA",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 79,
+  "prompt_tokens": 315,
+  "total_tokens": 394
+ },
+ "_gateway": {
+  "latency_ms": 5927.4
+ }
+}

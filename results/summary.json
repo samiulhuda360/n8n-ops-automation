@@ -1,5 +1,5 @@
 {
- "date": "2026-10-08",
+ "date": "2026-10-14",
  "split": "all",
  "gateway": "live",
  "model": "gemini-flash-lite-latest",
@@ -98,9 +98,9 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 1461.0,
+   "execution_ms": 2431.0,
    "ai_node_ms": 0.0,
-   "cli_wall_s": 14.9,
+   "cli_wall_s": 28.8,
    "rows": [
     {
      "id": "B01",
@@ -601,9 +601,9 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 1924.0,
+   "execution_ms": 1248.0,
    "ai_node_ms": 0.0,
-   "cli_wall_s": 14.0,
+   "cli_wall_s": 8.7,
    "rows": [
     {
      "id": "K10",
@@ -1229,9 +1229,9 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 1356.0,
+   "execution_ms": 1832.0,
    "ai_node_ms": 0.0,
-   "cli_wall_s": 13.0,
+   "cli_wall_s": 9.8,
    "rows": [
     {
      "id": "L01",
@@ -1692,9 +1692,9 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 1318.0,
+   "execution_ms": 727.0,
    "ai_node_ms": 0.0,
-   "cli_wall_s": 9.5,
+   "cli_wall_s": 10.6,
    "rows": [
     {
      "id": "P01",
@@ -2333,9 +2333,9 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 2784.0,
+   "execution_ms": 3308.0,
    "ai_node_ms": 0.0,
-   "cli_wall_s": 11.6,
+   "cli_wall_s": 21.0,
    "rows": [
     {
      "id": "I01",
@@ -3126,7 +3126,7 @@
     "model_latency_ms_p50": null,
     "model_latency_ms_p95": null
    },
-   "execution_ms": 1162.0,
+   "execution_ms": 1271.0,
    "ai_node_ms": 0.0,
    "cli_wall_s": 9.1,
    "rows": [
@@ -3660,17 +3660,17 @@
    "model": {
     "calls": 15,
     "ok": 15,
-    "live": 5,
-    "cached": 10,
+    "live": 0,
+    "cached": 15,
     "failed": 0,
     "prompt_tokens": 5587,
     "completion_tokens": 5339,
     "model_latency_ms_p50": 6095.5,
     "model_latency_ms_p95": 8851.0
    },
-   "execution_ms": 28717.0,
-   "ai_node_ms": 27580.0,
-   "cli_wall_s": 36.6,
+   "execution_ms": 4370.0,
+   "ai_node_ms": 2965.0,
+   "cli_wall_s": 13.8,
    "rows": [
     {
      "id": "B01",
@@ -4156,17 +4156,17 @@
    "model": {
     "calls": 21,
     "ok": 21,
-    "live": 7,
-    "cached": 14,
+    "live": 0,
+    "cached": 21,
     "failed": 0,
     "prompt_tokens": 9876,
     "completion_tokens": 2384,
     "model_latency_ms_p50": 5778.6,
     "model_latency_ms_p95": 9271.2
    },
-   "execution_ms": 36785.0,
-   "ai_node_ms": 35625.0,
-   "cli_wall_s": 44.9,
+   "execution_ms": 5608.0,
+   "ai_node_ms": 4277.0,
+   "cli_wall_s": 14.2,
    "rows": [
     {
      "id": "K10",
@@ -4792,17 +4792,17 @@
    "model": {
     "calls": 24,
     "ok": 24,
-    "live": 8,
-    "cached": 16,
+    "live": 3,
+    "cached": 21,
     "failed": 0,
     "prompt_tokens": 11806,
-    "completion_tokens": 3173,
-    "model_latency_ms_p50": 1823.8,
-    "model_latency_ms_p95": 6050.1
+    "completion_tokens": 3174,
+    "model_latency_ms_p50": 1841.7,
+    "model_latency_ms_p95": 6870.2
    },
-   "execution_ms": 33911.0,
-   "ai_node_ms": 32471.0,
-   "cli_wall_s": 41.9,
+   "execution_ms": 38875.0,
+   "ai_node_ms": 37247.0,
+   "cli_wall_s": 46.7,
    "rows": [
     {
      "id": "L01",
@@ -5259,17 +5259,17 @@
    "model": {
     "calls": 24,
     "ok": 24,
-    "live": 8,
-    "cached": 16,
+    "live": 6,
+    "cached": 18,
     "failed": 0,
-    "prompt_tokens": 7530,
-    "completion_tokens": 1739,
-    "model_latency_ms_p50": 2921.3,
-    "model_latency_ms_p95": 14847.1
+    "prompt_tokens": 7522,
+    "completion_tokens": 1748,
+    "model_latency_ms_p50": 3147.9,
+    "model_latency_ms_p95": 15445.4
    },
-   "execution_ms": 32964.0,
-   "ai_node_ms": 31696.0,
-   "cli_wall_s": 42.0,
+   "execution_ms": 57082.0,
+   "ai_node_ms": 56108.0,
+   "cli_wall_s": 66.1,
    "rows": [
     {
      "id": "P01",
@@ -5904,17 +5904,17 @@
    "model": {
     "calls": 24,
     "ok": 24,
-    "live": 8,
-    "cached": 16,
+    "live": 0,
+    "cached": 24,
     "failed": 0,
     "prompt_tokens": 11216,
     "completion_tokens": 5622,
     "model_latency_ms_p50": 2986.0,
     "model_latency_ms_p95": 16273.0
    },
-   "execution_ms": 29487.0,
-   "ai_node_ms": 27702.0,
-   "cli_wall_s": 38.3,
+   "execution_ms": 7056.0,
+   "ai_node_ms": 4911.0,
+   "cli_wall_s": 16.4,
    "rows": [
     {
      "id": "I01",
@@ -6641,17 +6641,17 @@
    "model": {
     "calls": 24,
     "ok": 24,
-    "live": 8,
-    "cached": 16,
+    "live": 0,
+    "cached": 24,
     "failed": 0,
     "prompt_tokens": 10736,
     "completion_tokens": 2267,
     "model_latency_ms_p50": 1891.5,
     "model_latency_ms_p95": 10091.7
    },
-   "execution_ms": 34813.0,
-   "ai_node_ms": 33639.0,
-   "cli_wall_s": 42.7,
+   "execution_ms": 5982.0,
+   "ai_node_ms": 4880.0,
+   "cli_wall_s": 14.6,
    "rows": [
     {
      "id": "S01",

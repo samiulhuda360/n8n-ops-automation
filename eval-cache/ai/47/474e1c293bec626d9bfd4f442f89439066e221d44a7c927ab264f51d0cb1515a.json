@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\"category\": \"marketing\", \"restricted\": false, \"reason\": \"Business cards are printed promotional material for the business.\", \"approver_summary\": \"Hannah Lewis from Marketing wants business cards from Pixel Print Studio Ltd for $220 NZD for four new staff.\"}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TtqajM3DQmV1Ozz/UvVJ86bxAqJFVsiU69vW7jvJbPvU5TtaAVHCl5wZToX1QdWMgO5EubRaYPgpXPOmfyj0mWC//5uUnOvTqI/Zb0kbLbfN6Owm/paSIjuE="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791960720,
+ "id": "jybPaqiwB47T1e8Phrr20Q8",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 57,
+  "prompt_tokens": 307,
+  "total_tokens": 364
+ },
+ "_gateway": {
+  "latency_ms": 5530.4
+ }
+}

@@ -36,9 +36,9 @@ def dump(path: Path, data: object) -> None:
 # ------------------------------------------------------------------------------------------------------- CRM
 
 CRM = [
-    ("Hana Whitfield", "Kaimai Adventure Store", "hana.whitfield@example.com", "021 555 0101", "wholesale"),
+    ("Kate Whitfield", "Kaimai Adventure Store", "kate.whitfield@example.com", "021 555 0101", "wholesale"),
     ("Tomasi Fifita", "Harbourside Rowing Club", "tomasi.fifita@example.com", "022 555 0102", "club_or_school"),
-    ("Priya Raman", "Northcote Scouts", "priya.raman@example.com", "027 555 0103", "club_or_school"),
+    ("Rebecca Shaw", "Northcote Scouts", "rebecca.shaw@example.com", "027 555 0103", "club_or_school"),
     ("Ben Carver", "Carver Events Ltd", "ben.carver@example.com", "09 555 0104", "sponsorship_or_partnership"),
     ("Mere Tane", "Te Aroha Outdoors", "mere.tane@example.com", "021 555 0105", "wholesale"),
     ("Lucy Ng", "Ng & Partners Accounting", "lucy.ng@example.com", "021 555 0106", "corporate_bulk"),
@@ -769,18 +769,18 @@ POLICY = {
     "managers": {
         "Retail": "Emma Clarke",
         "Wholesale": "Tom Reed",
-        "Marketing": "Aisha Khan",
+        "Marketing": "Hannah Lewis",
         "Operations": "Luke Bennett",
         "IT": "Luke Bennett",
     },
     "director": "Sarah Mitchell",
-    "finance": "Raj Iyer",
+    "finance": "Simon Porter",
 }
 
 HISTORY = [
     ("2026-09-28", "Jess Moana", "Marketing", "Pixel Print Studio Ltd", 420.0),
     ("2026-09-25", "Leo Martin", "IT", "CloudDesk Software Ltd", 300.0),
-    ("2026-09-20", "Nadia Faleolo", "Retail", "Capital Office Supplies Ltd", 120.0),
+    ("2026-09-20", "Claire Dawson", "Retail", "Capital Office Supplies Ltd", 120.0),
     ("2026-09-02", "Owen Parata", "Operations", "Ridgeline Camp Supplies Ltd", 450.0),
 ]
 
@@ -789,7 +789,7 @@ REQUESTS = [
     (
         "P01",
         "dev",
-        "Nadia Faleolo",
+        "Claire Dawson",
         "Retail",
         "Capital Office Supplies Ltd",
         86.50,
@@ -893,7 +893,7 @@ REQUESTS = [
     (
         "P09",
         "dev",
-        "Nadia Faleolo",
+        "Claire Dawson",
         "Retail",
         "Capital Office Supplies Ltd",
         450.00,
@@ -958,7 +958,7 @@ REQUESTS = [
     (
         "P14",
         "dev",
-        "Aisha Khan",
+        "Hannah Lewis",
         "Marketing",
         "Pixel Print Studio Ltd",
         220.00,
@@ -997,7 +997,7 @@ REQUESTS = [
     (
         "P17",
         "heldout",
-        "Nadia Faleolo",
+        "Claire Dawson",
         "Retail",
         "Capital Office Supplies Ltd",
         95.00,
@@ -1010,7 +1010,7 @@ REQUESTS = [
     (
         "P18",
         "heldout",
-        "Aisha Khan",
+        "Hannah Lewis",
         "Marketing",
         "Pixel Print Studio Ltd",
         5600.00,
@@ -1088,7 +1088,7 @@ REQUESTS = [
     (
         "P24",
         "heldout",
-        "Nadia Faleolo",
+        "Claire Dawson",
         "Retail",
         "Capital Office Supplies Ltd",
         499.00,

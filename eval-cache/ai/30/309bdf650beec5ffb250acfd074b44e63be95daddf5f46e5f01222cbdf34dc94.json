@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"marketing\",\n  \"restricted\": false,\n  \"reason\": \"This purchase is for printed promotional trade catalogues.\",\n  \"approver_summary\": \"Hannah Lewis from Marketing wants 2,000 printed copies of the 2027 trade catalogue from Pixel Print Studio Ltd for $5,600 NZD.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0T9D1At8IhKukGx7U2GTIF9exeCRzSuvYqYO6nq2exuGUpQKCllKF4ryv6WyJ+108ZmPgz72WEWrVAhXqgRgOGVL7emkirJPva5sSBI+0Zk0Bbm87rFlHrTWY="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791960725,
+ "id": "lSbPapiREoO21e8P4onXwAQ",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 79,
+  "prompt_tokens": 319,
+  "total_tokens": 398
+ },
+ "_gateway": {
+  "latency_ms": 1822.5
+ }
+}

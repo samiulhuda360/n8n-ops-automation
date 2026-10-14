@@ -1,0 +1,29 @@
+{
+ "choices": [
+  {
+   "finish_reason": "stop",
+   "index": 0,
+   "message": {
+    "content": "{\n  \"category\": \"office_and_equipment\",\n  \"restricted\": false,\n  \"reason\": \"This purchase is for store hardware and equipment used in daily operations.\",\n  \"approver_summary\": \"Claire Dawson from Retail wants a replacement EFTPOS terminal cable and label printer from Capital Office Supplies Ltd for $499 NZD to maintain store checkout and labeling operations.\"\n}",
+    "extra_content": {
+     "google": {
+      "thought_signature": "EmAKXgFpFH0TFNsBW/B42CWTu25y+P/rRM9W4/iDTKGNb8Ea+Mpv5sPYaBilUj/sAoAuo+zVdL/1ZSycPHMYJanXIDwPBVbwJoXx+t2lb7l4KDQ18rUWKblp9FTRx5eI+Rk="
+     }
+    },
+    "role": "assistant"
+   }
+  }
+ ],
+ "created": 1791960734,
+ "id": "nSbPaue6FpuU9tMP27nLWA",
+ "model": "gemini-flash-lite-latest",
+ "object": "chat.completion",
+ "usage": {
+  "completion_tokens": 85,
+  "prompt_tokens": 310,
+  "total_tokens": 395
+ },
+ "_gateway": {
+  "latency_ms": 6538.0
+ }
+}

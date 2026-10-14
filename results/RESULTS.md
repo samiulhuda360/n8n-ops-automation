@@ -1,6 +1,6 @@
 # Evaluation results
 
-Run on 2026-10-08 with `python -m opsflow eval` (model `gemini-flash-lite-latest`, gateway `live`). Every workflow ran for real inside n8n from its **Try with sample data** trigger, against the mock systems, on every labelled item. Two modes:
+Run on 2026-10-14 with `python -m opsflow eval` (model `gemini-flash-lite-latest`, gateway `live`). Every workflow ran for real inside n8n from its **Try with sample data** trigger, against the mock systems, on every labelled item. Two modes:
 
 - **rules**: `AI_MODE=off`. The keyword/regex/template baseline that each workflow falls back to.
 - **ai**: the shipped workflow: the model suggests, the guard rules decide.
@@ -120,14 +120,14 @@ Calls go through the caching gateway in the mock services: `live` calls reached 
 
 | Workflow | Model calls | Live | Cached | Failed | Tokens in / out | Model p50 / p95 | n8n run time | Cost per item |
 |---|---|---|---|---|---|---|---|---|
-| Lead intake and enrichment | 24 | 8 | 16 | 0 | 11,806 / 3,173 | 1.8s / 6.1s | 33.9s for 24 | US$0.00010 |
-| Supplier invoice to draft bill | 24 | 8 | 16 | 0 | 11,216 / 5,622 | 3.0s / 16.3s | 29.5s for 24 | US$0.00014 |
-| Customer support triage | 24 | 8 | 16 | 0 | 10,736 / 2,267 | 1.9s / 10.1s | 34.8s for 24 | US$0.00008 |
-| Daily KPI digest | 21 | 7 | 14 | 0 | 9,876 / 2,384 | 5.8s / 9.3s | 36.8s for 21 | US$0.00009 |
-| Purchase approval routing | 24 | 8 | 16 | 0 | 7,530 / 1,739 | 2.9s / 14.8s | 33.0s for 24 | US$0.00006 |
-| Blog post to social drafts | 15 | 5 | 10 | 0 | 5,587 / 5,339 | 6.1s / 8.9s | 28.7s for 15 | US$0.00018 |
+| Lead intake and enrichment | 24 | 3 | 21 | 0 | 11,806 / 3,174 | 1.8s / 6.9s | 38.9s for 24 | US$0.00010 |
+| Supplier invoice to draft bill | 24 | 0 | 24 | 0 | 11,216 / 5,622 | 3.0s / 16.3s | 7.1s for 24 | US$0.00014 |
+| Customer support triage | 24 | 0 | 24 | 0 | 10,736 / 2,267 | 1.9s / 10.1s | 6.0s for 24 | US$0.00008 |
+| Daily KPI digest | 21 | 0 | 21 | 0 | 9,876 / 2,384 | 5.8s / 9.3s | 5.6s for 21 | US$0.00009 |
+| Purchase approval routing | 24 | 6 | 18 | 0 | 7,522 / 1,748 | 3.1s / 15.4s | 57.1s for 24 | US$0.00006 |
+| Blog post to social drafts | 15 | 0 | 15 | 0 | 5,587 / 5,339 | 6.1s / 8.9s | 4.4s for 15 | US$0.00018 |
 
-Total for the AI run: 132 model calls (44 live, 88 cached, 0 failed), 56,751 input and 20,524 output tokens.
+Total for the AI run: 132 model calls (9 live, 123 cached, 0 failed), 56,743 input and 20,534 output tokens.
 
 ## Time saved
 

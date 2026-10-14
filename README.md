@@ -229,9 +229,9 @@ What the numbers show:
   blog posts with a draft needing an edit.
 
 **Model calls:** 132 calls in the AI run, 0 failures, about 57,000 input and 21,000 output tokens; median model
-latency 1.8 to 6.1 seconds per workflow; under US$0.0002 per item at the assumed price. Over the build, 132 live
-calls were made (88 for the dev split, then 44 for the held-out split); the AI run above answered the dev items
-from the cache.
+latency 1.8 to 6.1 seconds per workflow; under US$0.0002 per item at the assumed price. Every request in the
+run has a stored answer in `eval-cache/ai/` (132 in all), so the run replays offline; the run above made 9 of its
+calls live and answered the other 123 from that cache.
 
 **Time saved** at the stated volumes (assumptions in `data/time_model.csv`, rates measured above):
 

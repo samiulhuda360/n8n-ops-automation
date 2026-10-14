@@ -6,7 +6,7 @@ const { decideRoute, baselineCategory } = load('common', 'purchase');
 const policy = {
   auto_approve_max: 500, manager_max: 5000, split_window_days: 14,
   budget_codes: ['OPS-2026'], approved_suppliers: ['Known Ltd'], restricted_keywords: ['voucher', 'wine'],
-  managers: { Operations: 'Luke Bennett' }, director: 'Sarah Mitchell', finance: 'Raj Iyer',
+  managers: { Operations: 'Luke Bennett' }, director: 'Sarah Mitchell', finance: 'Simon Porter',
 };
 const req = (extra) => ({
   requester: 'Owen Parata', department: 'Operations', supplier: 'Known Ltd', amount_nzd: 100, budget_code: 'OPS-2026',

@@ -1,9 +1,9 @@
 [
  {
   "id": "C0001",
-  "name": "Hana Whitfield",
+  "name": "Kate Whitfield",
   "company": "Kaimai Adventure Store",
-  "email": "hana.whitfield@example.com",
+  "email": "kate.whitfield@example.com",
   "phone": "021 555 0101",
   "category": "wholesale",
   "priority": "warm",
@@ -25,9 +25,9 @@
  },
  {
   "id": "C0003",
-  "name": "Priya Raman",
+  "name": "Rebecca Shaw",
   "company": "Northcote Scouts",
-  "email": "priya.raman@example.com",
+  "email": "rebecca.shaw@example.com",
   "phone": "027 555 0103",
   "category": "club_or_school",
   "priority": "warm",
